@@ -17,7 +17,7 @@ function migrate_community_resource_hub_install(): void {
   $directory = \Drupal::config('system.file')->get('default_scheme') . '://migrate_community_resource_hub';
   \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
 
-  // Copy the rooms file to migrate_locations directory.
+  // Copy the .json file to the directory.
   // @todo Use \Drupal\Core\Extension\ExtensionPathResolver::getPath() when we
   // require Drupal > 9.3.0.
   $module_path = \Drupal::moduleHandler()->getModule('migrate_community_resource_hub')->getPath();

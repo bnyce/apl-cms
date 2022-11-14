@@ -12,7 +12,7 @@ ddev drush user:password admin "111"
 ddev drush entity:delete shortcut
 
 ddev composer require drupal/asset_injector
-ddev composer require drupal/migrate_file -y
+ddev composer require drupal/migrate_file
 
 cp -r ~/apl-cms/modules/* ~/$1/web/modules/contrib/
 
@@ -20,6 +20,14 @@ ddev drush en asset_injector -y
 ddev drush en migrate_file -y
 ddev drush en migrate_community_resource_hub -y
 ddev drush migrate:import community_resource_hub
+
+ddev drush theme:enable claro
+ddev drush config-set system.theme default claro -y
+mkdir  ~/$1/web/sites/default/files/community-hub
+cp -r ~/apl-cms/modules/migrate_community_resource_hub/artifacts/community-hub/* ~/$1/web/sites/default/files/community-hub
+cp -r ~/apl-cms/modules/migrate_community_resource_hub/artifacts/misc/* ~/$1/web/sites/default/files/misc
+cp -r ~/apl-cms/modules/migrate_community_resource_hub/artifacts/2022-10/* ~/$1/web/sites/default/files/2022-10
+ln -s sites/default/files ~/$1/web/library
 
 ddev drush cr
 
