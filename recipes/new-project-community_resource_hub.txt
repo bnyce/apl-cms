@@ -1,0 +1,26 @@
+# usage: bash new-project.txt projectname
+
+cd ~
+mkdir $1
+cd $1
+ddev config --project-type=drupal9 --docroot=web --create-docroot
+ddev start
+ddev composer create "drupal/recommended-project" --no-install -y
+ddev composer require drush/drush 
+ddev drush site:install -y
+ddev drush user:password admin "111"
+ddev drush entity:delete shortcut
+
+ddev composer require drupal/asset_injector
+ddev composer require drupal/migrate_file -y
+
+cp -r ~/apl-cms/modules/* ~/$1/web/modules/contrib/
+
+ddev drush en asset_injector -y
+ddev drush en migrate_file -y
+ddev drush en migrate_community_resource_hub -y
+ddev drush migrate:import community_resource_hub
+
+ddev drush cr
+
+ddev launch community-resource-hub
