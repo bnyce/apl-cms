@@ -15,6 +15,7 @@ The following page has some instructions for connecting a Pantheon-hosted site w
 
 https://ddev.readthedocs.io/en/latest/users/providers/pantheon/
 
+## Recipes ##
 
 The APL-CMS repository consists of a set of "recipes" that assemble and launch a functioning CMS web development environment configured and pre-populated with content similar to the Austin Public Library's website https://library.austintexas.gov
 
