@@ -6,7 +6,7 @@ email me: bryce.benton@austintexas.gov , or find me on Mastodon: @bryceb @c.im
 
 ## Getting Started ##
 
-The APL-CMS repository consists of a set of "recipes" that assembles and launches a functioning CMS web development environment configured and pre-populated with content similar to the Austin Public Library's website https://library.austintexas.gov
+The APL-CMS repository consists of a set of "recipes" that assemble and launch a functioning CMS web development environment configured and pre-populated with content similar to the Austin Public Library's website https://library.austintexas.gov
 
 The recipes require a modern computer capable of running DDEV, a container based local development environment
 * More about DDEV https://ddev.com/
