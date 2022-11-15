@@ -10,6 +10,7 @@ The APL-CMS repository consists of a set of "recipes" that assemble and launch a
 
 The recipes require a modern computer capable of running DDEV, a container based local development environment
 * More about DDEV https://ddev.com/
+* MacOS users: Colima is free, and possibly a better option than Docker. Install it with homebrew https://formulae.brew.sh/formula/colima
 
 To try a recipe, install DDEV if you haven't already, and clone the repository into your home directory so that it is at ~/apl-cms
 * The recipes expect the repository to be at that location--alternatively, you could alter the recipe to look in a different location where you have cloned the apl-cms repo.
