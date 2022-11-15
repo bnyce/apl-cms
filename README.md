@@ -7,13 +7,13 @@ email me: bryce.benton@austintexas.gov , or find me on Mastodon: @bryceb @c.im
 ## Getting Started ##
 The easiest way to get started is to try out the demonstration website for this project : https://dev-apl-cms.pantheonsite.io/
 
-This apl-cms repository drives that site, so you can look through the source code and modules here on GitHub and also see the front-end and back-end of the website this code facilitates. Log in with the _ridiculously_ unsafe username / password: admin 111 https://dev-apl-cms.pantheonsite.io/user
+This apl-cms repository drives that site, so you can look through the source code and modules here on GitHub and also see the front-end and back-end of the website this code facilitates. 
+* Log in with the _ridiculously_ unsafe username / password: admin 111 https://dev-apl-cms.pantheonsite.io/user
 
 ## Digging In ##
 
 The following page has some instructions for connecting a Pantheon-hosted site with a local DDEV . The repository for this project originally followed these instructions, so if you clone this GitHub repository, it might not be too difficult to adapt the configuration to point to your own Pantheon-hosted site. You'll need a free account with Pantheon, and you'll need to establish your SSH key and machine-token so that the Pantheon command line utility "terminus" can authenticate you and connect your hosted and local sites.
-
-https://ddev.readthedocs.io/en/latest/users/providers/pantheon/
+* https://ddev.readthedocs.io/en/latest/users/providers/pantheon/
 
 ## Recipes ##
 
