@@ -1,4 +1,4 @@
-name: pantheon-apl-cms
+name: apl-cms
 type: drupal9
 docroot: web
 php_version: "8.0"
