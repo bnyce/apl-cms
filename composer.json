@@ -23,7 +23,8 @@
         "drush/drush": "^11 || ^12",
         "drupal/asset_injector": "^2.12",
         "drupal/migrate_file": "^2.1",
-        "drupal/pathauto": "^1.11"
+        "drupal/pathauto": "^1.11",
+        "drupal/uswds_base": "^3.0"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
