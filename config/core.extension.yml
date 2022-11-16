@@ -1,7 +1,6 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
-  asset_injector: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -27,7 +26,30 @@ module:
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
+  migrate_alerts: 0
+  migrate_audience: 0
+  migrate_audience2016: 0
+  migrate_booklist_cats: 0
+  migrate_databases: 0
+  migrate_db_access: 0
+  migrate_db_cats: 0
+  migrate_db_subjects: 0
+  migrate_db_types: 0
+  migrate_event_tags: 0
+  migrate_events: 0
   migrate_file: 0
+  migrate_fullscreens: 0
+  migrate_home_page: 0
+  migrate_library_info: 0
+  migrate_locations: 0
+  migrate_meeting_rooms: 0
+  migrate_plus: 0
+  migrate_priorities: 0
+  migrate_remote_locations: 0
+  migrate_rooms: 0
+  migrate_rotators: 0
+  migrate_sponsors: 0
+  migrate_zones: 0
   mysql: 0
   node: 0
   options: 0
@@ -40,10 +62,12 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   user: 0
   views_ui: 0
+  pathauto: 1
   views: 10
   standard: 1000
 theme:

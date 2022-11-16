@@ -1,0 +1,10 @@
+uuid: e16b47d1-c197-4f9f-bb77-312aa9c964dd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xtd9hb83BT3yOlHsGZNBHbdoNUhu-Nl4p90QF9TcO3Y
+name: 'Library Location'
+vid: library_location
+description: 'A Physical Library, History Center, Bookstore, or Branch of the Austin Public Library'
+weight: -16

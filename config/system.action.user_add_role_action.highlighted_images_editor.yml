@@ -1,0 +1,14 @@
+uuid: dbeb1a58-178e-4365-a2dd-c8d74aa80e71
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.highlighted_images_editor
+  module:
+    - user
+id: user_add_role_action.highlighted_images_editor
+label: 'Add the Highlighted Images Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: highlighted_images_editor

@@ -1,0 +1,10 @@
+uuid: 0a905a58-fd95-41cc-b061-77ed2251ab6c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JfmFzSkw2z6eQM8wR-2WAewbcRM5DQ_YWxGPwUvizpQ
+name: 'Database Types'
+vid: database_types
+description: ''
+weight: -11

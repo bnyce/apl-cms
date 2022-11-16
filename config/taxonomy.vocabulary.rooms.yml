@@ -1,0 +1,10 @@
+uuid: 81e38999-a7aa-4dd0-abdd-1bc91aee81d5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: D1goBo_nhWXt_Br_5CdD9_CdZsqWCowQTrZGKWyo3t4
+name: Rooms
+vid: rooms
+description: 'Rooms that are available for reservation.'
+weight: -15

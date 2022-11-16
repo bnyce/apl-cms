@@ -1,0 +1,10 @@
+uuid: cbb5fa75-7c81-4bda-add6-c515fd5fa635
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0hdhOmfH8ghZJFiGrsoWMa4m1FmDkBmXlYhSGHSJcjs
+name: 'Event Tags'
+vid: event_tags
+description: ''
+weight: 9

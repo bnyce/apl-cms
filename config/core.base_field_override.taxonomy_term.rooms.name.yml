@@ -1,0 +1,20 @@
+uuid: 4266dccf-6bcd-461c-a6b8-ae6df8fb90f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.rooms
+_core:
+  default_config_hash: znxiBZxvq5xMaQxpE8rqgtiuiyMgvN1mfhVv_1D_tz0
+id: taxonomy_term.rooms.name
+field_name: name
+entity_type: taxonomy_term
+bundle: rooms
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

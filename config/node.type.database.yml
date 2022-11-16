@@ -1,0 +1,19 @@
+uuid: 75a7454d-b173-4017-982c-f742f2e683e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: JYjExG_75pfyxPh3ZWgIjFHpw4NsAXMt1oXIjfkTAzM
+name: 'Virtual Library Database'
+type: database
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

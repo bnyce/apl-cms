@@ -1,0 +1,10 @@
+uuid: 52fc3a0c-e662-4214-a9c6-3c67d4181cc7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U9KCuIYpg6s-Vy6Ol6_OVz8Nq58r0oZ0cZzgspOntUE
+name: 'Database Categories'
+vid: database_categories
+description: ''
+weight: -9

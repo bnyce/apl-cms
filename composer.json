@@ -22,7 +22,8 @@
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^11 || ^12",
         "drupal/asset_injector": "^2.12",
-        "drupal/migrate_file": "^2.1"
+        "drupal/migrate_file": "^2.1",
+        "drupal/pathauto": "^1.11"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
