@@ -47,6 +47,7 @@ module:
   migrate_events: 0
   migrate_file: 0
   migrate_fullscreens: 0
+  migrate_heroes: 0
   migrate_home_page: 0
   migrate_items: 0
   migrate_library_info: 0
@@ -80,6 +81,7 @@ module:
   views_autocomplete_filters: 0
   views_conditional: 0
   views_data_export: 0
+  views_slideshow: 0
   views_ui: 0
   webform: 0
   webform_views: 0
