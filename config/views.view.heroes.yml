@@ -344,7 +344,7 @@ display:
           equalto: ''
           then: "<div class=\"hero-image\" style=\"background-image:url({{ field_hero_image }})\" data-url=\"{{ field_hero_image }}\">\r\n<div class=\"flex-grid\">\r\n <div class=\"d-col-5 t-col-5 m-col-3\">\r\n  <div class=\"hero-text2\">\r\n    <p class=\"hero-title2\">{{ title }}</p>\r\n    <p class=\"hero-summary\">{{ field_hero_summary }}</p>\r\n     <span class=\"hero-action\" >{{ field_button_link }}</span>\r\n  </div></div>\r\n</div> \r\n</div>"
           then_translate: 1
-          or: ''
+          or: e
           or_translate: 1
           strip_tags: 0
         field_hero_template:
