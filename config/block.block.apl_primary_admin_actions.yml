@@ -1,0 +1,20 @@
+uuid: 3c6f9274-2bde-4a78-920a-04f0e54ba76e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - apl
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: apl_primary_admin_actions
+theme: apl
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

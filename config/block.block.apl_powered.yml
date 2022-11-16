@@ -1,0 +1,22 @@
+uuid: 7e11fccf-2fe0-4fec-96df-54a599caaa33
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apl
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: apl_powered
+theme: apl
+region: header_top
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

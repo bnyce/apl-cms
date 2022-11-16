@@ -1,7 +1,9 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  asset_injector: 0
   automated_cron: 0
+  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -11,17 +13,23 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  csv_serialization: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_permissions: 0
   field_ui: 0
   file: 0
   filter: 0
   help: 0
   history: 0
   image: 0
+  jquery_ui: 0
+  jquery_ui_datepicker: 0
+  jquery_ui_slider: 0
+  jquery_ui_touch_punch: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -57,7 +65,9 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  rest: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
@@ -66,11 +76,18 @@ module:
   toolbar: 0
   tour: 0
   user: 0
+  views_autocomplete_filters: 0
+  views_conditional: 0
+  views_data_export: 0
   views_ui: 0
+  webform: 0
+  webform_views: 0
   pathauto: 1
   views: 10
   standard: 1000
 theme:
   olivero: 0
   claro: 0
+  uswds_base: 0
+  apl: 0
 profile: standard
