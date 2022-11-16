@@ -1,6 +1,6 @@
 uuid: eb820352-c0ad-4521-891e-74e7ef4c134a
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - apl
@@ -9,7 +9,7 @@ _core:
 id: apl_page_title
 theme: apl
 region: header_top
-weight: -5
+weight: -9
 provider: null
 plugin: page_title_block
 settings:

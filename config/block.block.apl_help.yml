@@ -1,6 +1,6 @@
 uuid: 101ff697-9088-4941-809a-e896542e2704
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: apl_help
 theme: apl
 region: header_top
-weight: 0
+weight: -8
 provider: null
 plugin: help_block
 settings:

@@ -12,8 +12,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: apl_account_menu
 theme: apl
-region: secondary_menu
-weight: -4
+region: header_top
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:

@@ -1,0 +1,349 @@
+menus:
+  -
+    menu_name: sections
+    title: 'eBooks Audiobooks'
+    parent: null
+    uri: 'internal:/ebooks-audiobooks'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: true
+    weight: -50
+    langcode: en
+    uuid: 7c9a6b69-f0f3-413e-bb14-1fe05039963a
+  -
+    menu_name: sections
+    title: 'Overdrive / Libby'
+    parent: 'menu_link_content:7c9a6b69-f0f3-413e-bb14-1fe05039963a'
+    uri: 'internal:/overdrive-libby'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: feba77ac-25e7-438d-b57a-9f55fb24fea8
+  -
+    menu_name: sections
+    title: hoopla
+    parent: 'menu_link_content:7c9a6b69-f0f3-413e-bb14-1fe05039963a'
+    uri: 'internal:/hoopla'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 641c7517-6042-4b39-92dd-bbad2f2eba37
+  -
+    menu_name: sections
+    title: 'BiblioBoard Library'
+    parent: 'menu_link_content:7c9a6b69-f0f3-413e-bb14-1fe05039963a'
+    uri: 'internal:/biblioboard-library'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 3975bd72-1ecf-4c19-88aa-4ce5400c7c0d
+  -
+    menu_name: sections
+    title: cloudLibrary
+    parent: 'menu_link_content:7c9a6b69-f0f3-413e-bb14-1fe05039963a'
+    uri: 'internal:/cloudLibrary'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: d392c656-7c7e-4439-8594-9f53f4ea24f0
+  -
+    menu_name: sections
+    title: 'Magazines Newspapers'
+    parent: null
+    uri: 'internal:/magazines-newspapers'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: true
+    weight: -49
+    langcode: en
+    uuid: 39132e4a-5ab1-41bb-9875-5dab6c582d52
+  -
+    menu_name: sections
+    title: 'Austin American-Statesman'
+    parent: 'menu_link_content:39132e4a-5ab1-41bb-9875-5dab6c582d52'
+    uri: 'internal:/austin-american-statesman'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: 969a4720-1851-4e5f-96a9-9789e4f12fe6
+  -
+    menu_name: sections
+    title: 'Austin Monitor'
+    parent: 'menu_link_content:39132e4a-5ab1-41bb-9875-5dab6c582d52'
+    uri: 'internal:/austin-monitor'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: e7dbabd9-8a82-45ce-8dd2-025e55651355
+  -
+    menu_name: sections
+    title: NewsBank
+    parent: 'menu_link_content:39132e4a-5ab1-41bb-9875-5dab6c582d52'
+    uri: 'internal:/newsBank'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: ca668fe4-59f3-47b2-92c8-76ebf626f957
+  -
+    menu_name: sections
+    title: 'New York Times'
+    parent: 'menu_link_content:39132e4a-5ab1-41bb-9875-5dab6c582d52'
+    uri: 'internal:/new-york-times'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: 8ce8031d-5d36-497f-b940-ef18eea38159
+  -
+    menu_name: sections
+    title: 'Meeting Rooms'
+    parent: null
+    uri: 'internal:/meeting-rooms'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: true
+    weight: -48
+    langcode: en
+    uuid: 0368f960-3a2e-4127-9afc-5713df08bdaf
+  -
+    menu_name: sections
+    title: 'Find a space to hold your next meeting'
+    parent: 'menu_link_content:0368f960-3a2e-4127-9afc-5713df08bdaf'
+    uri: 'internal:/meeting-rooms'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: dbbf1198-151d-446a-be9b-7fe5746a524e
+  -
+    menu_name: sections
+    title: Priorities
+    parent: null
+    uri: 'internal:/priorities'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: true
+    weight: -47
+    langcode: en
+    uuid: d65b6aaf-2f8b-46be-924a-991524133ae0
+  -
+    menu_name: sections
+    title: 'Nature at the Library'
+    parent: 'menu_link_content:d65b6aaf-2f8b-46be-924a-991524133ae0'
+    uri: 'internal:/nature-at-the-library'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: d88dd83b-93ff-4834-b2ff-74e8c3a4b319
+  -
+    menu_name: sections
+    title: 'Kids Block Party'
+    parent: 'menu_link_content:d65b6aaf-2f8b-46be-924a-991524133ae0'
+    uri: 'internal:/kids-block-party'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 404f426e-9083-48b3-b2ae-2da579f14956
+  -
+    menu_name: sections
+    title: 'Library Priorities'
+    parent: 'menu_link_content:d65b6aaf-2f8b-46be-924a-991524133ae0'
+    uri: 'internal:/library-priorities'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: d145b4d5-476a-42ca-80e6-61b85301dc91
+  -
+    menu_name: footer
+    title: 'Austin History Center'
+    parent: null
+    uri: 'internal:/ahc/home'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 65548df9-d3f2-4a1c-949a-7561ee97cd11
+  -
+    menu_name: footer
+    title: 'Event Space Rentals'
+    parent: null
+    uri: 'internal:/rental'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: f1466f69-c6b0-46bb-8451-aa9276326dc1
+  -
+    menu_name: footer
+    title: 'Gift Shop'
+    parent: null
+    uri: 'internal:/shop'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 6edaf352-572c-4416-8360-95611c133123
+  -
+    menu_name: footer
+    title: Locations
+    parent: null
+    uri: 'internal:/locations'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 78cf7af2-a663-4236-a929-8f4fa151a28a
+  -
+    menu_name: footer
+    title: 'Meeting Rooms'
+    parent: null
+    uri: 'internal:/meeting-rooms'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 314c71f1-712d-440b-8350-e1c5f9c8d87a
+  -
+    menu_name: footer
+    title: 'Recycled Reads Bookstore'
+    parent: null
+    uri: 'internal:/recycled-reads'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: dbea5a6a-c210-4246-aa52-febb99c64ed2
+  -
+    menu_name: main
+    title: Books/Movies/Music
+    parent: null
+    uri: 'internal:/catalog'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: f6374daf-0acf-46ca-9f14-b79157b3dbd1
+  -
+    menu_name: main
+    title: 'Library Card'
+    parent: null
+    uri: 'internal:/library-card'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: ca75245b-933f-4652-a9e5-af8b54bc800a
+  -
+    menu_name: main
+    title: Research
+    parent: null
+    uri: 'internal:/research'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: 56b04c39-d39d-43a1-aa5a-66bdd6dd0fe3
+  -
+    menu_name: main
+    title: Youth
+    parent: null
+    uri: 'internal:/youth/home'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -46
+    langcode: en
+    uuid: a5007be2-118c-498a-8ac9-042737cc84ea
+  -
+    menu_name: main
+    title: 'Get Help'
+    parent: null
+    uri: 'internal:/ask'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -45
+    langcode: en
+    uuid: 16580bfe-a38c-4719-9097-843d4dc76f6b
+  -
+    menu_name: account
+    title: Events
+    parent: null
+    uri: 'internal:/events'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: 23eaf3a5-4d9f-4741-ab79-9a4f751813a5
+  -
+    menu_name: account
+    title: Locations
+    parent: null
+    uri: 'internal:/locations'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 231cc8b3-a892-42d9-934d-c8fa4cb4cf55
