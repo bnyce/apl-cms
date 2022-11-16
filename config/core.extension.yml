@@ -48,6 +48,7 @@ module:
   migrate_file: 0
   migrate_fullscreens: 0
   migrate_home_page: 0
+  migrate_items: 0
   migrate_library_info: 0
   migrate_locations: 0
   migrate_meeting_rooms: 0
