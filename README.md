@@ -16,7 +16,7 @@ This apl-cms repository drives that site, so you can look through the source cod
 The following page has some instructions for connecting a Pantheon-hosted site with a local DDEV . The repository for this project originally followed these instructions, so if you clone this GitHub repository, it might not be too difficult to adapt the configuration to point to your own Pantheon-hosted site. You'll need a free account with Pantheon, and you'll need to establish your SSH key and machine-token so that the Pantheon command line utility "terminus" can authenticate you and connect your hosted and local sites.
 * DDEV + Pantheon: https://ddev.readthedocs.io/en/latest/users/providers/pantheon/
 * Pantheon + Terminus: https://www.mediacurrent.com/blog/leveling-up-with-pantheons-terminus
-** DDEV comes with terminus and easy Pantheon integration, terminus makes drush and other site utility functions very easy to perform from the command line
+  * DDEV comes with terminus and easy Pantheon integration, terminus makes drush and other site utility functions very easy to perform from the command line
 
 ## Recipes ##
 
