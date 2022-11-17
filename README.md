@@ -9,7 +9,7 @@ The easiest way to get started is to try out the demonstration website for this 
 
 This apl-cms repository drives that site, so you can look through the source code and modules here on GitHub and also see the front-end and back-end of the website this code facilitates. 
 * Log in with the _ridiculously_ unsafe username / password: admin 111 https://dev-apl-cms.pantheonsite.io/user
-* Of course we wouldn't use an unsafe password on an important website. This one is meant to be easy to peer inside. It's okay if you try out things or even break something, as we can easily restore the environment from a backup of "test", "live" or from a local dev environment. 
+  * Of course we wouldn't use an unsafe password on an important website. This one is meant to be easy to peer inside. It's okay if you try out things or even break something, as we can easily restore the environment from a backup of "test", "live" or from a local dev environment. 
 
 ## Digging In ##
 
