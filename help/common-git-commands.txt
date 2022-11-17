@@ -1,0 +1,20 @@
+# Common git commands:
+
+git status
+git log
+git branch
+
+# push the main branch to GitHub (origin)
+git checkout main
+git merge master
+git push origin main
+
+# push the master branch to Pantheon
+git checkout master
+git merge main
+git push pantheon master
+
+# push the database and files to Pantheon
+ddev push pantheon
+
+# note: need to make sure starter content is provided, can be migrated, for non-Pantheon setups where not easy to clone the database and files
