@@ -11,7 +11,7 @@ _core:
 id: apl_messages
 theme: apl
 region: highlighted
-weight: -5
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:

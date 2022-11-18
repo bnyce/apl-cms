@@ -1,0 +1,9 @@
+uuid: 5b09d8c8-4cb0-4c24-9fa1-215f604f5e94
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zx-4v23gQA_AcfGsK5emPLz6Vctn8J_B_XcmN8Bs0T0
+id: admin_webform_results
+label: 'admin webform results'
+route: entity.webform.results_submissions

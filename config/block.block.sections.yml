@@ -1,0 +1,29 @@
+uuid: 3596e3d2-8f24-41f9-8d65-b7441012889a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sections
+  module:
+    - system
+  theme:
+    - apl
+id: sections
+theme: apl
+region: highlighted
+weight: -7
+provider: null
+plugin: 'system_menu_block:sections'
+settings:
+  id: 'system_menu_block:sections'
+  label: Sections
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

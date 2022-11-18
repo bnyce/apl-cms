@@ -33,7 +33,11 @@
         "drupal/views_conditional": "^1.5",
         "drupal/field_permissions": "^1.2",
         "drupal/views_slideshow": "^4.8",
-        "drupal/structure_sync": "^2.0"
+        "drupal/structure_sync": "^2.0",
+        "drupal/config_perms": "^2.0",
+        "drupal/editoria11y": "^2.0",
+        "drupal/jsonapi_permission": "^1.2",
+        "drupal/key_auth": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
