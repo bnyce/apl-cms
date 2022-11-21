@@ -6,7 +6,10 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_external_link
     - field.field.node.article.field_image
+    - field.field.node.article.field_slr_time_end
+    - field.field.node.article.field_slr_time_start
     - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
@@ -42,8 +45,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: wide
       image_link: ''
+      image_style: wide
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -62,4 +65,7 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_external_link: true
+  field_slr_time_end: true
+  field_slr_time_start: true

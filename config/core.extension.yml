@@ -47,6 +47,7 @@ module:
   migrate_alerts: 0
   migrate_audience: 0
   migrate_audience2016: 0
+  migrate_blogs: 0
   migrate_booklist_cats: 0
   migrate_databases: 0
   migrate_db_access: 0
