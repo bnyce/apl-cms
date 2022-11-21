@@ -1,3 +1,4 @@
+uuid: d354409e-9322-48ce-b9a1-66cba9603a76
 langcode: en
 status: true
 dependencies: {  }
@@ -9,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: apl_dev
-label: Library Info
+label: 'Library Info'
 source:
   plugin: url
   data_fetcher_plugin: file
@@ -46,7 +47,7 @@ process:
   body/format:
     plugin: default_value
     default_value: basic_html
-  field_main_image: 
+  field_main_image:
     plugin: image_import
     source: image
     title: title
