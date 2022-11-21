@@ -16,10 +16,14 @@ module:
   contextual: 0
   csv_serialization: 0
   datetime: 0
+  dbal: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   editoria11y: 0
+  entity_hierarchy: 0
+  feeds: 0
+  feeds_tamper: 0
   field: 0
   field_permissions: 0
   field_ui: 0
@@ -76,8 +80,10 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  smart_date: 0
   structure_sync: 0
   system: 0
+  tamper: 0
   taxonomy: 0
   text: 0
   token: 0
@@ -91,6 +97,7 @@ module:
   views_slideshow_cycle: 0
   views_ui: 0
   webform: 0
+  webform_submission_export_import: 0
   webform_views: 0
   pathauto: 1
   views: 10

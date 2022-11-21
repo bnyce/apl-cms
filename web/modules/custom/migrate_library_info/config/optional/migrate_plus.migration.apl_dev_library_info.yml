@@ -39,7 +39,7 @@ source:
 process:
   type:
     plugin: default_value
-    default_value: alert
+    default_value: library_info
   title: title
   path: path
   body/value: body
