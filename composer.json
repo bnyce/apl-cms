@@ -37,7 +37,11 @@
         "drupal/config_perms": "^2.0",
         "drupal/editoria11y": "^2.0",
         "drupal/jsonapi_permission": "^1.2",
-        "drupal/key_auth": "^2.0"
+        "drupal/key_auth": "^2.0",
+        "drupal/feeds": "^3.0@beta",
+        "drupal/feeds_tamper": "^2.0@beta",
+        "drupal/smart_date": "^3.6",
+        "drupal/entity_hierarchy": "^3.3"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
@@ -45,7 +49,7 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "drupal-scaffold": {
