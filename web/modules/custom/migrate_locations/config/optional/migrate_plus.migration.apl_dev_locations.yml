@@ -4,7 +4,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - migrate_locations
+      - migrate_file
 _core:
   default_config_hash: bVtIrZO_148Rdmcx0OAzI8or1Cn0O2M0sfbrN4SIkkQ
 id: apl_dev_locations
