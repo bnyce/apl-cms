@@ -49,6 +49,12 @@ source:
     -
       name: field_library_priority
       selector: field_library_priority
+    -
+      name: field_cat_hierarchy
+      selector: field_cat_hierarchy
+    -
+      name: description
+      selector: description
   ids:
     tid:
       type: integer
@@ -61,6 +67,7 @@ process:
   summary: summary
   field_is_an_event_category: is_an_event_category
   field_library_priority: field_library_priority
+  field_cat_hierarchy: field_cat_hierarchy
   field_recommended_ages: recommended_ages
   field_main_image_event:
     plugin: image_import
@@ -68,6 +75,10 @@ process:
     destination: 'public://event_tags/'
     alt: name
     skip_on_missing_source: true
+  description/value: description
+  description/format:
+    plugin: default_value
+    default_value: basic_html
 
   subtitle: subtitle
   sticky:

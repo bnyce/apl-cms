@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event_tags.feeds_item
+    - field.field.taxonomy_term.event_tags.field_associated_tags
     - field.field.taxonomy_term.event_tags.field_cat_hierarchy
     - field.field.taxonomy_term.event_tags.field_is_an_event_category
     - field.field.taxonomy_term.event_tags.field_library_priority
@@ -11,6 +12,7 @@ dependencies:
     - field.field.taxonomy_term.event_tags.field_recommended_ages
     - field.field.taxonomy_term.event_tags.field_ref_event_category
     - field.field.taxonomy_term.event_tags.field_reflection_category
+    - field.field.taxonomy_term.event_tags.field_sponsors
     - field.field.taxonomy_term.event_tags.field_summary
     - field.field.taxonomy_term.event_tags.field_term_subtitle
     - field.field.taxonomy_term.event_tags.layout_builder__layout
@@ -105,13 +107,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 13
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 1
@@ -135,4 +130,6 @@ content:
     third_party_settings: {  }
 hidden:
   feeds_item: true
+  field_associated_tags: true
+  field_sponsors: true
   layout_builder__layout: true

@@ -6,6 +6,7 @@ dependencies:
     - core.base_field_override.taxonomy_term.event_tags.description
     - core.base_field_override.taxonomy_term.event_tags.name
     - field.field.taxonomy_term.event_tags.feeds_item
+    - field.field.taxonomy_term.event_tags.field_associated_tags
     - field.field.taxonomy_term.event_tags.field_cat_hierarchy
     - field.field.taxonomy_term.event_tags.field_is_an_event_category
     - field.field.taxonomy_term.event_tags.field_library_priority
@@ -13,6 +14,7 @@ dependencies:
     - field.field.taxonomy_term.event_tags.field_recommended_ages
     - field.field.taxonomy_term.event_tags.field_ref_event_category
     - field.field.taxonomy_term.event_tags.field_reflection_category
+    - field.field.taxonomy_term.event_tags.field_sponsors
     - field.field.taxonomy_term.event_tags.field_summary
     - field.field.taxonomy_term.event_tags.field_term_subtitle
     - field.field.taxonomy_term.event_tags.layout_builder__layout
@@ -73,19 +75,6 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 1
-            additional: {  }
-          4c7a948f-0b56-4bb4-873e-7c9eec35a739:
-            uuid: 4c7a948f-0b56-4bb4-873e-7c9eec35a739
-            region: first
-            configuration:
-              id: 'views_block:navigation-block_23'
-              label: ''
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 2
             additional: {  }
           8cd75357-c516-4764-99ef-d8f2c8ac3006:
             uuid: 8cd75357-c516-4764-99ef-d8f2c8ac3006
@@ -162,14 +151,15 @@ content:
     region: first
 hidden:
   feeds_item: true
+  field_associated_tags: true
   field_is_an_event_category: true
   field_library_priority: true
   field_main_image_event: true
   field_recommended_ages: true
   field_ref_event_category: true
   field_reflection_category: true
+  field_sponsors: true
   field_summary: true
   field_term_subtitle: true
-  langcode: true
   layout_builder__layout: true
   search_api_excerpt: true
