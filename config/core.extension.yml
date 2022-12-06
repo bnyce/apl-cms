@@ -44,6 +44,7 @@ module:
   migrate_event_tags: 0
   migrate_events: 0
   migrate_file: 0
+  migrate_home_page: 0
   migrate_locations: 0
   migrate_plus: 0
   migrate_priorities: 0
@@ -58,6 +59,7 @@ module:
   path_alias: 0
   rdf: 0
   rest: 0
+  scheduler: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -78,4 +80,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  uswds_base: 0
 profile: standard
