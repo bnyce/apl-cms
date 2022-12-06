@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_term_subtitle
     - taxonomy.vocabulary.event_tags
-_core:
-  default_config_hash: rVfFzqn3Iny29G55tJ7kCE5nTzPthWiN1tux2o5H8KY
 id: taxonomy_term.event_tags.field_term_subtitle
 field_name: field_term_subtitle
 entity_type: taxonomy_term

@@ -7,8 +7,6 @@ dependencies:
     - taxonomy.vocabulary.event_tags
   module:
     - options
-_core:
-  default_config_hash: '-NY0opmR5nxr7v4WYTi-SGlPSzNsSGoGEusP0e5Ckfk'
 id: taxonomy_term.event_tags.field_recommended_ages
 field_name: field_recommended_ages
 entity_type: taxonomy_term

@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - taxonomy
-_core:
-  default_config_hash: QKeWGqc4ciWEfX_kicfg-V3tUSSwlEOQ9P8FK2YNIFI
 id: taxonomy_term.field_ref_event_category
 field_name: field_ref_event_category
 entity_type: taxonomy_term

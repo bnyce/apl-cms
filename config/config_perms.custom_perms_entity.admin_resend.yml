@@ -1,9 +1,0 @@
-uuid: 05b759ce-e455-4491-94a5-45d887e45e4b
-langcode: eng
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: tkLWwb1jZLyYe_ybcxETiMrYoSndbZ4Mj_tMJYp5TW8
-id: admin_resend
-label: 'admin resend'
-route: entity.webform_submission.resend_form

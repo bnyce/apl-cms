@@ -5,8 +5,6 @@ dependencies:
   module:
     - options
     - taxonomy
-_core:
-  default_config_hash: AOebR6d7CstRmhkcimJrT1uUJMVWr_4TAzVabc2Uhow
 id: taxonomy_term.field_recommended_ages
 field_name: field_recommended_ages
 entity_type: taxonomy_term

@@ -5,8 +5,6 @@ dependencies:
   module:
     - taxonomy
     - text
-_core:
-  default_config_hash: itpLt5VAuKLbFEzHtUTgxM-xtk6NDSMsVU7CHD1k-Bs
 id: taxonomy_term.field_sponsors
 field_name: field_sponsors
 entity_type: taxonomy_term

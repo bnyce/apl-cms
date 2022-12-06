@@ -1,9 +1,0 @@
-uuid: 1e5cf295-0467-478b-9112-32f515dc85bc
-langcode: eng
-status: false
-dependencies: {  }
-_core:
-  default_config_hash: a-U0Oxou5H5iDoZ86rczCSFgw_kDQ2i5D4ETOXC7Xtg
-id: admin_delete_webform
-label: 'admin delete webform'
-route: entity.webform_submission.delete_form

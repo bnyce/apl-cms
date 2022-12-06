@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - taxonomy
-_core:
-  default_config_hash: x7xiOxPKYyt1C39sYKV7aPECgL9PhWtplVyBq1Uu8Bs
 id: taxonomy_term.field_library_priority
 field_name: field_library_priority
 entity_type: taxonomy_term

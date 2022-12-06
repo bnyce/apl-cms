@@ -10,8 +10,6 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-_core:
-  default_config_hash: XWOCvb439ETaTzOQ3mNggA_ss69L3kimMbC2yY-eYjM
 id: taxonomy_term.field_main_image_event
 field_name: field_main_image_event
 entity_type: taxonomy_term

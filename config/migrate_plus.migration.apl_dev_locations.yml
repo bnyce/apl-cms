@@ -4,9 +4,9 @@ status: true
 dependencies:
   enforced:
     module:
-      - migrate_locations
+      - migrate_file
 _core:
-  default_config_hash: '-OulGpyL1RUcJ4GzVYfqGzZ_v-P9781sL4nHJ7Q4VSo'
+  default_config_hash: ipEwO8g_ISbvoduvrV-OupbjmT_DgrHAhY3L5U4DotY
 id: apl_dev_locations
 class: null
 field_plugin_method: null

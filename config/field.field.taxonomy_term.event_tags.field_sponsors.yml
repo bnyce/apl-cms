@@ -7,8 +7,6 @@ dependencies:
     - taxonomy.vocabulary.event_tags
   module:
     - text
-_core:
-  default_config_hash: TGThoxEsYZSOiida6n8sUUdwfbWC3jl-WpahZCnvoNc
 id: taxonomy_term.event_tags.field_sponsors
 field_name: field_sponsors
 entity_type: taxonomy_term

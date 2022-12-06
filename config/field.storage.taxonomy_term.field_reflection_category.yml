@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - taxonomy
-_core:
-  default_config_hash: E9O9GxO9h0Lxz1VLrPIbPqMnvyJubyvDgh7PsKbOSIk
 id: taxonomy_term.field_reflection_category
 field_name: field_reflection_category
 entity_type: taxonomy_term

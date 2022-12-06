@@ -7,8 +7,6 @@ dependencies:
     - taxonomy.vocabulary.event_tags
   module:
     - entity_hierarchy
-_core:
-  default_config_hash: Yvf4_WD1YF8FLuRArV2LSI6vlC_yLvFvhT97QowidW8
 id: taxonomy_term.event_tags.field_cat_hierarchy
 field_name: field_cat_hierarchy
 entity_type: taxonomy_term

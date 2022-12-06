@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.rooms.feeds_item
     - field.field.taxonomy_term.rooms.field_capacity2
     - field.field.taxonomy_term.rooms.field_is_slr
     - field.field.taxonomy_term.rooms.field_location
@@ -118,5 +117,4 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-hidden:
-  feeds_item: true
+hidden: {  }

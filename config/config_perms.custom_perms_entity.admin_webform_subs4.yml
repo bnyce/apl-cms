@@ -1,9 +1,0 @@
-uuid: ed57fb26-448d-40ea-9c38-a7331fb052f9
-langcode: eng
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: eF3NGLzXpT5Yl-Jvwa_TBdfjhoV1BKXErIB-xhN6nCw
-id: admin_webform_subs4
-label: 'admin webform subs4'
-route: entity.webform.results_export

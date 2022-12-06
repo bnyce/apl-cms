@@ -1,4 +1,3 @@
-uuid: 3e4025f1-8021-4fcd-a6c2-ef8bccf3fcfd
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
       - migrate_plus
       - migrate_file
       - migrate_event_tags
-_core:
-  default_config_hash: EPDOGuD4OqIxXl663WmxusIZuXlm8LtTQgO3r-xU6ME
 id: apl_dev_event_tags
 class: null
 field_plugin_method: null
@@ -16,7 +13,7 @@ cck_plugin_method: null
 migration_tags:
   - taxonomy
 migration_group: apl_dev
-label: 'Event Tags'
+label: Event Tags
 source:
   plugin: url
   data_fetcher_plugin: file
@@ -71,6 +68,7 @@ process:
     destination: 'public://event_tags/'
     alt: name
     skip_on_missing_source: true
+
   subtitle: subtitle
   sticky:
     plugin: default_value

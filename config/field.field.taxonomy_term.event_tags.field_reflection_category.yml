@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_reflection_category
     - taxonomy.vocabulary.event_tags
-_core:
-  default_config_hash: 7wZ8NaiOPVjf-qYEFFMRLbfnSi_cmRD-wLKk4HlHLUE
 id: taxonomy_term.event_tags.field_reflection_category
 field_name: field_reflection_category
 entity_type: taxonomy_term

@@ -7,8 +7,6 @@ dependencies:
     - taxonomy.vocabulary.event_tags
   module:
     - feeds
-_core:
-  default_config_hash: zNx48Lp0n5QSBFDw2GPfG1_6aToK9cvUtqCvzzIV1hE
 id: taxonomy_term.event_tags.feeds_item
 field_name: feeds_item
 entity_type: taxonomy_term

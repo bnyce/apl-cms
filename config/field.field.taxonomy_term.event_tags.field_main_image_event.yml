@@ -7,8 +7,6 @@ dependencies:
     - taxonomy.vocabulary.event_tags
   module:
     - image
-_core:
-  default_config_hash: 0_NDrbQDCCL8PoSEGosohriThlCX7u53tJbBzJEjAwU
 id: taxonomy_term.event_tags.field_main_image_event
 field_name: field_main_image_event
 entity_type: taxonomy_term

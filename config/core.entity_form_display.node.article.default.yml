@@ -5,10 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_external_link
     - field.field.node.article.field_image
-    - field.field.node.article.field_slr_time_end
-    - field.field.node.article.field_slr_time_start
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -16,7 +13,6 @@ dependencies:
     - comment
     - image
     - path
-    - scheduler
     - text
 _core:
   default_config_hash: Pzq9mzrsfoPf775qgEU_SUbHSro9pv1ga-Euh1Ykd_k
@@ -78,12 +74,6 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 120
@@ -116,13 +106,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden:
-  field_external_link: true
-  field_slr_time_end: true
-  field_slr_time_start: true
+hidden: {  }
