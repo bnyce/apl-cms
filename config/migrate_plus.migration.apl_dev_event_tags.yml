@@ -1,3 +1,4 @@
+uuid: 67d3a13a-be7f-4a89-9cdd-45094f7c4428
 langcode: en
 status: true
 dependencies:
@@ -13,12 +14,13 @@ cck_plugin_method: null
 migration_tags:
   - taxonomy
 migration_group: apl_dev
-label: Event Tags
+label: 'Event Tags'
 source:
   plugin: url
   data_fetcher_plugin: file
   data_parser_plugin: json
   urls:
+    - 'public://migrate_event_tags/event_tags1.json'
     - 'public://migrate_event_tags/event_tags.json'
   item_selector: event_tag
   fields:
@@ -55,6 +57,9 @@ source:
     -
       name: description
       selector: description
+    -
+      name: parent
+      selector: parent
   ids:
     tid:
       type: integer
@@ -65,7 +70,7 @@ process:
   name: name
   tid: tid
   summary: summary
-  field_is_an_event_category: is_an_event_category
+  field_is_an_event_category: is_event_category
   field_library_priority: field_library_priority
   field_cat_hierarchy: field_cat_hierarchy
   field_recommended_ages: recommended_ages
@@ -79,7 +84,6 @@ process:
   description/format:
     plugin: default_value
     default_value: basic_html
-
   subtitle: subtitle
   sticky:
     plugin: default_value
