@@ -10,8 +10,8 @@ _core:
   default_config_hash: vTmNF6e_XzlKIeu4-KYMAFiaY5F4hPhNRtodyBYeZBw
 id: uswds_base_search
 theme: uswds_base
-region: secondary_menu
-weight: 10
+region: breadcrumb
+weight: -5
 provider: null
 plugin: search_form_block
 settings:
