@@ -11,8 +11,9 @@ label: 'Nav bar'
 code: |-
   (function($, jQuery) {
     $(document).ready(function() {
-    
-    
+    	
+    console.log('we out here');
+    $('#extended-search-field-small').attr('placeholder', 'Search Title, Event...');
   $( '#apl-we-recommend' ).click(function(e) {
     
   	  e.preventDefault();
@@ -76,15 +77,15 @@ code: |-
      
     });
   })(jQuery);
-conditions_require_all: true
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: true
     pages: "/admin/*\r\n/editor/*"
 contexts: {  }
-header: false
-preprocess: true
-jquery: true
-noscript: ''
-noscriptRegion: {  }
+conditions_require_all: true

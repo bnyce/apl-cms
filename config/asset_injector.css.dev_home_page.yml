@@ -10,12 +10,24 @@ code: |-
   #main-content {
   	padding: 0;
   }
+  #search-block-form,
+  .region.region-header.usa-navbar,
+  .usa-banner-inner {
+  	max-width: 64rem;
+  	margin: 0 auto;
+  }
+  .usa-nav-container {
+  	text-align: center;
+  }
+
   .grid-row > div {
   	width: 100%;
   }
   .usa-search__input, [type="search"] {
   	height: 66px;
-  	border-color: silver;
+  	border-color: transparent;
+  	max-width: 64rem;
+  	font-size: 32px;
   }
   html .usa-search [type="submit"] {
   	border-bottom-left-radius: 0;
