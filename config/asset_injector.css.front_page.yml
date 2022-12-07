@@ -9,6 +9,51 @@ _core:
 id: front_page
 label: 'front page'
 code: |-
+  #block-views-block-heroes-block-1 {
+  	background-image: url(/sites/default/files/styles/wide/public/hero/bookshelf_img.png);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	position: relative;
+  	height: 300px;
+  }
+  .hero-action a {
+  	background: #009ABF;
+  	padding: 10px;
+  	color: white;
+  	border-radius: 4px;
+  	display: inline-block;
+  	width: auto;
+  }
+  .hero-title2 {
+  	font-size: 25px;
+  	font-weight: bold;
+  	margin-bottom: 0;
+  }
+  .hero-summary {
+  	margin-bottom: 2em;
+  }
+  #block-uswds-base-local-tasks,
+  h1.margin-0 {
+  	display: none;
+  }
+  .skin-default {
+  	background: transparent;
+  	max-width: 64rem;
+  	margin: 0 auto;
+  }
+  .hero-text2 {
+  	background: white;
+  	padding: 0 1em 1em;
+  	position: absolute;
+  	top: 54px;
+  	border-radius: 2px;
+  }
+  .usa-layout-docs__main.desktop\:grid-col-fill {
+  	max-width: 64rem;
+  	margin: 0 auto;
+  	padding: 0;
+  }
   .block.block-views.block-views-blockevents-block-4,
   .block.block-views.block-views-blocksearch-block-8,
   .block.block-views.block-views-blockmore-navigation-block-23
@@ -150,12 +195,12 @@ code: |-
   .pager__item.pager__item--mini.pager__item--current {
   	display: none;
   }
-conditions_require_all: false
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: '<front>'
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: false

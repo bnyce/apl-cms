@@ -7,10 +7,13 @@ dependencies:
     - field.field.node.hero_image.field_hero_image
     - field.field.node.hero_image.field_hero_summary
     - field.field.node.hero_image.field_hero_template
+    - field.field.node.hero_image.field_slr_time_end
+    - field.field.node.hero_image.field_slr_time_start
     - image.style.thumbnail
     - node.type.hero_image
   module:
     - content_moderation
+    - datetime
     - image
     - link
     - path
@@ -53,6 +56,18 @@ content:
   field_hero_template:
     type: options_select
     weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_slr_time_end:
+    type: datetime_default
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_slr_time_start:
+    type: datetime_default
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }

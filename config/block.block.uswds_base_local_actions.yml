@@ -9,7 +9,7 @@ _core:
 id: uswds_base_local_actions
 theme: uswds_base
 region: content
-weight: 10
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:
