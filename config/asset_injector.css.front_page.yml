@@ -17,6 +17,33 @@ code: |-
   	position: relative;
   	height: 300px;
   }
+  #block-views-block-sections-block-1 {
+  	color: #009ABF;
+  	font-size: 30px;
+  	text-align: center;
+  	line-height: 1.5em;
+  }
+  .section_image {
+  	display: block;
+  	height: 124px;
+  }
+  #block-views-block-sections-block-1 .views-row ul {
+  	list-style: none;
+  	display: flex;
+  	justify-content: space-between;
+  }
+
+  #block-views-block-sections-block-1 .views-row li a {
+  	font-size: 18px;
+  	width: 200px;
+  	display: block;
+  	line-height: 1;
+  	color: black;
+  	text-decoration: none;
+  }
+  #block-views-block-sections-block-1 .views-row li a:hover {
+  	text-decoration: underline;
+  }
   .hero-action a {
   	background: #009ABF;
   	padding: 10px;
