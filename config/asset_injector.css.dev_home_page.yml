@@ -10,6 +10,16 @@ code: |-
   #main-content {
   	padding: 0;
   }
+  html .usa-search--small .usa-search__submit-icon {
+  	float: right;
+  }
+  #search-block-form .usa-button.usa-button--hover, 
+  #search-block-form .usa-button:hover {
+  	background-color: rgba(0,0,0,.2);
+  }
+  #search-block-form .usa-button {
+  	background: none;
+  }
   #search-block-form,
   .region.region-header.usa-navbar,
   .usa-banner-inner {

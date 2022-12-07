@@ -14,6 +14,10 @@ code: |-
     	
     console.log('we out here');
     $('#extended-search-field-small').attr('placeholder', 'Search Title, Event...');
+    $('.usa-search__submit-icon').attr('src', '/themes/custom/apl/assets/img/search.png');
+    
+    
+    
   $( '#apl-we-recommend' ).click(function(e) {
     
   	  e.preventDefault();
