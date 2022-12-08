@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-_core:
-  default_config_hash: JA3rA66ioZIY6BJxpNyAz_Xk9tNEwg66x2NJQ-0HIeY
 id: node.field_slr_time_end
 field_name: field_slr_time_end
 entity_type: node

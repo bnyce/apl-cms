@@ -8,8 +8,6 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: custom
-_core:
-  default_config_hash: wjSw3ow8d3fPSW0DSves8UvaIe-yyLMOxdpaMlJ1jaI
 id: node.field_signature_event
 field_name: field_signature_event
 entity_type: node

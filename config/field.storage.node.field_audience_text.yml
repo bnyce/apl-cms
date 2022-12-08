@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: hPDDBspaPZHHZ5BEd1pUmnLAX52O8RRAj0KvHhlzBZ4
 id: node.field_audience_text
 field_name: field_audience_text
 entity_type: node

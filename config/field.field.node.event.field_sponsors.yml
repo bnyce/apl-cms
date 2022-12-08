@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_sponsors
     - node.type.event
     - taxonomy.vocabulary.sponsors
-_core:
-  default_config_hash: M0pW3mHsawrZ0Hua-3Ny-55R_8fftT_VoNzeBFLo0L8
 id: node.event.field_sponsors
 field_name: field_sponsors
 entity_type: node

@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_community_services_outreac
     - node.type.event
-_core:
-  default_config_hash: MNC2OQ7zKjX86ewIKbO-cXuhuSAMMZbccTwJvuqmBFY
 id: node.event.field_community_services_outreac
 field_name: field_community_services_outreac
 entity_type: node

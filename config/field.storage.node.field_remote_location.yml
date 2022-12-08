@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-_core:
-  default_config_hash: NQbk6ILqgf9RJTwm1kEiEGiFq_g056ZmkKrvrgnZfI8
 id: node.field_remote_location
 field_name: field_remote_location
 entity_type: node

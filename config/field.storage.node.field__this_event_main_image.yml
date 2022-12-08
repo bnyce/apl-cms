@@ -6,8 +6,6 @@ dependencies:
     - file
     - image
     - node
-_core:
-  default_config_hash: '-xQgBXYPXBem9Je3KKEPBj-b5DvaJ01_J-vIO-yC1TU'
 id: node.field__this_event_main_image
 field_name: field__this_event_main_image
 entity_type: node

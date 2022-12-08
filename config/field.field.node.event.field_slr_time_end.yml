@@ -7,8 +7,6 @@ dependencies:
     - node.type.event
   module:
     - datetime
-_core:
-  default_config_hash: vhwHhwblrB4toJom0QfDN9C66W61Jp9pwlcqfPrjmOQ
 id: node.event.field_slr_time_end
 field_name: field_slr_time_end
 entity_type: node

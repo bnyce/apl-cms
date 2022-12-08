@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-_core:
-  default_config_hash: jIlckXMAbusiUf-SOd1Azu9ozFIv3Sut22fYqP3rVwI
 id: node.field_sponsors
 field_name: field_sponsors
 entity_type: node

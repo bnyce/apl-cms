@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_cat_ia
     - node.type.event
     - taxonomy.vocabulary.intended_audience
-_core:
-  default_config_hash: TAhDjfT1MTZITYFDCnaCinA3Lk0G9fFa0ShRUZ4dV3o
 id: node.event.field_cat_ia
 field_name: field_cat_ia
 entity_type: node

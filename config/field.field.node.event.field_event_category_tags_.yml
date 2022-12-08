@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_event_category_tags_
     - node.type.event
-_core:
-  default_config_hash: qP-tui5Q5b4BdFMtB2wlF5EcffFzqIZPDkvridoyIrM
 id: node.event.field_event_category_tags_
 field_name: field_event_category_tags_
 entity_type: node

@@ -5,8 +5,6 @@ dependencies:
   enforced:
     module:
       - migrate_events
-_core:
-  default_config_hash: y4t3eScWDhkSMMiGIMhrlbGi4UYKXQMHaL4miGCMbhU
 id: apl_dev_events
 class: null
 field_plugin_method: null
@@ -113,11 +111,11 @@ process:
     source: field__this_event_main_image
     title: title
     alt: title
-  field_slr_time_start:
+  field_slr_time_start: 
     -
       plugin: format_date
       source: field_slr_time_start
-      from_format: U
+      from_format: 'U'
       to_format: 'Y-m-d\TH:i:s'
   field_show_full_description: field_show_full_description
   field_audience_text: field_audience_text
@@ -125,14 +123,14 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: field_central_event_location
+      source: field_central_event_location  
   field_community_services_outreac: field_community_services_outreac
-  field_slr_time_end:
+  field_slr_time_end: 
     -
       plugin: format_date
       source: field_slr_time_end
-      from_format: U
-      to_format: 'Y-m-d\TH:i:s'
+      from_format: 'U'
+      to_format: 'Y-m-d\TH:i:s' 
   body: body
   field_event_tag:
     -
@@ -147,7 +145,7 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: field_event_loc
+      source: field_event_loc 
   field_event_summary: field_event_summary
   field_cat_ia:
     -
@@ -174,7 +172,7 @@ process:
     -
       plugin: skip_on_empty
       method: process
-      source: field_remote_location
+      source: field_remote_location  
   field_signature_event: field_signature_event
   field_invisible: field_invisible
   field_sponsors:

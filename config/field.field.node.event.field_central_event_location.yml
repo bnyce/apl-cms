@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_central_event_location
     - node.type.event
-_core:
-  default_config_hash: 5oKOjnfnlAiqRsUlGjvqfDe693hdg_MkUinwp1toRkw
 id: node.event.field_central_event_location
 field_name: field_central_event_location
 entity_type: node

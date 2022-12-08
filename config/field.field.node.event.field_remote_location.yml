@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_remote_location
     - node.type.event
     - taxonomy.vocabulary.remote_locations
-_core:
-  default_config_hash: fySwyg9HdzIbmwuawwgw3kqOWP0oT9r2TQ3c_u6oHZo
 id: node.event.field_remote_location
 field_name: field_remote_location
 entity_type: node

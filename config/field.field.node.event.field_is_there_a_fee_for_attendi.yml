@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_is_there_a_fee_for_attendi
     - node.type.event
-_core:
-  default_config_hash: hffYzl8KIbPugK7lwrquvUwIMeyPWIXUcGeNQ87OisY
 id: node.event.field_is_there_a_fee_for_attendi
 field_name: field_is_there_a_fee_for_attendi
 entity_type: node

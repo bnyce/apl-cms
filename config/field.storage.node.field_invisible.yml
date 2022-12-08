@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: 8k6wKMAdZZVMAgn8ZRLs7JdpRSmrASF-3Kh4HovYc6I
 id: node.field_invisible
 field_name: field_invisible
 entity_type: node

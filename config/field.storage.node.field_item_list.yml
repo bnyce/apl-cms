@@ -8,8 +8,6 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: custom
-_core:
-  default_config_hash: kYoWQNydpiE_50Mj1DVS0zVMG12vxzQ52n67lVmzISs
 id: node.field_item_list
 field_name: field_item_list
 entity_type: node

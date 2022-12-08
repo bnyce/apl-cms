@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_event_tag
     - node.type.event
     - taxonomy.vocabulary.event_tags
-_core:
-  default_config_hash: cwLHDnj4tceJdGVEcT6sMIAx136VhD9tXK889EQEE2A
 id: node.event.field_event_tag
 field_name: field_event_tag
 entity_type: node

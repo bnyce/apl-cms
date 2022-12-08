@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_attendance
     - node.type.event
-_core:
-  default_config_hash: jGT0_ZrylK3XNb9RU_T9HWzSmsafgkhSOWyMPBFhS_k
 id: node.event.field_attendance
 field_name: field_attendance
 entity_type: node

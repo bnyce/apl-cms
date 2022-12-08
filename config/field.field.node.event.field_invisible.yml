@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_invisible
     - node.type.event
-_core:
-  default_config_hash: 70tIqXc6jjG5FTlonrkI2dcEA5eNBYZ-VzNmf5y_vL8
 id: node.event.field_invisible
 field_name: field_invisible
 entity_type: node

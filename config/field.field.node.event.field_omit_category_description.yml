@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_omit_category_description
     - node.type.event
-_core:
-  default_config_hash: 3hyPY5qb0mxajtqxsL8A-ZdBr2KS20ANedAeTI5TArQ
 id: node.event.field_omit_category_description
 field_name: field_omit_category_description
 entity_type: node

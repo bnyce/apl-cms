@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_show_full_description
     - node.type.event
-_core:
-  default_config_hash: MoI9X57zQ9Qqs8iLBoWmI3tJmjaKDCI3_tG-Yu79N4U
 id: node.event.field_show_full_description
 field_name: field_show_full_description
 entity_type: node

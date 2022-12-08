@@ -7,8 +7,6 @@ dependencies:
     - node.type.event
   module:
     - options
-_core:
-  default_config_hash: FABcG0dD_fN5bpiHYbL_GIU4uR1L2-2uM_-uGYnJ-4U
 id: node.event.field_event_recommended_ages
 field_name: field_event_recommended_ages
 entity_type: node

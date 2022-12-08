@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: JlMxqSY36WrhpcN8G7QSRmZUFIGz-03R_evb10pXxoA
 id: node.field_is_there_a_fee_for_attendi
 field_name: field_is_there_a_fee_for_attendi
 entity_type: node

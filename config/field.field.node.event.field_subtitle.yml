@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_subtitle
     - node.type.event
-_core:
-  default_config_hash: o6EXa3TxilRxmougCUGN2bvJFrU3KdJbvHbnR4qnOrM
 id: node.event.field_subtitle
 field_name: field_subtitle
 entity_type: node
