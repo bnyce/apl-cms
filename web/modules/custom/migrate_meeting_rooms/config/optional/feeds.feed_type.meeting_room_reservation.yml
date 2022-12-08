@@ -1,0 +1,408 @@
+uuid: 9be69c67-979d-4d7e-8b34-023151f7e37d
+langcode: eng
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.room_reservation.title
+    - core.base_field_override.node.room_reservation.uid
+    - field.field.node.room_reservation.field____date
+    - field.field.node.room_reservation.field_internal_
+    - field.field.node.room_reservation.field_meeting_room
+    - field.field.node.room_reservation.field_room_expected_attendance
+    - field.field.node.room_reservation.field_room_group
+    - field.field.node.room_reservation.field_room_status
+    - field.field.node.room_reservation.field_slr_time_end
+    - field.field.node.room_reservation.field_slr_time_start
+    - node.type.room_reservation
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      caf19973-45ea-497a-a15a-8d1a3fa3653a:
+        text: eng
+        uuid: caf19973-45ea-497a-a15a-8d1a3fa3653a
+        plugin: rewrite
+        source: langcode
+        weight: 0
+        label: Rewrite
+      7244e0ce-0273-48d4-8b6c-a61d8d260910:
+        text: '[date] [start__]'
+        uuid: 7244e0ce-0273-48d4-8b6c-a61d8d260910
+        plugin: rewrite
+        source: start__
+        weight: 0
+        label: Rewrite
+      0be627f5-b845-46ef-8a9e-c59a1fc2fa15:
+        text: '[date] [end__]'
+        uuid: 0be627f5-b845-46ef-8a9e-c59a1fc2fa15
+        plugin: rewrite
+        source: end__
+        weight: 0
+        label: Rewrite
+      67c1a1b5-0af3-4214-a964-afdf87e213a2:
+        uuid: 67c1a1b5-0af3-4214-a964-afdf87e213a2
+        plugin: strtotime
+        source: start__
+        weight: 1
+        label: 'String to Unix Timestamp'
+      f6249e2a-dfe4-4d73-9c35-e36b5031a2b9:
+        uuid: f6249e2a-dfe4-4d73-9c35-e36b5031a2b9
+        plugin: strtotime
+        source: end__
+        weight: 1
+        label: 'String to Unix Timestamp'
+      21ea6c2a-75ce-427e-ae8d-1eb3d7fa1c50:
+        default_value: '68719'
+        only_if_empty: true
+        uuid: 21ea6c2a-75ce-427e-ae8d-1eb3d7fa1c50
+        plugin: default_value
+        source: group
+        weight: 0
+        label: 'Set value or default value'
+      cd7493df-4a55-4bf6-8b08-ae0314095e28:
+        default_value: faulknerd
+        only_if_empty: true
+        uuid: cd7493df-4a55-4bf6-8b08-ae0314095e28
+        plugin: default_value
+        source: username
+        weight: 0
+        label: 'Set value or default value'
+      a3dc652f-9222-447f-948d-2a5272bd648b:
+        default_value: 'APL Use'
+        only_if_empty: true
+        uuid: a3dc652f-9222-447f-948d-2a5272bd648b
+        plugin: default_value
+        source: topic
+        weight: 0
+        label: 'Set value or default value'
+      fb0bbbd2-2f90-44d3-9bf7-9c188bcbad6f:
+        default_value: '0'
+        only_if_empty: true
+        uuid: fb0bbbd2-2f90-44d3-9bf7-9c188bcbad6f
+        plugin: default_value
+        source: internal
+        weight: 0
+        label: 'Set value or default value'
+      c0bf0a9a-8b63-492e-8df9-cdce1b6f058d:
+        default_value: '1'
+        only_if_empty: true
+        uuid: c0bf0a9a-8b63-492e-8df9-cdce1b6f058d
+        plugin: default_value
+        source: status
+        weight: -9
+        label: 'Set value or default value'
+      caef1539-39a7-4502-9cb1-a4319da96104:
+        find: Confirmed
+        replace: '3'
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: caef1539-39a7-4502-9cb1-a4319da96104
+        plugin: find_replace
+        source: status
+        weight: -10
+        label: 'Find replace'
+      1d1f3df1-7fe9-4a70-9529-e92513aeba7b:
+        uuid: 1d1f3df1-7fe9-4a70-9529-e92513aeba7b
+        plugin: strtotime
+        source: date
+        weight: -9
+        label: 'String to Unix Timestamp'
+      2a3803d4-cb2e-418d-9b39-328f45eb5190:
+        text: '[date] 12:00 AM'
+        uuid: 2a3803d4-cb2e-418d-9b39-328f45eb5190
+        plugin: rewrite
+        source: date
+        weight: -10
+        label: Rewrite
+      4c2f2a39-4342-4813-87c9-6aaeb420d57b:
+        find: '/$Old Q.*/'
+        replace: '790'
+        limit: null
+        uuid: 4c2f2a39-4342-4813-87c9-6aaeb420d57b
+        plugin: find_replace_regex
+        source: room
+        weight: 0
+        label: 'Find replace REGEX'
+      72f787d4-25f4-4895-be38-598ced4cb412:
+        find: '/$Hampton.*/'
+        replace: '784'
+        limit: null
+        uuid: 72f787d4-25f4-4895-be38-598ced4cb412
+        plugin: find_replace_regex
+        source: room
+        weight: 1
+        label: 'Find replace REGEX'
+      44363da3-d34e-4d05-b2e9-353e920904b9:
+        find: '/$Howson.*/'
+        replace: '785'
+        limit: null
+        uuid: 44363da3-d34e-4d05-b2e9-353e920904b9
+        plugin: find_replace_regex
+        source: room
+        weight: 2
+        label: 'Find replace REGEX'
+      9ad7164a-20f1-4b5c-af92-045b251594fc:
+        find: '/$Little.*/'
+        replace: '786'
+        limit: null
+        uuid: 9ad7164a-20f1-4b5c-af92-045b251594fc
+        plugin: find_replace_regex
+        source: room
+        weight: 3
+        label: 'Find replace REGEX'
+      101d43b6-2715-48be-adf5-627299636ab8:
+        find: '/$Mancha.*/'
+        replace: '787'
+        limit: null
+        uuid: 101d43b6-2715-48be-adf5-627299636ab8
+        plugin: find_replace_regex
+        source: room
+        weight: 4
+        label: 'Find replace REGEX'
+      a03cb0f5-67c9-4ccd-a030-e19815c1d515:
+        find: '/$Mil.*/'
+        replace: '788'
+        limit: null
+        uuid: a03cb0f5-67c9-4ccd-a030-e19815c1d515
+        plugin: find_replace_regex
+        source: room
+        weight: 5
+        label: 'Find replace REGEX'
+      35372795-875a-46e8-8f0c-8e0932552f1c:
+        find: '/$North.*/'
+        replace: '789'
+        limit: null
+        uuid: 35372795-875a-46e8-8f0c-8e0932552f1c
+        plugin: find_replace_regex
+        source: room
+        weight: 6
+        label: 'Find replace REGEX'
+      173c469d-09d0-45f7-92b0-bbd62a54454a:
+        find: '/$Spice.*/'
+        replace: '799'
+        limit: null
+        uuid: 173c469d-09d0-45f7-92b0-bbd62a54454a
+        plugin: find_replace_regex
+        source: room
+        weight: 7
+        label: 'Find replace REGEX'
+      56b6dc5c-5e42-4378-bfb7-e0e1034e5860:
+        find: '/$Wil.*/'
+        replace: '807'
+        limit: null
+        uuid: 56b6dc5c-5e42-4378-bfb7-e0e1034e5860
+        plugin: find_replace_regex
+        source: room
+        weight: 8
+        label: 'Find replace REGEX'
+      1f97f160-4ec1-4e81-93d9-908858a7ca58:
+        find: '/$Yarb.*/'
+        replace: '811'
+        limit: null
+        uuid: 1f97f160-4ec1-4e81-93d9-908858a7ca58
+        plugin: find_replace_regex
+        source: room
+        weight: 9
+        label: 'Find replace REGEX'
+id: meeting_room_reservation
+label: 'Meeting Room Reservation - Internal'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: room_reservation
+  langcode: eng
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 97
+custom_sources:
+  topic:
+    value: topic
+    label: topic
+    machine_name: topic
+    type: csv
+  room:
+    value: room
+    label: room
+    machine_name: room
+    type: csv
+  internal:
+    value: internal
+    label: internal
+    machine_name: internal
+    type: csv
+  expected_attendance:
+    value: expected_attendance
+    label: expected_attendance
+    machine_name: expected_attendance
+    type: csv
+  uid:
+    value: uid
+    label: uid
+    machine_name: uid
+    type: csv
+  group:
+    value: group
+    label: group
+    machine_name: group
+    type: csv
+  status:
+    value: status
+    label: status
+    machine_name: status
+    type: csv
+  start:
+    value: start
+    label: start
+    machine_name: start
+    type: csv
+  end:
+    value: end
+    label: end
+    machine_name: end
+    type: csv
+  langcode:
+    value: langcode
+    label: langcode
+    machine_name: langcode
+    type: csv
+  date:
+    value: date
+    label: date
+    machine_name: date
+    type: csv
+  start_:
+    value: start
+    label: start
+    machine_name: start_
+    type: csv
+  end_:
+    value: end
+    label: end
+    machine_name: end_
+    type: csv
+  start__:
+    value: start
+    label: start
+    machine_name: start__
+    type: csv
+  end__:
+    value: end
+    label: end
+    machine_name: end__
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  username:
+    value: username
+    label: username
+    machine_name: username
+    type: csv
+  attendance:
+    value: attendance
+    label: attendance
+    machine_name: attendance
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: topic
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_meeting_room
+    map:
+      target_id: room
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_internal_
+    map:
+      value: internal
+    settings:
+      language: null
+  -
+    target: uid
+    map:
+      target_id: username
+    settings:
+      language: ''
+      reference_by: name
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_room_group
+    map:
+      target_id: group
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_room_status
+    map:
+      value: status
+    settings:
+      language: null
+  -
+    target: langcode
+    map:
+      value: langcode
+    settings:
+      language: null
+  -
+    target: field____date
+    map:
+      value: date
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_start
+    map:
+      value: start__
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_slr_time_end
+    map:
+      value: end__
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_room_expected_attendance
+    map:
+      value: attendance
+    settings:
+      language: null
+    unique: {  }

@@ -84,6 +84,7 @@ module:
   views_slideshow_cycle: 0
   views_ui: 0
   webform: 0
+  webform_submission_export_import: 0
   webform_views: 0
   workflows: 0
   views: 10
