@@ -317,12 +317,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 3
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
     region: content
-    settings:
-      include_locked: true
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -418,3 +417,4 @@ hidden:
   field_ref_searchable_audience: true
   field_reflected: true
   field_title40: true
+  layout_builder__layout: true

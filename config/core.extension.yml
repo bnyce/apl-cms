@@ -51,6 +51,7 @@ module:
   migrate_heroes: 0
   migrate_home_page: 0
   migrate_locations: 0
+  migrate_meeting_rooms: 0
   migrate_plus: 0
   migrate_priorities: 0
   migrate_remote_locations: 0
@@ -82,6 +83,8 @@ module:
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
+  webform: 0
+  webform_views: 0
   workflows: 0
   views: 10
   standard: 1000

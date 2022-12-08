@@ -1,0 +1,14 @@
+uuid: e7ab5c2d-1e76-42d4-95b7-a4840915c41c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.internal_group_representative
+  module:
+    - user
+id: user_add_role_action.internal_group_representative
+label: 'Add the Meeting Room Internal role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: internal_group_representative

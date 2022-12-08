@@ -87,12 +87,27 @@ third_party_settings:
               items_per_page: none
             weight: 2
             additional: {  }
+          2bd4778d-1ce4-494c-b072-4bf02fde47d8:
+            uuid: 2bd4778d-1ce4-494c-b072-4bf02fde47d8
+            region: content
+            configuration:
+              id: 'extra_field_block:node:event:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
         third_party_settings: {  }
 id: node.event.teaser
 targetEntityType: node
 bundle: event
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_kids_block_party_category:
     type: list_default
     label: above
@@ -155,5 +170,5 @@ hidden:
   field_sponsors: true
   field_subtitle: true
   field_title40: true
-  langcode: true
+  layout_builder__layout: true
   search_api_excerpt: true
