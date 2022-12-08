@@ -24,20 +24,6 @@ third_party_settings:
         source: langcode
         weight: 0
         label: Rewrite
-      8f841522-ee9a-49e8-b4e1-1e88b7dbbee9:
-        text: '[date_] [timestart]'
-        uuid: 8f841522-ee9a-49e8-b4e1-1e88b7dbbee9
-        plugin: rewrite
-        source: timestart
-        weight: 0
-        label: Rewrite
-      36861a6c-1d5b-4dcf-846c-8ec6dff88c0d:
-        text: '[date_] [timeend]'
-        uuid: 36861a6c-1d5b-4dcf-846c-8ec6dff88c0d
-        plugin: rewrite
-        source: timeend
-        weight: 0
-        label: Rewrite
       2e0417f7-6fd3-42bd-865c-3b06086fd888:
         find: 'Yarborough Branch'
         replace: 'Yarborough Branch #1'
@@ -49,6 +35,32 @@ third_party_settings:
         source: room_
         weight: 0
         label: 'Find replace'
+      b8097566-1d69-4c90-8185-14439f772172:
+        text: '[date_] [timestart]'
+        uuid: b8097566-1d69-4c90-8185-14439f772172
+        plugin: rewrite
+        source: timestart
+        weight: 0
+        label: Rewrite
+      05bf5a26-6162-4ed9-b03c-90e8e23f5292:
+        uuid: 05bf5a26-6162-4ed9-b03c-90e8e23f5292
+        plugin: strtotime
+        source: timestart
+        weight: 1
+        label: 'String to Unix Timestamp'
+      8aa86a13-752b-4422-b218-6345fb1fd5b7:
+        text: '[date_] [timeend]'
+        uuid: 8aa86a13-752b-4422-b218-6345fb1fd5b7
+        plugin: rewrite
+        source: timeend
+        weight: 0
+        label: Rewrite
+      25740584-fb88-4a39-81d7-26ccde9e37cc:
+        uuid: 25740584-fb88-4a39-81d7-26ccde9e37cc
+        plugin: strtotime
+        source: timeend
+        weight: 1
+        label: 'String to Unix Timestamp'
 label: 'Meeting Room Reservation - Internal'
 id: meeting_room_reservation
 description: ''
