@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: fSvrsR5TvDsvLrx7H7zmJ4BJAopdS-FMJB3K7EzBjYM
 id: mr_webform_calendar
 label: 'MR Webform Calendar'
 code: |2-
@@ -323,15 +321,15 @@ code: |2-
 
       window.location.href = go_to2;
   });
-conditions_require_all: true
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/meeting-rooms/calendar\r\n"
 contexts: {  }
-header: false
-preprocess: false
-jquery: false
-noscript: ''
-noscriptRegion: {  }
+conditions_require_all: true

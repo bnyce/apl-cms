@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: aWhLmOV1vdQ6KQ4rGT00VlAFOQqWjt6ND9EeiXhGY38
 id: meeting_rooms_calendar_staff_
 label: 'Meeting Rooms Calendar (staff)'
 code: |2-
@@ -324,15 +322,15 @@ code: |2-
 
       window.location.href = go_to2;
   });
-conditions_require_all: true
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: /meeting-rooms/calendar/staff
 contexts: {  }
-header: false
-preprocess: true
-jquery: false
-noscript: ''
-noscriptRegion: {  }
+conditions_require_all: true
