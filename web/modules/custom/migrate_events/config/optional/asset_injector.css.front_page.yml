@@ -9,6 +9,96 @@ _core:
 id: front_page
 label: 'front page'
 code: |-
+  .view-heroes .views-row {
+  	width: 100%;
+  }
+  html .view-heroes .views-slideshow-controls-bottom {
+  	z-index: 9;
+  	margin-top: -17px;
+  	position: relative;
+  	padding: 0;
+  }
+  .skin-default {
+  	margin-bottom: 0 !important;
+  }
+  .views_slideshow_cycle_slide,
+  .views_slideshow_cycle_teaser_section {
+  	width: 100% !important;
+  }
+  .image-style-wide {
+  	position: absolute;
+          opacity: 0;
+  }
+  .view-heroes .views-slideshow-controls-bottom {
+  	z-index: 9;
+  	margin-top: -50px;
+  	position: relative;
+  	padding-bottom: 13px;
+  }
+  .view-heroes .views-slideshow-controls-bottom .views-slideshow-pager-bullets li {
+  	text-indent: -9999px;
+  	cursor: pointer;
+  	display: inline-block;
+  	border-radius: 12px;
+  	padding: 0px 12px;
+  	background: #222;
+  	margin: 0.4em 12px;
+  	line-height: 24px;
+          opacity: .7;
+  }
+
+
+  .view-heroes .views-slideshow-controls-bottom .views-slideshow-pager-bullets li:hover {
+  	opacity: .8;
+  }
+  .view-heroes .views-slideshow-controls-bottom .views-slideshow-pager-bullets li:hover, 
+  .view-heroes .views-slideshow-controls-bottom .views-slideshow-pager-bullets li.active {
+  	background: #00a3cc;
+  }
+  .view-heroes .view-footer {
+  	margin-top: 0px;
+  }
+  .layout__region--content {
+  	margin-bottom: 0 !important;
+  }
+  #widget_pager_bottom_heroes-block_1 {
+  	margin: 0;
+  }
+  .hero-image {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-text2 p {
+  	margin: 0;
+  	padding: 0 0 10px;
+  }
+
+  .hero-title2 {
+  	font-weight: bold;
+  	font-size: 30px;
+  }
+
+  .hero-action a {
+  	text-decoration: none;
+  	background: #00a3cc;
+  	padding: 10px;
+  	display: inline-block;
+  	color: white;
+  	border-radius: 4px;
+  	margin-top: 10px;
+  }
+
+  .hero-action:hover {
+  	color: white;
+  	opacity: .8;
+  }
+  .hero-right .flex-grid {
+  	flex-direction: row-reverse;
+  }
+
   .event-date {
   	color: #009ABF;
   	text-transform: uppercase;
@@ -129,10 +219,13 @@ code: |-
   }
   .hero-text2 {
   	background: white;
-  	padding: 0 1em 1em;
+  	padding: .8em 1em 1em;
   	position: absolute;
   	top: 54px;
   	border-radius: 2px;
+      opacity: .9;
+      width: 300px;
+      display: block;
   }
   .usa-layout-docs__main.desktop\:grid-col-fill {
   	max-width: 64rem;

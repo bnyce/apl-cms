@@ -356,7 +356,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: 'Upcoming Events'
+      title: Events
       fields:
         title:
           id: title
