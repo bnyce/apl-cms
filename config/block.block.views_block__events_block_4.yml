@@ -1,24 +1,24 @@
-uuid: 40ffb2e9-e7c9-4461-946b-973fc39f5937
+uuid: cd765232-ef92-437d-8262-9732debe8c31
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.sections
+    - views.view.events
   module:
     - system
     - views
   theme:
     - uswds_base
-id: views_block__sections_block_1
+id: views_block__events_block_4
 theme: uswds_base
 region: content
-weight: -5
+weight: -4
 provider: null
-plugin: 'views_block:sections-block_1'
+plugin: 'views_block:events-block_4'
 settings:
-  id: 'views_block:sections-block_1'
+  id: 'views_block:events-block_4'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
   items_per_page: none

@@ -435,7 +435,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "<i class=\"material-icons-outlined\">place</i>\r\n<span class=\"apl-loc\">{{ field_event_loc }}</span>"
+            text: '<span class="icon_con"><img class="icon_locations" src="/themes/custom/apl/assets/img/locations.png" /></span><span class="event_location">{{ field_event_loc }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -467,7 +467,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -498,7 +498,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "<div class=\"field-remote-location\"><i class=\"material-icons-outlined\">place</i>\r\n<span class=\"apl-loc\">{{ field_remote_location }}</span></div>"
+            text: '<div class="field-remote-location"><span class="icon_con"><img class="icon_locations" src="/themes/custom/apl/assets/img/locations.png" /></span><span class="event_location">{{ field_remote_location }}</span></div>'
             make_link: false
             path: ''
             absolute: false
@@ -530,7 +530,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -593,7 +593,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -794,7 +794,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: long_date_without_year
+            format_type: snippet_time
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -857,11 +857,75 @@ display:
           if: field_slr_time_end_1
           condition: neq
           equalto: '{{ field_slr_time_start_1 }}'
-          then: '<i class="material-icons-outlined">schedule</i><span class="datetime">{{ field_slr_time_start }} to {{ field_slr_time_end }}</span>'
+          then: '<span class="icon_con"><img class="icon_alarm" src="/themes/custom/apl/assets/img/alarm_clock.png" /></span><span class="event_time">{{ field_slr_time_start }} to {{ field_slr_time_end }}</span>'
           then_translate: 1
-          or: '<i class="material-icons-outlined">schedule</i><span class="datetime">{{ field_slr_time_start }}</span>'
+          or: '<span class="icon_con"><img class="icon_alarm" src="/themes/custom/apl/assets/img/alarm_clock.png" /></span><span class="datetime">{{ field_slr_time_start }}</span>'
           or_translate: 1
           strip_tags: 0
+        field_slr_time_start_2:
+          id: field_slr_time_start_2
+          table: node__field_slr_time_start
+          field: field_slr_time_start
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: trim
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         nid:
           id: nid
           table: node_field_data
@@ -876,7 +940,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"apl-event\">\r\n\t<div class=\"field-title\">\r\n\t\t{{ title }}\r\n\t</div>\r\n\t<div class=\"field-event-date\">\r\n\t\t\t{{ views_conditional_field_1 }}\r\n\t</div>\t<div class=\"field-event-loc\">\r\n\t\t{{ field_event_loc }}</div>{{ field_remote_location }} \r\n</div>"
+            text: "<div class=\"apl-event\">\r\n\t<div class=\"event-date\">\r\n\t\t\t{{ field_slr_time_start_2 }}\r\n\t</div>\t\r\n        <div class=\"field-title\">\r\n\t\t{{ title }}\r\n\t</div>\r\n\t<div class=\"event-time\">\r\n\t\t\t{{ views_conditional_field_1 }}\r\n\t</div>\t\r\n        <div class=\"event-loc\">\r\n\t\t{{ field_event_loc }}</div>{{ field_remote_location }} \r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -997,19 +1061,6 @@ display:
             field_identifier: ''
           exposed: false
       filters:
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
         type:
           id: type
           table: node_field_data
@@ -1185,18 +1236,7 @@ display:
       link_display: custom_url
       link_url: /events
       header: {  }
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: false
-          content: '<a class="usa-button" href="/events">More upcoming events</a>'
-          tokenize: false
+      footer: {  }
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
         metatag_display_extender: {  }

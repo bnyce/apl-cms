@@ -18,6 +18,7 @@ dependencies:
     - options
     - rest
     - serialization
+    - smart_date
     - taxonomy
     - user
     - views_data_export
@@ -46,7 +47,7 @@ display:
           entity_type: node
           entity_field: uid
           plugin_id: field
-          label: 'Authored by'
+          label: uid
           exclude: false
           alter:
             alter_text: false
@@ -734,6 +735,59 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: '-1 day'
+            type: offset
+            granularity: second
+          group: 1
+          exposed: true
+          expose:
+            operator_id: changed_op
+            label: Changed
+            description: ''
+            use_operator: false
+            operator: changed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: changed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              hero_editor: '0'
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              internal_group_representative: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
         options:
@@ -774,6 +828,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
@@ -791,6 +846,11 @@ display:
     display_plugin: data_export
     position: 1
     display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 10
       style:
         type: data_export
         options:
@@ -810,7 +870,7 @@ display:
         options:
           field_options:
             uid:
-              alias: Username
+              alias: uid
               raw_output: false
             title:
               alias: topic
@@ -843,6 +903,7 @@ display:
       path: meeting-rooms-nodes.csv
       filename: ''
       automatic_download: false
+      export_limit: 10
       store_in_public_file_directory: false
       custom_redirect_path: false
       redirect_to_display: none
@@ -853,6 +914,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
