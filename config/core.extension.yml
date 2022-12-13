@@ -45,6 +45,7 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_audience: 0
+  migrate_blogs: 0
   migrate_event_tags: 0
   migrate_events: 0
   migrate_file: 0

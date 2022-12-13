@@ -261,8 +261,7 @@ code: |-
   	margin-top: 0;
   	padding-bottom: 30px;
   }
-  .block-views-blocksearch-block-8 > h2:nth-child(1),
-  .block.block-views.block-views-blockevents-block-4 h2 {
+  .block-views-blocksearch-block-8 > h2:nth-child(1) {
   	padding: 10px 15px 0;
   }
   .block-views-blocksearch-block-8 div.view-footer a,

@@ -9,7 +9,7 @@ _core:
 id: uswds_base_local_tasks
 theme: uswds_base
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

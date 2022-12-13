@@ -1,5 +1,5 @@
-uuid: 20b701df-05f8-4b0c-a109-55c27c361006
-langcode: eng
+uuid: 9030d118-4ae7-4b3c-b492-9c554793f874
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
+  default_config_hash: PmVL51L3A9QGbPLoeLHw5epAPszeZRasCeC3imeeDRQ
 id: node.article.field_image
 field_name: field_image
 entity_type: node
@@ -16,7 +16,7 @@ bundle: article
 label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
