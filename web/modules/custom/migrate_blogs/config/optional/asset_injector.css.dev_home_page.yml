@@ -14,7 +14,17 @@ code: |-
   	width: 270px;
   	display: block;
   }
-
+  .menu.menu--footer.nav {
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  }
+  .menu.menu--footer.nav a {
+  	text-decoration: none;
+  }
+  .menu.menu--footer.nav a:hover {
+  	text-decoration: underline;
+  }
   .usa-social-link__icon {
   	display: block;
   	height: auto;
@@ -114,7 +124,7 @@ code: |-
   }
 
   .block.block-views.block-views-blockpress-releases-block-1 {
-  	margin: 40px 0;
+  	margin: 50px 0;
   	padding: 0 !important;
   }
   #main-content h2 {
@@ -250,10 +260,9 @@ code: |-
   .usa-nav__primary.usa-accordion li:nth-child(3) {
   	background-color: #C42026;
   }
-
   .usa-nav__primary.usa-accordion li a span {
   	display: inline-block;
-  	padding: 10px;
+  	padding: 15px 15px 10px;
   }
   html .usa-header--basic .usa-nav__link:hover::after, 
   html .usa-header--basic .usa-nav__primary-item > .usa-current::after {

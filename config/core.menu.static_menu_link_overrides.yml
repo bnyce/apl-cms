@@ -6,7 +6,7 @@ definitions:
     parent: ''
     weight: 0
     expanded: false
-    enabled: true
+    enabled: false
   standard__front_page:
     enabled: true
     menu_name: main

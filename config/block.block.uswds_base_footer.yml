@@ -12,8 +12,8 @@ _core:
   default_config_hash: fe18X2hTQjshk7BVrSy8SiJPuRZKzP3KTKc5puymUOc
 id: uswds_base_footer
 theme: uswds_base
-region: footer_menu
-weight: 0
+region: footer_secondary
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

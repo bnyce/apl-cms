@@ -38,8 +38,8 @@ uswds_rss: /rss.xml
 uswds_paragraphs_edge_to_edge: 0
 uswds_menu_accordion_duplicate_parent: 0
 uswds_menu_bypass:
-  primary_menu: 0
+  primary_menu: primary_menu
+  footer_menu: footer_menu
   secondary_menu: 0
   sidebar_first: 0
   sidebar_second: 0
-  footer_menu: 0
