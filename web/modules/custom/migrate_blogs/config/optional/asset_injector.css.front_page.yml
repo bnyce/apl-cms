@@ -12,18 +12,41 @@ code: |-
   .view-heroes .views-row {
   	width: 100%;
   }
+  #search-block-form .usa-button {
+  	background: white !important;
+  }
+  .views-slideshow-controls-bottom.clearfix {
+  	z-index: 999;
+  	position: relative;
+  }
+  .skin-default .flex-grid {
+  	max-width: 64rem;
+  	margin: 0 auto;
+  	display: block;
+  	position: relative;
+  }
+  .hero-right .hero-text2 {
+  	right: 0;
+  }
+  .skin-default img {
+  	width: 100%;
+  	height: auto;
+  	position: absolute;
+  }
   html .view-heroes .views-slideshow-controls-bottom {
   	z-index: 9;
   	margin-top: -17px;
   	position: relative;
   	padding: 0;
   }
-  .skin-default {
-  	margin-bottom: 0 !important;
+
+  .skin-default .views-row {
+  	width: 100%;
   }
   .views_slideshow_cycle_slide,
   .views_slideshow_cycle_teaser_section {
   	width: 100% !important;
+  	height: 330px !important;
   }
   .image-style-wide {
   	position: absolute;
@@ -153,7 +176,7 @@ code: |-
   	border-radius: 3px;
   }
 
-  #block-views-block-heroes-block-1 {
+  #eeeblock-views-block-heroes-block-1 {
   	background-image: url(/sites/default/files/styles/wide/public/hero/bookshelf_img.png);
   	background-size: cover;
   	background-repeat: no-repeat;
@@ -210,7 +233,7 @@ code: |-
   }
   .skin-default {
   	background: transparent;
-  	max-width: 64rem;
+  	max-width: 100%;
   	margin: 0 auto;
   }
   .hero-text2 {
