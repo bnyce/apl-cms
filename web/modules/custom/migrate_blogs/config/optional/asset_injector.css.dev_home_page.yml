@@ -10,6 +10,17 @@ code: |-
   #main-content {
   	padding: 0;
   }
+  .usa-footer__contact-links .grid-col-auto {
+  	width: 60px !important;
+  }
+  .grid-container.usa-footer__return-to-top,
+  .usa-footer__primary-section,
+  .usa-footer__logo-img {
+  	display: none;
+  }
+  .usa-social-link {
+  	background-color: transparent !important;
+  }
   .news_link {
   	position: absolute;
   	bottom: 0;
