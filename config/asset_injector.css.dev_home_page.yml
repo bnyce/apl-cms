@@ -7,6 +7,13 @@ _core:
 id: dev_home_page
 label: dev_home_page
 code: |-
+  .apl-events {
+  	display: grid;
+  	grid-template-columns: 49% 49%;
+  	grid-template-rows: auto auto;
+  	grid-column-gap: 20px;
+  	grid-row-gap: 20px;
+  }
   #main-content {
   	padding: 0;
   }
@@ -59,8 +66,9 @@ code: |-
   html .usa-search--small .usa-search__submit-icon {
   	float: right;
   }
+
   .block.block-views.block-views-blockpress-releases-block-1 {
-  	margin: 30px 0;
+  	margin: 40px 0;
   	padding: 0 !important;
   }
   #main-content h2 {
