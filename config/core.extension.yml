@@ -45,12 +45,15 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_audience: 0
+  migrate_audience2016: 0
   migrate_blogs: 0
+  migrate_booklist_cats: 0
   migrate_event_tags: 0
   migrate_events: 0
   migrate_file: 0
   migrate_heroes: 0
   migrate_home_page: 0
+  migrate_items: 0
   migrate_locations: 0
   migrate_meeting_rooms: 0
   migrate_plus: 0
