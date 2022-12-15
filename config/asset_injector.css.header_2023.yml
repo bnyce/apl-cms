@@ -87,7 +87,18 @@ code: |-
   .region.region-header.usa-navbar {
   	display: flex;
   }
-
+  .grid-row.grid-gap {
+  	position: relative;
+  	z-index: 9;
+  	background: white;
+  }
+  .img_container {
+  	display: block;
+  	height: 131px;
+  }
+  footer .grid-row.grid-gap {
+  	background: transparent;
+  }
   @media screen and (max-width: 63.99em) {
   	.menu.menu--main.nav li {
   	 height: auto;
