@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: dvKD54DC0Lt51xlPJoWhU-u0hkfSAFgZHTwa9pZu_Ww
 id: uswds_regions
 label: 'USWDS regions'
 code: |
@@ -63,12 +65,12 @@ code: |
   .layout--twocol-section.layout--twocol-section--33-67 > .layout__region--second, .layout--twocol-section.layout--twocol-section--67-33 > .layout__region--first {
   	flex: 0 1 580px;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/meeting-rooms\r\n/blog/*\r\n/skillmill/*"
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

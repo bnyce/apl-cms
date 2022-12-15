@@ -2,6 +2,8 @@ uuid: bbe9e613-dff9-472f-8e69-e4871b1a2c27
 langcode: en
 status: false
 dependencies: {  }
+_core:
+  default_config_hash: Qw1Fxn7rkGz_f0HVEyEn_dIupQZETB38OvWq1sjZ_sk
 id: flex_grid_footer
 label: 'flex-grid, footer'
 code: |-
@@ -197,8 +199,8 @@ code: |-
     margin: 0;
     padding: 0;
   }
-media: all
-preprocess: true
+conditions_require_all: false
 conditions: {  }
 contexts: {  }
-conditions_require_all: false
+media: all
+preprocess: true

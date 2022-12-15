@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - system
+_core:
+  default_config_hash: UYdJtXNWUtmbHvujUN-7PhGQUaa71SGpW0VBTiMqhz4
 id: margins_adjustment
 label: 'margins adjustment'
 code: |
@@ -46,8 +48,7 @@ code: |
   	width: 100%;
   	text-align: center;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   node_type:
     id: node_type
@@ -67,4 +68,5 @@ conditions:
       claro2: claro2
     negate: false
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

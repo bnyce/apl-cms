@@ -2,6 +2,8 @@ uuid: 1439190f-0536-4f3e-9b9b-4ebb5461fe5b
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: xN-JiwE2Chd_ENNxoVs0JbMbvN_zEv9CWhR0U7uv6PI
 id: home_page_etc
 label: 'home page etc'
 code: |-
@@ -36,8 +38,8 @@ code: |-
     font-size: 15px;
     font-weight: 400;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions: {  }
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - system
+_core:
+  default_config_hash: 04wJp5eVZlLZhqVRzV8tppCNqk0fsBarGt85zF2nzlU
 id: apl_carousel
 label: apl-carousel
 code: |-
@@ -111,8 +113,7 @@ code: |-
   	text-align: left;
   	padding: 10px 0 20px;
   }
-media: all
-preprocess: true
+conditions_require_all: false
 conditions:
   request_path:
     id: request_path
@@ -126,4 +127,5 @@ conditions:
     bundles:
       apl_site_content: apl_site_content
 contexts: {  }
-conditions_require_all: false
+media: all
+preprocess: true

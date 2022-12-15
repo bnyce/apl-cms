@@ -2,6 +2,8 @@ uuid: 4d79cc59-922c-4fd4-9cda-29191f02ee7f
 langcode: eng
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: AlKBU-0OOq47J5HfUPTzMdVSviF7npHVFEEfCIUOHIs
 id: footer_2021b
 label: 'fixer 2021b'
 code: |-
@@ -114,8 +116,8 @@ code: |-
   	background-repeat: no-repeat;
   	margin-top: 20px;
   }
-media: all
-preprocess: false
+conditions_require_all: true
 conditions: {  }
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: false

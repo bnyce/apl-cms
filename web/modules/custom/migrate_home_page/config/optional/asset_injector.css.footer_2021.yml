@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: Be1eC5rAsO7WNwh_Av31vNHefjHppn6roWjQUR_Zqx8
 id: footer_2021
 label: 'footer 2021'
 code: |-
@@ -69,12 +71,12 @@ code: |-
   	margin-right: 5px;
   	width: 32px;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   request_path:
     id: request_path
     negate: true
     pages: '/admin/*'
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

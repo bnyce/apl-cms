@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: gBJPPitsdnChe9l-79B_9HV8E_mMUbnLsD7yoHuxBvQ
 id: uswds_fixes
 label: 'uswds fixes'
 code: |-
@@ -292,12 +294,12 @@ code: |-
   	background-color: #0071bc;
   	box-shadow: 0 0 0 2px #0071bc;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/form/*\r\n/blog/*\r\n/skillmill/*\r\n/recommended/personal-picks\r\n/passports/list\r\n/admin/structure/webform/manage/meeting_room_reservation_request/submission/*/duplicate\r\n/webform/shared_learning_room_reservation/submissions/*\r\n/webform/meeting_room_reservation_request/submissions/*\r\n/meeting-rooms/list\r\n/passports/calendar\r\n/passports/appointment\r\n/collaboration-request\r\n/feedback/*\r\n/rental/survey\r\n/book-a-librarian\r\n/meeting-rooms/request\r\n/meeting-rooms/calendar\r\n/meeting-rooms/calendar/staff\r\n/slr/request\r\n/slr/calendar\r\n/slr/calendar/*\r\n/node/7698994\r\n/ahc/researchcopyorder\r\n/ahc/contact-austin-history-center\r\n/accs-contact\r\n/admin/structure/webform/manage/meeting_room_reservation_request/submission/*/edit\r\n/admin/structure/webform/manage/passport_appointment_request/submission/*/edit\r\n/slr/list\r\n/visit-form\r\n/meeting-rooms\r\n/jobportal/request"
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

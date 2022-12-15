@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: jSTpBcPxtUvvelGmmSHQcP1Cdy0tL6FUogIw2xJ5__0
 id: disappear
 label: disappear
 code: |-
@@ -100,12 +102,12 @@ code: |-
   	vertical-align: middle;
   	font-size: 1em;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   request_path:
     id: request_path
     negate: true
     pages: "/user/*\r\n/admin/*"
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

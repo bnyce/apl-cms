@@ -4,14 +4,15 @@ status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: skO8_VWlt-5Hfh8JmSFEwrLMkdD__tYnPDdE1agaanU
 id: user_adjustments
 label: 'User adjustments'
 code: |
   #toolbar-item-administration {
   	margin-left: -1000px;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   user_role:
     id: user_role
@@ -21,4 +22,5 @@ conditions:
     roles:
       authenticated: authenticated
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

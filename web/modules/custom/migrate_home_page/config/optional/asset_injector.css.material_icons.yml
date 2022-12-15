@@ -2,6 +2,8 @@ uuid: 4fbe4e7e-1126-4864-9d65-805bc7f21fee
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: g628OpmnxEGfjuIhePXCG_beS-HbPimWZI7UVGoVEw4
 id: material_icons
 label: 'Material Icons'
 code: |
@@ -120,8 +122,8 @@ code: |
     -moz-font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale;
   }
-media: all
-preprocess: true
+conditions_require_all: false
 conditions: {  }
 contexts: {  }
-conditions_require_all: false
+media: all
+preprocess: true

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: SrQGmc50HY5qhtXBhz85-zylw5nBf9eSiVkkJZCq5yc
 id: alert_page
 label: 'Links and Alerts'
 code: |-
@@ -119,12 +121,12 @@ code: |-
   	display: inline-block;
   	vertical-align: unset;
   }
-media: all
-preprocess: false
+conditions_require_all: false
 conditions:
   request_path:
     id: request_path
     negate: true
     pages: '/admin/*'
 contexts: {  }
-conditions_require_all: false
+media: all
+preprocess: false

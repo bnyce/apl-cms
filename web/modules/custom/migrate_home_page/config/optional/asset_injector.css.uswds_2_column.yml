@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: uyvmkdEQytFKYLvVEGFNPlsHJBBR1CdC8eIRHRmeks4
 id: uswds_2_column
 label: 'uswds 2 column'
 code: |-
@@ -18,12 +20,12 @@ code: |-
   	margin-top: 0;
   	padding-bottom: 30px;
   }
-media: all
-preprocess: false
+conditions_require_all: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/meeting-rooms\r\n/blog/*"
 contexts: {  }
-conditions_require_all: false
+media: all
+preprocess: false

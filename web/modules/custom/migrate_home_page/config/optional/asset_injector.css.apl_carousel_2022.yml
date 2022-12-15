@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: ltPsCAVA8ZE6luWr5R6ptNi6GhfWo5z07USjS7qtl5s
 id: apl_carousel_2022
 label: 'apl carousel 2022'
 code: |-
@@ -29,12 +31,12 @@ code: |-
   	max-height: 170px;
   	width: 110px;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: '<front>'
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: qYGprmHdsmMG51DnEpJho9tiFOmunnHyrPnbCgVLuyA
 id: margins_fix
 label: 'Margins fix'
 code: |-
@@ -24,12 +26,12 @@ code: |-
   .block-views h2 {
   	padding: 1px 15px;
   }
-media: all
-preprocess: false
+conditions_require_all: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/user\r\n/user/*\r\n"
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: false

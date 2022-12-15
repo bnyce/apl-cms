@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - system
+_core:
+  default_config_hash: BKX73dTIR0sVyFS2O1H5DW_dLFsu0TCx1W5zsh-ShNE
 id: flex_grid
 label: Virtual
 code: |-
@@ -111,12 +113,12 @@ code: |-
   	width: 100% !important;
   }
   }*/
-media: all
-preprocess: true
+conditions_require_all: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/virtual/*\r\n/virtual\r\n/node/*\r\n/blog/*"
 contexts: {  }
-conditions_require_all: false
+media: all
+preprocess: true

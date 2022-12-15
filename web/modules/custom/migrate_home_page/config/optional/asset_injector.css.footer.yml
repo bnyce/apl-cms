@@ -2,6 +2,8 @@ uuid: 1374aed6-6f53-4c61-9e95-d90c52d4ecfb
 langcode: en
 status: false
 dependencies: {  }
+_core:
+  default_config_hash: SzINuQDbTzSY1tXLFaEoim3IFlWYMWLp6Q-_RxQY_Ug
 id: footer
 label: footer
 code: |-
@@ -103,8 +105,8 @@ code: |-
   #apl_footer #apl_footer_social img:hover {
     background-color: #333 !important;
   }
-media: all
-preprocess: true
+conditions_require_all: true
 conditions: {  }
 contexts: {  }
-conditions_require_all: true
+media: all
+preprocess: true
