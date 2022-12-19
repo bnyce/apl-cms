@@ -246,7 +246,8 @@ code: |-
       width: 300px;
       display: block;
   }
-  .usa-layout-docs__main.desktop\:grid-col-fill {
+  #block-views-block-sections-block-1,
+  .eeeusa-layout-docs__main.desktop\:grid-col-fill {
   	max-width: 64rem;
   	margin: 0 auto;
   	padding: 0;

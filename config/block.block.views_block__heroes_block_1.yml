@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:heroes-block_1'
 settings:
   id: 'views_block:heroes-block_1'
-  label: Sections
+  label: Heroes
   label_display: '0'
   provider: views
-  views_label: Sections
+  views_label: Heroes
   items_per_page: none
 visibility:
   request_path:

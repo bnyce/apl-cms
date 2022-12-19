@@ -21,6 +21,9 @@ settings:
     -
       value: '2'
       label: right
+    -
+      value: '3'
+      label: 'only text - no title, no button'
   allowed_values_function: ''
 module: options
 locked: false

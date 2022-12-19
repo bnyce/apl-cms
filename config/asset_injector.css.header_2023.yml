@@ -5,6 +5,16 @@ dependencies: {  }
 id: header_2023
 label: 'Header 2023'
 code: |-
+  #block-views-block-sections-block-1,
+  #block-views-block-events-block-4,
+  #block-views-block-press-releases-block-1,
+  #block-moreupcomingevents,
+  .eeeusa-layout-docs__main.desktop\:grid-col-fill {
+  	max-width: 64rem;
+  	margin: 0 auto;
+  	padding: 0;
+  }
+
   #block-languages::before {
   	display: block;
   	content: ' ';
