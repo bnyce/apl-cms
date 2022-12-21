@@ -12,7 +12,7 @@ dependencies:
 id: views_block__heroes_block_2
 theme: uswds_base
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: 'views_block:heroes-block_2'
 settings:

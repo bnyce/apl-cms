@@ -14,6 +14,7 @@ code: |-
   	width: 270px;
   	display: block;
   }
+
   .menu.menu--footer.nav {
   	margin: 0;
   	padding: 0;

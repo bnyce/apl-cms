@@ -1,23 +1,23 @@
-uuid: 936b7973-02b6-4ab9-a6da-8a306d150525
+uuid: 78aa1b78-58a5-4e2c-a826-a9a8633a7f27
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:f45654ed-7b00-4d94-94b7-877732cdcd38'
+    - 'block_content:basic:afe4d089-8bf9-4069-8e76-3dca78e7dfcc'
   module:
     - block_content
     - system
   theme:
     - uswds_base
-id: moreupcomingevents
+id: bibliorecentlyreviewedwidget
 theme: uswds_base
 region: content
-weight: -5
+weight: -4
 provider: null
-plugin: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
+plugin: 'block_content:afe4d089-8bf9-4069-8e76-3dca78e7dfcc'
 settings:
-  id: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
-  label: 'More upcoming events'
+  id: 'block_content:afe4d089-8bf9-4069-8e76-3dca78e7dfcc'
+  label: 'Biblio Recently Reviewed widget'
   label_display: '0'
   provider: block_content
   status: true

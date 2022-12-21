@@ -5,8 +5,24 @@ dependencies: {  }
 id: header_2023
 label: 'Header 2023'
 code: |-
+  #home_rec {
+  	max-width: 64rem;
+  	width: 100%;
+  }
+  #block-bibliorecentlyreviewedwidget {
+  	text-align: center;
+  }
+  .hero-only .hero-summary {
+  	margin-bottom: 0;
+  	color: white;
+  	position: absolute;
+  	font-size: 25px;
+  	width: 350px;
+  	display: block;
+  	max-height: 300px;
+  }
   #block-views-block-sections-block-1,
-  #block-views-block-events-block-4,
+  #eeblock-views-block-events-block-4,
   #block-views-block-press-releases-block-1,
   #block-moreupcomingevents,
   .eeeusa-layout-docs__main.desktop\:grid-col-fill {
@@ -48,36 +64,39 @@ code: |-
   	background-repeat: no-repeat;
   	margin: -5px 0 0 0;
   }
+  #block-topmenu li:nth-child(2) a span::before {
+  	background-position: 7px 0px;
+  }
   .link.usa-nav__link {
   	padding: 0 !important;
   }
-  .usa-nav__primary.usa-accordion li:first-child a span::before {
+  #block-topmenu li:first-child a span::before {
   	background-image: url(/themes/custom/apl/assets/img/events.png);
   }
-  .usa-nav__primary.usa-accordion li:nth-child(2) a span::before {
+  #block-topmenu li:nth-child(2) a span::before {
   	background-image: url(/themes/custom/apl/assets/img/locations.png);
   }
-  .usa-nav__primary.usa-accordion li:nth-child(3) a span::before {
+  #block-topmenu li:nth-child(3) a span::before {
   	background-image: url(/themes/custom/apl/assets/img/log_in.png);
   }
-  .usa-nav__primary.usa-accordion li:nth-child(3) a {
+  #block-topmenu li:nth-child(3) a {
   	color: white;
   	text-transform: capitalize;
   }
-  .usa-nav__primary.usa-accordion li:nth-child(3) a span::after {
+  #block-topmenu li:nth-child(3) a span::after {
   	background-image: url(/themes/custom/apl/assets/img/arrow_down_white.png);
   }
 
-  .usa-nav__primary.usa-accordion li a span {
+  #block-topmenu li a span {
   	display: inline-block;
-  	padding: 15px 15px 10px;
+  	padding: 10px 10px 5px 0;
   }
   html .usa-header--basic .usa-nav__link:hover::after, 
   html .usa-header--basic .usa-nav__primary-item > .usa-current::after {
   	left: 0;
   	right: 0;
   }
-  .usa-nav__primary.usa-accordion li:nth-child(3) {
+  #block-topmenu li:nth-child(3) {
   	background-color: #C42026;
   }
 
