@@ -69,6 +69,7 @@ process:
     default_value: event_tags
   name: name
   tid: tid
+  parent: parent
   summary: summary
   field_is_an_event_category: is_event_category
   field_library_priority: field_library_priority
