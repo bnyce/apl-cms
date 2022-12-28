@@ -1,0 +1,25 @@
+uuid: 65381ccc-9f34-4215-983b-90b88a624a25
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.primary-menu
+  module:
+    - system
+  theme:
+    - claro2
+id: claro2_primarymenu
+theme: claro2
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:primary-menu'
+settings:
+  id: 'system_menu_block:primary-menu'
+  label: 'Primary Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: e46a0807-650b-48bf-ac79-c3a54653b9b8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:75f5784e-c051-410a-9842-5dfde41d99ad'
+  module:
+    - block_content
+  theme:
+    - claro2
+id: claro2_biblioaccountlogin
+theme: claro2
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:75f5784e-c051-410a-9842-5dfde41d99ad'
+settings:
+  id: 'block_content:75f5784e-c051-410a-9842-5dfde41d99ad'
+  label: 'Biblio Account Login'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

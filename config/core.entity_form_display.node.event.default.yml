@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field__this_event_main_image
     - field.field.node.event.field_attendance
     - field.field.node.event.field_audience_text
+    - field.field.node.event.field_canceled
     - field.field.node.event.field_cat_ia
     - field.field.node.event.field_central_event_location
     - field.field.node.event.field_community_services_outreac
@@ -53,9 +54,12 @@ dependencies:
     - field.field.node.event.field_sponsors
     - field.field.node.event.field_subtitle
     - field.field.node.event.field_title40
+    - field.field.node.event.layout_builder__layout
     - image.style.thumbnail
     - node.type.event
+    - workflows.workflow.e
   module:
+    - content_moderation
     - datetime
     - datetimehideseconds
     - field_group
@@ -108,10 +112,10 @@ third_party_settings:
     group_movie:
       children:
         - field_movie_image
-        - field_movie_title
-        - field_movie_year
         - field_movie_rating
         - field_movie_summary
+        - field_movie_title
+        - field_movie_year
       label: Movie
       region: hidden
       parent_name: ''
@@ -151,6 +155,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_canceled:
+    type: boolean_checkbox
+    weight: -101
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_cat_ia:
     type: options_buttons

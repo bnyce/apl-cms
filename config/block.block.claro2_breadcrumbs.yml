@@ -1,0 +1,22 @@
+uuid: e192a261-539d-4284-b0e7-884497dfca56
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - claro2
+_core:
+  default_config_hash: vk6Vdm_OwlRR94AcQvjxPVahMS_nQLYmg0K_slaZKZ8
+id: claro2_breadcrumbs
+theme: claro2
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

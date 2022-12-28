@@ -1,0 +1,23 @@
+uuid: 4340bf69-78c7-4c05-8099-f16cefa3c73b
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - claro2
+_core:
+  default_config_hash: vTmNF6e_XzlKIeu4-KYMAFiaY5F4hPhNRtodyBYeZBw
+id: claro2_search
+theme: claro2
+region: breadcrumb
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

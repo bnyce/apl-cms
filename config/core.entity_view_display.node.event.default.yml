@@ -1,9 +1,8 @@
-uuid: 7401ef2e-e1a6-40d6-ac48-aa7cc412195d
+uuid: e9354113-dd73-418f-8430-8954a49a754f
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
     - field.field.node.event.body
     - field.field.node.event.feeds_item
     - field.field.node.event.field__this_event_main_image
@@ -57,63 +56,25 @@ dependencies:
     - field.field.node.event.field_title40
     - field.field.node.event.layout_builder__layout
     - node.type.event
-    - views.view.events
   module:
-    - layout_builder
-    - layout_discovery
-    - options
     - user
-    - views
-third_party_settings:
-  layout_builder:
-    enabled: true
-    allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-          context_mapping: {  }
-        components:
-          07b59167-bb73-4be5-9a85-53e62ffc6af9:
-            uuid: 07b59167-bb73-4be5-9a85-53e62ffc6af9
-            region: content
-            configuration:
-              id: 'views_block:events-block_5'
-              label: ''
-              label_display: '0'
-              provider: views
-              context_mapping:
-                nid: layout_builder.entity
-              views_label: ''
-              items_per_page: none
-            weight: 2
-            additional: {  }
-          2bd4778d-1ce4-494c-b072-4bf02fde47d8:
-            uuid: 2bd4778d-1ce4-494c-b072-4bf02fde47d8
-            region: content
-            configuration:
-              id: 'extra_field_block:node:event:content_moderation_control'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 3
-            additional: {  }
-        third_party_settings: {  }
-id: node.event.teaser
+id: node.event.default
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: default
 content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
     weight: -20
     region: content
-  field_kids_block_party_category:
-    type: list_default
+  field_canceled:
+    type: boolean
     label: above
-    settings: {  }
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
     weight: 101
     region: content
@@ -128,7 +89,6 @@ hidden:
   field__this_event_main_image: true
   field_attendance: true
   field_audience_text: true
-  field_canceled: true
   field_cat_ia: true
   field_central_event_location: true
   field_community_services_outreac: true
@@ -149,6 +109,7 @@ hidden:
   field_is_there_a_fee_for_attendi: true
   field_isbn_for_image3: true
   field_item_list: true
+  field_kids_block_party_category: true
   field_link_for_registration: true
   field_metadata_description: true
   field_metadata_image: true
@@ -174,4 +135,3 @@ hidden:
   field_subtitle: true
   field_title40: true
   layout_builder__layout: true
-  search_api_excerpt: true

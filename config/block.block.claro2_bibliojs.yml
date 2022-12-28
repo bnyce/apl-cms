@@ -1,0 +1,25 @@
+uuid: 9fcddd57-a0d3-48e6-9d47-e84e8e4750a9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a294ff8c-fde4-48de-b966-51a266701306'
+  module:
+    - block_content
+  theme:
+    - claro2
+id: claro2_bibliojs
+theme: claro2
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:a294ff8c-fde4-48de-b966-51a266701306'
+settings:
+  id: 'block_content:a294ff8c-fde4-48de-b966-51a266701306'
+  label: 'Biblio JS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

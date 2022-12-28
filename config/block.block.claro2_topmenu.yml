@@ -1,0 +1,25 @@
+uuid: c1268a44-bc84-41cf-9084-879742f4356f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - claro2
+id: claro2_topmenu
+theme: claro2
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Top Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

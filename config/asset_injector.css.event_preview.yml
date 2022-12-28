@@ -1,0 +1,43 @@
+uuid: 58c8717e-bc1f-4cff-b16a-8e28c30909ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: event_preview
+label: 'Event Preview'
+code: |-
+  .layout-node-form {
+  	position: relative;
+  }
+  #prevEvent {
+  	border: 1px solid black;
+  	width: 580px;
+  	position: absolute;
+  	bottom: 0;
+  	right: 0;
+  }
+  #prevTitle {
+  	font-size: 40px !important;
+  	font-weight: bold;
+  	margin-bottom: 20px !important;
+  }
+  #prevSummary {
+  	margin-bottom: 20px;
+  }
+
+  .material-icons-outlined {
+  	float: left;
+  }
+media: all
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
+contexts: {  }
+conditions_require_all: true

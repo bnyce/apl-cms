@@ -1,0 +1,27 @@
+uuid: 7ba06801-32fd-4423-8c80-9f33a60c5f1f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - claro2
+_core:
+  default_config_hash: fe18X2hTQjshk7BVrSy8SiJPuRZKzP3KTKc5puymUOc
+id: claro2_footer
+theme: claro2
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
