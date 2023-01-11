@@ -11,7 +11,7 @@ dependencies:
 id: claro2_bibliojs
 theme: claro2
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:a294ff8c-fde4-48de-b966-51a266701306'
 settings:

@@ -1,6 +1,6 @@
 uuid: fea73c7d-149e-4f5a-a827-50d34c2d29cf
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:f45654ed-7b00-4d94-94b7-877732cdcd38'
@@ -12,7 +12,7 @@ dependencies:
 id: claro2_moreupcomingevents
 theme: claro2
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
 settings:

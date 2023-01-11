@@ -1,0 +1,44 @@
+uuid: d9d0f92e-620a-4f65-9d89-d9a5cf2c1712
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: live_patches
+label: 'live patches'
+code: |-
+  .node__content {
+  	float: none !important;
+  	width: 960px !important;
+  	margin: 0 auto;
+  	display: block !important;
+  }
+
+
+  .d-col-3 > div {
+  	padding: 0 !important;
+  }
+  h2 {
+  	margin-top: 0 !important;
+  }
+
+
+  .block.block-layout-builder.block-inline-blockbasic:nth-child(2) {
+  	float: right;
+  	width: 580px;
+  	clear: none;
+  }
+  .block.block-layout-builder.block-inline-blockbasic {
+  	width: 360px;
+  	float: left;
+  	clear: left;
+  }
+media: all
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/node/759100"
+contexts: {  }
+conditions_require_all: true

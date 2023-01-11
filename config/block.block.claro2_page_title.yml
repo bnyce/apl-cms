@@ -1,6 +1,6 @@
 uuid: ad780ffd-6108-4602-af8d-84d83a26e949
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - claro2
@@ -9,7 +9,7 @@ _core:
 id: claro2_page_title
 theme: claro2
 region: content
-weight: -2
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

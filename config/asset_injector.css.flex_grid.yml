@@ -9,15 +9,12 @@ _core:
 id: flex_grid
 label: Virtual
 code: |-
-  .node__content .layout.layout--onecol {
-  	width: 580px;
-  	float: right;
-  }
+
   .skin-default .views-field.views-field-title {
   	text-align: left;
   	font-weight: normal;
   	width: auto;
-  	font-size: 18px !important;
+  	font-size: 18px !important; 
   }
   .block.block-views.block-views-blocknavigation-block-6 a {
   	text-decoration: none;
@@ -39,12 +36,7 @@ code: |-
   .block.block-views.block-views-blocknavigation-block-6 {
   	background: white;
   }
-  .layout.layout--onecol:nth-child(2) {
-  	float: left;
-  	width: 360px !important;
-  	clear: none;
-  	background: none;
-  }
+
 
   @media only screen and (min-width: 0px) and (max-width: 660px) {
   .node__content .layout.layout--onecol,
@@ -113,12 +105,12 @@ code: |-
   	width: 100% !important;
   }
   }*/
-conditions_require_all: false
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/virtual/*\r\n/virtual\r\n/node/*\r\n/blog/*"
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: false

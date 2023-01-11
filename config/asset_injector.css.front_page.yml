@@ -393,11 +393,11 @@ code: |-
   	display: none;
   }
 media: all
-preprocess: true
+preprocess: false
 conditions:
   request_path:
     id: request_path
-    negate: false
+    negate: true
     pages: '<front>'
 contexts: {  }
 conditions_require_all: false

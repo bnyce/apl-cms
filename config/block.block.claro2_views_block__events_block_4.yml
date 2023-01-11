@@ -1,6 +1,6 @@
 uuid: 69ed70bf-f46f-455b-9d44-7241c21b8e1e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.events
@@ -12,7 +12,7 @@ dependencies:
 id: claro2_views_block__events_block_4
 theme: claro2
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: 'views_block:events-block_4'
 settings:

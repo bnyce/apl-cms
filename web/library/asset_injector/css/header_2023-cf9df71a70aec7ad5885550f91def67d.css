@@ -1,0 +1,138 @@
+#home_rec {
+	max-width: 64rem;
+	width: 100%;
+}
+#block-bibliorecentlyreviewedwidget {
+	text-align: center;
+}
+.hero-only .hero-summary {
+	margin-bottom: 0;
+	color: white;
+	position: absolute;
+	font-size: 25px;
+	width: 350px;
+	display: block;
+	max-height: 300px;
+}
+#block-views-block-sections-block-1,
+#eeblock-views-block-events-block-4,
+#block-views-block-press-releases-block-1,
+#block-moreupcomingevents,
+.eeeusa-layout-docs__main.desktop\:grid-col-fill {
+	max-width: 64rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#block-languages::before {
+	display: block;
+	content: ' ';
+	height: 25px;
+	width: 25px;
+	background-image: url(/themes/custom/apl/assets/img/globe.png);
+	float: left;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+	padding: 10px !important;
+}
+#block-languages {
+	display: none;
+}
+.usa-banner-inner > div {
+	display: flex;
+	justify-content: right;
+}
+#search-block-form,
+.region.region-header.usa-navbar,
+.usa-banner-inner {
+	max-width: 64rem;
+	margin: 0 auto;
+}
+.usa-nav__primary.usa-accordion li a span::before {
+	content: ' ';
+	height: 25px;
+	width: 25px;
+	float: left;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	margin: -5px 0 0 0;
+}
+#block-topmenu li:nth-child(2) a span::before {
+	background-position: 7px 0px;
+}
+.link.usa-nav__link {
+	padding: 0 !important;
+}
+#block-topmenu li:first-child a span::before {
+	background-image: url(/themes/custom/apl/assets/img/events.png);
+}
+#block-topmenu li:nth-child(2) a span::before {
+	background-image: url(/themes/custom/apl/assets/img/locations.png);
+}
+#block-topmenu li:nth-child(3) a span::before {
+	background-image: url(/themes/custom/apl/assets/img/log_in.png);
+}
+#block-topmenu li:nth-child(3) a {
+	color: white;
+	text-transform: capitalize;
+}
+#block-topmenu li:nth-child(3) a span::after {
+	background-image: url(/themes/custom/apl/assets/img/arrow_down_white.png);
+}
+
+#block-topmenu li a span {
+	display: inline-block;
+	padding: 10px 10px 5px 0;
+}
+html .usa-header--basic .usa-nav__link:hover::after, 
+html .usa-header--basic .usa-nav__primary-item > .usa-current::after {
+	left: 0;
+	right: 0;
+}
+#block-topmenu li:nth-child(3) {
+	background-color: #C42026;
+}
+
+.usa-navbar {
+	min-height: 4.3rem !important;
+}
+.menu.menu--main.nav li.first a {
+	color: transparent;
+	background-image: url(/themes/custom/apl/assets/img/APL.png);
+	width: 263px;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 3px 0;
+	margin: 0;
+	background-position: 0px 6px;
+}
+.region.region-header.usa-navbar {
+	display: flex;
+}
+.grid-row.grid-gap {
+	position: relative;
+	z-index: 9;
+	background: white;
+}
+.img_container {
+	display: block;
+	height: 131px;
+}
+footer .grid-row.grid-gap {
+	background: transparent;
+}
+@media screen and (max-width: 63.99em) {
+	.menu.menu--main.nav li {
+	 height: auto;
+  }
+ .region.region-header.usa-navbar {
+	text-align: left;
+ }
+ .usa-navbar {
+ 	  display: flex !important;
+  	height: auto;
+}
+ .menu--main.nav li {
+  display: block !important;
+ }
+}

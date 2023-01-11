@@ -1,6 +1,6 @@
 uuid: dd969e6c-99bf-4077-8725-0f08765117ee
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.heroes
@@ -12,7 +12,7 @@ dependencies:
 id: claro2_views_block__heroes_block_2
 theme: claro2
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: 'views_block:heroes-block_2'
 settings:

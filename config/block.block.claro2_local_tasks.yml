@@ -8,8 +8,8 @@ _core:
   default_config_hash: EMaHqTPYMYBCgJxDNacklCOc4izcUYu8hOdorw0vzzU
 id: claro2_local_tasks
 theme: claro2
-region: content
-weight: -10
+region: header
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:
