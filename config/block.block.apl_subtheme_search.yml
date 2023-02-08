@@ -1,0 +1,23 @@
+uuid: ef160b83-cc4c-458f-9fff-6e8d8e706d58
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - apl_subtheme
+_core:
+  default_config_hash: vTmNF6e_XzlKIeu4-KYMAFiaY5F4hPhNRtodyBYeZBw
+id: apl_subtheme_search
+theme: apl_subtheme
+region: breadcrumb
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,22 +1,107 @@
 uuid: 58c8717e-bc1f-4cff-b16a-8e28c30909ba
 langcode: en
 status: true
-dependencies:
-  module:
-    - node
+dependencies: {  }
 id: event_preview
 label: 'Event Preview'
 code: |-
+  html h1.field-title{
+  	line-height: 1.5em !important;
+  	margin-top: 0;
+  }
+  #prevBook {
+  	width: 15.5%;
+  }
+  #prevSubtitle {
+  	font-weight: bold;
+  }
+  .field-event-reg a {
+  	text-decoration: none;
+  	color: #0069aa;
+  }
+  #prevBook,
+  .apl-item-list {
+  	margin: 20px 20px 0 0;
+  }
+  .apl-free {
+  	margin: 20px 0 10px;
+  }
+  #prevRemote{
+  	padding-left: 1.7em;
+  }
+  .apl-rec-age, .apl-event-summary {
+  	margin-bottom: 20px;
+  }
   .layout-node-form {
   	position: relative;
   }
-  #prevEvent {
-  	border: 1px solid black;
-  	width: 580px;
-  	position: absolute;
-  	bottom: 0;
-  	right: 0;
+  .usa-button {
+  	background-color: #0071bc;
+  	appearance: none;
+  	-webkit-appearance: none;
+  	border: 0;
+  	border-radius: 3px;
+  	color: #fff;
+  	cursor: pointer;
+  	display: inline-block;
+  	font-weight: normal;
+  	line-height: 1;
+  	margin-bottom: 0.5em;
+  	margin-right: 0.5em;
+  	margin-top: 0.5em;
+  	outline: none;
+  	padding: 0.6em 0.8em;
+  	text-align: center;
+  	text-decoration: none;
+  	width: auto;
+  	-webkit-font-smoothing: antialiased;
   }
+  .usa-button.usa-button-outline, .usa-button.usa-button-outlined, .usa-button.usa-button-outline:hover, .usa-button.usa-button-outlined:hover {
+  	background-color: #fff !important;
+  	color: #0071bc;
+  }
+  .modal .material-icons,
+  .modal .material-icons-round,
+  .modal .material-icons-two-tone,
+  .modal .material-icons-sharp,
+  .modal .material-icons-outlined {
+  	width: 1.2em;
+  }
+  .material-icons-outlined {
+  	font-family: 'Material Icons Outlined';
+  	font-weight: normal;
+  	font-style: normal;
+  	font-size: 24px;
+  	line-height: 1;
+  	letter-spacing: normal;
+  	text-transform: none;
+  	display: inline-block;
+  	white-space: nowrap;
+  	word-wrap: normal;
+  	direction: ltr;
+  	-moz-font-feature-settings: 'liga';
+  	-moz-osx-font-smoothing: grayscale;
+  }
+
+  #prevEventContainer {
+  	border: 1px solid black;
+  	width: 100%;
+  	position: fixed;
+  }
+  #prevEvent {
+  	background: white;
+  	width: 580px;
+  	margin: 0 auto;
+  	padding: 15px;
+
+  	  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  	
+  }
+
+  .field-title,
   #prevTitle {
   	font-size: 40px !important;
   	font-weight: bold;
@@ -29,15 +114,46 @@ code: |-
   .material-icons-outlined {
   	float: left;
   }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
 media: all
-preprocess: true
-conditions:
-  node_type:
-    id: node_type
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      event: event
+preprocess: false
+conditions: {  }
 contexts: {  }
-conditions_require_all: true
+conditions_require_all: false

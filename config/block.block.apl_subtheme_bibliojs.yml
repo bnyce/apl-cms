@@ -1,0 +1,25 @@
+uuid: 0bbfe11c-cdcf-4c07-a52a-de4ce49af4fb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a294ff8c-fde4-48de-b966-51a266701306'
+  module:
+    - block_content
+  theme:
+    - apl_subtheme
+id: apl_subtheme_bibliojs
+theme: apl_subtheme
+region: header
+weight: -4
+provider: null
+plugin: 'block_content:a294ff8c-fde4-48de-b966-51a266701306'
+settings:
+  id: 'block_content:a294ff8c-fde4-48de-b966-51a266701306'
+  label: 'Biblio JS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

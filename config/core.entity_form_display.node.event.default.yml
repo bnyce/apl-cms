@@ -50,16 +50,13 @@ dependencies:
     - field.field.node.event.field_skip_apl_tv
     - field.field.node.event.field_slr_time_end
     - field.field.node.event.field_slr_time_start
-    - field.field.node.event.field_sponsor
     - field.field.node.event.field_sponsors
     - field.field.node.event.field_subtitle
     - field.field.node.event.field_title40
     - field.field.node.event.layout_builder__layout
     - image.style.thumbnail
     - node.type.event
-    - workflows.workflow.e
   module:
-    - content_moderation
     - datetime
     - datetimehideseconds
     - field_group
@@ -302,14 +299,6 @@ content:
     third_party_settings:
       datetimehideseconds:
         hide: true
-  field_sponsor:
-    type: text_textarea
-    weight: 21
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_sponsors:
     type: entity_reference_autocomplete
     weight: 31
@@ -327,12 +316,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  moderation_state:
-    type: moderation_state_default
-    weight: 100
-    region: content
-    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -429,3 +412,4 @@ hidden:
   field_reflected: true
   field_title40: true
   layout_builder__layout: true
+  moderation_state: true

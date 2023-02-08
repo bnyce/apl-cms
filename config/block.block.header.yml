@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:basic:c192d925-060a-4c14-8276-b6cbbf193318'
   module:
     - block_content
+    - system
   theme:
     - claro2
 id: header
 theme: claro2
 region: header
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:c192d925-060a-4c14-8276-b6cbbf193318'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'

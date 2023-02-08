@@ -51,7 +51,6 @@ dependencies:
     - field.field.node.event.field_skip_apl_tv
     - field.field.node.event.field_slr_time_end
     - field.field.node.event.field_slr_time_start
-    - field.field.node.event.field_sponsor
     - field.field.node.event.field_sponsors
     - field.field.node.event.field_subtitle
     - field.field.node.event.field_title40
@@ -169,7 +168,6 @@ hidden:
   field_skip_apl_tv: true
   field_slr_time_end: true
   field_slr_time_start: true
-  field_sponsor: true
   field_sponsors: true
   field_subtitle: true
   field_title40: true

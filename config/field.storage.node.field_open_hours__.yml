@@ -1,0 +1,33 @@
+uuid: b4bd7057-983c-40d4-8b74-b644746cb8f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - office_hours
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_open_hours__
+field_name: field_open_hours__
+entity_type: node
+type: office_hours
+settings:
+  time_format: G
+  element_type: office_hours_datelist
+  increment: 60
+  required_start: false
+  limit_start: ''
+  required_end: false
+  limit_end: ''
+  comment: 0
+  valhrs: false
+  cardinality_per_day: 1
+module: office_hours
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 2da15839-5efa-448b-ab8b-e84324601e1b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.primary-menu
+  module:
+    - system
+  theme:
+    - apl_subtheme
+id: apl_subtheme_primarymenu
+theme: apl_subtheme
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:primary-menu'
+settings:
+  id: 'system_menu_block:primary-menu'
+  label: 'Primary Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -8,9 +8,12 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  calendar: 0
+  calendar_datetime: 0
   ckeditor: 0
   comment: 0
   config: 0
+  config_perms: 0
   contact: 0
   content_moderation: 0
   contextual: 0
@@ -31,6 +34,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  fullcalendar_view: 0
   help: 0
   history: 0
   image: 0
@@ -48,6 +52,7 @@ module:
   migrate_audience2016: 0
   migrate_blogs: 0
   migrate_booklist_cats: 0
+  migrate_channels: 0
   migrate_event_tags: 0
   migrate_events: 0
   migrate_file: 0
@@ -60,9 +65,11 @@ module:
   migrate_priorities: 0
   migrate_remote_locations: 0
   migrate_rooms: 0
+  migrate_slrs: 0
   migrate_sponsors: 0
   mysql: 0
   node: 0
+  office_hours: 0
   options: 0
   page_cache: 0
   path: 0
@@ -78,20 +85,37 @@ module:
   tamper: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   user: 0
   views_autocomplete_filters: 0
   views_conditional: 0
   views_data_export: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
+  views_templates: 0
   views_ui: 0
   webform: 0
+  webform_demo_event_registration: 0
+  webform_example_composite: 0
+  webform_example_element: 0
+  webform_example_element_properties: 0
+  webform_example_handler: 0
+  webform_example_variant: 0
+  webform_examples: 0
+  webform_node: 0
+  webform_options_custom: 0
+  webform_options_limit: 0
+  webform_scheduled_email: 0
+  webform_share: 0
   webform_submission_export_import: 0
+  webform_templates: 0
   webform_ui: 0
   webform_views: 0
   workflows: 0
+  pathauto: 1
   views: 10
   standard: 1000
 theme:
@@ -99,4 +123,8 @@ theme:
   claro: 0
   uswds_base: 0
   claro2: 0
+  stable: 0
+  classy: 0
+  uswds: 0
+  apl_subtheme: 0
 profile: standard

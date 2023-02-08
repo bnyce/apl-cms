@@ -1,0 +1,22 @@
+uuid: fd650833-f56d-49ac-a988-38e665bc4981
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - apl_subtheme
+_core:
+  default_config_hash: kZYm0IFDqdGZFVnT4IcGM4VknJc3u4SBbsI71Gz8qFM
+id: apl_subtheme_help
+theme: apl_subtheme
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

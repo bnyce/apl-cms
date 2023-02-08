@@ -41,7 +41,7 @@
 # `ddev exec terminus site:list` will show available sites
 
 environment_variables:
-  project: apl-cms.live
+  project: apl-cms.dev
 
 auth_command:
   command: |

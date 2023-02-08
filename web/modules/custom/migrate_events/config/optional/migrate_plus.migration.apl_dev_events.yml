@@ -31,6 +31,9 @@ source:
       name: path
       selector: path
     -
+      name: event_category
+      selector: event_category
+    -
       name: field__this_event_main_image
       selector: field__this_event_main_image
     -
@@ -115,6 +118,8 @@ process:
     -
       plugin: format_date
       source: field_slr_time_start
+      from_timezone: 'America/Chicago'
+      to_timezone: 'UTC'
       from_format: 'U'
       to_format: 'Y-m-d\TH:i:s'
   field_show_full_description: field_show_full_description
@@ -125,13 +130,20 @@ process:
       method: process
       source: field_central_event_location  
   field_community_services_outreac: field_community_services_outreac
-  field_slr_time_end: 
+  field_slr_time_end:
     -
       plugin: format_date
       source: field_slr_time_end
+      from_timezone: 'America/Chicago'
+      to_timezone: 'UTC'
       from_format: 'U'
-      to_format: 'Y-m-d\TH:i:s' 
+      to_format: 'Y-m-d\TH:i:s'
   body: body
+  field_event_category_tags_:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: event_category 
   field_event_tag:
     -
       plugin: skip_on_empty

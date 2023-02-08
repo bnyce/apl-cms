@@ -1,0 +1,25 @@
+uuid: f03cbe79-58d9-41e2-9b3d-88b0cc211065
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - apl_subtheme
+id: apl_subtheme_topmenu
+theme: apl_subtheme
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Top Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

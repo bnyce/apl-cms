@@ -8,8 +8,8 @@ _core:
   default_config_hash: WvhJomAnIQT0keg1Yz2xbxmqzqT4vGCfSbSK2M6XQLs
 id: claro2_local_actions
 theme: claro2
-region: header
-weight: -10
+region: content
+weight: -11
 provider: null
 plugin: local_actions_block
 settings:

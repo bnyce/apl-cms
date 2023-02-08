@@ -1,0 +1,20 @@
+uuid: 30cb11d0-1fbc-42aa-9d4e-b1669670770d
+langcode: en
+status: false
+dependencies:
+  theme:
+    - apl_subtheme
+_core:
+  default_config_hash: nCwPdh9v96oDlivWz71bLHUdUjXmXNGzCtZZg3hxmco
+id: apl_subtheme_page_title
+theme: apl_subtheme
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

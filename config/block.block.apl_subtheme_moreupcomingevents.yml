@@ -1,0 +1,30 @@
+uuid: 0d9f04dd-09d4-4244-b2bc-aab949ce2956
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f45654ed-7b00-4d94-94b7-877732cdcd38'
+  module:
+    - block_content
+    - system
+  theme:
+    - apl_subtheme
+id: apl_subtheme_moreupcomingevents
+theme: apl_subtheme
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
+settings:
+  id: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
+  label: 'More upcoming events'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

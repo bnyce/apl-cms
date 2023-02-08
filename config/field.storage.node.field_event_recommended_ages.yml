@@ -36,6 +36,9 @@ settings:
       value: youth7
       label: 'Recommended for ages 9-12'
     -
+      value: youth10
+      label: 'Recommended for ages 10 and up'
+    -
       value: youth8
       label: 'Recommended for ages 13-18'
     -
@@ -43,7 +46,7 @@ settings:
       label: 'Teens 13-18 only'
     -
       value: adult
-      label: 'Adults only'
+      label: 'Recommended for ages 18 and up'
   allowed_values_function: ''
 module: options
 locked: false

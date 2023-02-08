@@ -11,7 +11,7 @@ dependencies:
 id: claro2_primarymenu
 theme: claro2
 region: header
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:primary-menu'
 settings:

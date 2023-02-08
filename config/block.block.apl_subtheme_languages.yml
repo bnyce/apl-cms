@@ -1,0 +1,25 @@
+uuid: e2d48246-4861-4044-80d4-140d0c6b0f6c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.languages
+  module:
+    - system
+  theme:
+    - apl_subtheme
+id: apl_subtheme_languages
+theme: apl_subtheme
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:languages'
+settings:
+  id: 'system_menu_block:languages'
+  label: Languages
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 05ccc1d5-9965-4811-8232-d3ea35684577
+langcode: en
+status: true
+dependencies: {  }
+id: event_2023
+label: 'Event 2023'
+code: |-
+  .node__content {
+  	max-width: 960px;
+  	margin: 0 auto;
+  }
+  .region-content .layout--onecol {
+  	text-align: left !important;
+  }
+  .apl-events {
+  	display: block !important;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

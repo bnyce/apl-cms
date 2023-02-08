@@ -1,0 +1,23 @@
+uuid: 65fbd3ff-b6d2-4a33-829d-7e0f7e4ede6b
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - uswds
+_core:
+  default_config_hash: SjoIAPvh6OkIKgt0jgj0oi1-ts4ROjCra7RCPtqq9dg
+id: uswds_search_form_wide
+theme: uswds
+region: secondary_menu
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

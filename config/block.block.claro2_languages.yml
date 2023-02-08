@@ -11,7 +11,7 @@ dependencies:
 id: claro2_languages
 theme: claro2
 region: header
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:languages'
 settings:

@@ -11,7 +11,7 @@ _core:
 id: claro2_help
 theme: claro2
 region: help
-weight: -11
+weight: -6
 provider: null
 plugin: help_block
 settings:
