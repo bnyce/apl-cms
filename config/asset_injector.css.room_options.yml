@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: eFxvpuesY8jEaEwlePAVocQbKPko74bUdMxSQQCi7sE
 id: room_options
 label: 'Room Options'
 code: |-
@@ -118,12 +116,12 @@ code: |-
   	clear: left;
   	padding-left: 5px;
   }
-conditions_require_all: true
+media: all
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/central/slr/options\r\n/slr/request\r\n/webform/shared_learning_room_reservation/submissions/*/edit"
 contexts: {  }
-media: all
-preprocess: false
+conditions_require_all: true

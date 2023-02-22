@@ -1,0 +1,18 @@
+uuid: 639ea965-d7d1-406a-a9c0-32ddf7bb0da6
+langcode: en
+status: true
+dependencies: {  }
+id: std
+label: std
+code: |-
+  /* Reset rule */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+media: all
+preprocess: false
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

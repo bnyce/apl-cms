@@ -1,0 +1,22 @@
+uuid: fbd32a2d-6a61-4829-8bf2-e55c9da6caaf
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - apl
+_core:
+  default_config_hash: 11ak2kPe0MiVtd3BU2NtQar0hd5ZRal48f7A6fnAMZc
+id: apl_breadcrumbs
+theme: apl
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

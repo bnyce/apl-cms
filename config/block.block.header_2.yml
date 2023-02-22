@@ -1,0 +1,25 @@
+uuid: 66431378-3c06-4e73-b3ec-1f71d5824b47
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c192d925-060a-4c14-8276-b6cbbf193318'
+  module:
+    - block_content
+  theme:
+    - uswds
+id: header_2
+theme: uswds
+region: header_top
+weight: -7
+provider: null
+plugin: 'block_content:c192d925-060a-4c14-8276-b6cbbf193318'
+settings:
+  id: 'block_content:c192d925-060a-4c14-8276-b6cbbf193318'
+  label: Header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -2,8 +2,6 @@ uuid: 98d9c5cf-0e58-4261-9b0a-6849cb60e3fc
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: Cm2vGPitlpkkG476CM_LL9nMiV9RSV-2aqPwUxltThA
 id: site_header
 label: header
 code: |-
@@ -252,8 +250,8 @@ code: |-
   	margin-top: 0;
   }
   }
-conditions_require_all: false
-conditions: {  }
-contexts: {  }
 media: all
 preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: false

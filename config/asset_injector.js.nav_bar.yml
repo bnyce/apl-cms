@@ -4,18 +4,11 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: dNGV0hFL_ZTfp9y-s0w84Twa1DEvfbibyGko38x9jt4
 id: nav_bar
 label: 'Nav bar'
 code: |-
   (function($, jQuery) {
     $(document).ready(function() {
-    	
-    console.log('we out here');
-    $('#extended-search-field-small').attr('placeholder', 'Search Title, Event...');
-    $('.usa-search__submit-icon').attr('src', '/themes/custom/apl/assets/img/search.png');
-    
     
     
   $( '#apl-we-recommend' ).click(function(e) {

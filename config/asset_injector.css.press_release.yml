@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: G-9gM2SRXazgl-6sduSAMc3QgjZp3lTn1BtHJ5IrcY0
 id: press_release
 label: 'Press Release'
 code: |-
@@ -21,12 +19,12 @@ code: |-
   	float: right;
   	margin-left: 20px;
   }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: true
     pages: '/apltv/*'
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

@@ -2,8 +2,6 @@ uuid: 9ffa23cd-d8d2-4eff-8d11-d91d40e54666
 langcode: eng
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: MjgZCc9U1Rg06Pn0Han2lTu3WdVKqqtJZHR28zyO3nc
 id: navigation_bar
 label: 'Navigation Bar'
 code: |-
@@ -35,8 +33,8 @@ code: |-
   body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   	margin-left: 0 !important;
   }
-conditions_require_all: true
-conditions: {  }
-contexts: {  }
 media: all
 preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

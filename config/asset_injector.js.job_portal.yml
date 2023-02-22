@@ -1,0 +1,33 @@
+uuid: 6e3212e2-6591-4113-a907-dab37d3eb0af
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: job_portal
+label: 'Job Portal'
+code: |-
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+
+
+  $('h2').click(function() {
+      $( this ).toggleClass('active');
+  });
+
+
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/jobportal\r\n/portaldeempleo\r\n/es/portaldeempleo\r\n/community-resource-hub"
+contexts: {  }
+conditions_require_all: true

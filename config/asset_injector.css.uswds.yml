@@ -2,8 +2,6 @@ uuid: cb035b86-399b-412b-b46a-29b93e95cd78
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: EQ2FDkxGWqlWO8al7bvdbnzw_3tUs8dc4TV5u79txQU
 id: uswds
 label: uswds
 code: |+
@@ -41,8 +39,8 @@ code: |+
     text-decoration: underline;
   }
 
-conditions_require_all: false
-conditions: {  }
-contexts: {  }
 media: all
 preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: false

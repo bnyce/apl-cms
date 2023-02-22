@@ -1,7 +1,9 @@
 uuid: df43e9b7-af78-4019-b7a8-d259f42bf051
 langcode: eng
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - apl_webform
 weight: 0
 open: null
 close: null
@@ -128,6 +130,9 @@ elements: |-
       5: Denied
     '#default_value': '1'
     '#access_create_roles': {  }
+  phone:
+    '#type': textfield
+    '#title': phone
 css: "#webform-submission-shared-learning-room-reservation-delete-form {\r\n\tcolor: transparent;\r\n}\r\n.item-list {\r\n\theight: 0;\r\n}\r\n"
 javascript: ''
 settings:
@@ -485,10 +490,10 @@ handlers:
       theme_name: ''
       parameters: {  }
       debug: false
-  check_slr_availability_if_not_slr_admin_:
-    id: slr_availability_validator
-    handler_id: check_slr_availability_if_not_slr_admin_
-    label: 'Check SLR availability (if not SLR Admin)'
+  check_if_reservation_overlaps:
+    id: apl_webform_custom_validator
+    handler_id: check_if_reservation_overlaps
+    label: 'Check if reservation overlaps'
     notes: ''
     status: true
     conditions: {  }

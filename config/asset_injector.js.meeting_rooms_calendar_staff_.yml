@@ -46,7 +46,7 @@ code: |2-
                       var room_name = 'Little Walnut Creek Branch - Capacity: 50';
                       break;
                   case '787':
-                      var room_name = 'Manchaca Branch - Capacity: 75';
+                      var room_name = 'Menchaca Branch - Capacity: 75';
                       break;
                   case '788':
                       var room_name = 'Milwood Branch - Capacity: 50';

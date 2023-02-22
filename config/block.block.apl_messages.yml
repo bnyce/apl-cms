@@ -1,0 +1,22 @@
+uuid: f00f1121-335e-440c-86b7-71afa49c3ab0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apl
+_core:
+  default_config_hash: zOLBBuDnDP6mfiqiclOsIf1f-8JpokXvqZlTIC0qT7M
+id: apl_messages
+theme: apl
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

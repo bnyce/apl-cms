@@ -13,9 +13,9 @@ use Drupal\Core\StringTranslation\StringTranslationTrait;
  *
  * @WebformHandler(
  *   id = "apl_webform_custom_validator",
- *   label = @Translation("Alter form to validate it"),
+ *   label = @Translation("Check if reservation overlaps"),
  *   category = @Translation("Settings"),
- *   description = @Translation("Form alter to validate it."),
+ *   description = @Translation("Return an error if reservation overlaps."),
  *   cardinality = \Drupal\webform\Plugin\WebformHandlerInterface::CARDINALITY_SINGLE,
  *   results = \Drupal\webform\Plugin\WebformHandlerInterface::RESULTS_PROCESSED,
  *   submission = \Drupal\webform\Plugin\WebformHandlerInterface::SUBMISSION_OPTIONAL,
@@ -38,7 +38,6 @@ class MyWebformHandler extends WebformHandlerBase {
    * Validate the reservation does not overlap an existing reservation.
    */
   private function validateTime(FormStateInterface $formState) {
-    $value = !empty($formState->getValue('phone')) ? Html::escape($formState->getValue('phone')) : NULL;
     $room = !empty($formState->getValue('room')) ? Html::escape($formState->getValue('room')) : NULL;
 
     $mTimeStart = !empty($formState->getValue('time_start')) ? Html::escape($formState->getValue('time_start')) : NULL;

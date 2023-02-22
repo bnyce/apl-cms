@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - webform
-_core:
-  default_config_hash: N-regKsSxgKoMZqYJRNweU-rII0lovgPymu1XMsnW0Q
 id: flex_grid_2021
 label: flex-grid-2021
 code: |+
@@ -139,7 +137,8 @@ code: |+
 
 
 
-conditions_require_all: false
+media: all
+preprocess: true
 conditions:
   'entity_bundle:webform_submission':
     id: 'entity_bundle:webform_submission'
@@ -149,5 +148,4 @@ conditions:
     bundles:
       event_services_survey: event_services_survey
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: false

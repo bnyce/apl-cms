@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: PGhGZmicJClGc0seDV6ijPGJxaEUMtud3sOlhdKxjEU
 id: lists_and_tables
 label: 'lists and tables'
 code: |-
@@ -20,12 +18,12 @@ code: |-
   .bef-exposed-form .form--inline > .form-item {
   	float: none;
   }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: /meeting-rooms/list
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

@@ -4,14 +4,12 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: Z_mZkPdhxh8aoGXx4nNytx4zv3Otc8AP3_DXNXU3KnA
 id: meeting_room_reservation
 label: 'Meeting Room Reservation'
 code: |-
   (function($, jQuery) {
     $(document).ready(function() {
-      console.log('bb1'); // which version
+      console.log('bb3'); // which version
       // if back button, reload the page
       if (performance.navigation.type == 2) {
         location.reload(true);
@@ -247,9 +245,9 @@ code: |-
       var existingStarts_room = [];
       var existingStarts_start = [];
       var existingStarts_end = [];
-      var disabledDays = ['2022-11-11', '2022-11-24', '2022-11-25', '2022-12-23', '2022-12-24', '2022-12-25', '2022-12-26'];
-      var max_date = dayjs().add(28, 'days');
-      var min_date = dayjs();
+      var disabledDays = ['2023-01-16','2023-02-10','2023-02-19','2023-02-20','2023-04-09','2023-05-12','2023-05-28','2023-05-29','2023-06-18','2023-06-19','2023-07-04','2023-08-11','2023-09-03','2023-09-04','2023-10-20','2023-11-10','2023-11-11','2023-11-23','2023-11-24','2023-12-24','2023-12-25','2023-12-26'];
+      var max_date = dayjs().add(29, 'days').hour(7);
+      var min_date = dayjs().add(3, 'days').hour(7);
       var which_date = $('#edit-date');
       var how_many = $('#edit-location').val();
       var location2 = $('#edit-location').val();
@@ -467,10 +465,13 @@ code: |-
               rooms_names = ['Austin History Center'];
               rooms_capac = [62];
               break;
+
             case "183":
+              /*
               rooms_array = [780];
               rooms_names = ['Austin History Center'];
               rooms_capac = [62];
+              */
               break;
             case "194":
               //  rooms_array = [ 781, 782, 848 ];
@@ -502,7 +503,7 @@ code: |-
               break;
             case "198":
               rooms_array = [787];
-              rooms_names = ['Manchaca Branch'];
+              rooms_names = ['Menchaca Branch'];
               rooms_capac = [75];
               break;
             case "199":
@@ -611,7 +612,7 @@ code: |-
           }
           var ch_date = input_date;
           var messages = [];
-          //  Austin History Center 780, Manchaca Road 787, Little Walnut 786, Ruiz 793,795,794 and Spicewood Springs 799
+          //  Austin History Center 780, Menchaca Road 787, Little Walnut 786, Ruiz 793,795,794 and Spicewood Springs 799
           //  open 12-5 Sundays, beginning Sep11
           const arr = ['780', '787', '786', '793', '795', '794', '799'];
           const notIncludes = !arr.includes(room_id);
@@ -621,7 +622,7 @@ code: |-
             if ((room_id == '780' || room_id == '7') && (parseInt(ch_date.format('d')) == '1')) { //closed on Monday if AHC 
               messages = ['This location is closed on Monday.'];
             } else {
-              //  Austin History Center 780, Manchaca Road 787, Little Walnut 786, Ruiz 793,795,794 and Spicewood Springs 799
+              //  Austin History Center 780, Menchaca Road 787, Little Walnut 786, Ruiz 793,795,794 and Spicewood Springs 799
               //  open 12-5 Sundays
               if (ch_date.format('d') == '0' && (room_id == '780' || room_id == '787' || room_id == '786' || room_id == '793' || room_id == '795' || room_id == '794' || room_id == '799')) {
                 opening_hour = 12; // opens at noon 
@@ -1000,8 +1001,7 @@ code: |-
           var the_date1 = dayjs(which_date.val());
           var ppwf_format = 'YYYY-MM-DD';
           var the_date = the_date1.format(ppwf_format);
-          if (the_date == '2022-07-04' || the_date == '2022-09-04' || the_date == '2022-09-05' || the_date == '2022-11-11' || the_date == '2022-11-24' || the_date == '2022-11-25' ||
-            the_date == '2022-12-23' || the_date == '2022-12-24' || the_date == '2022-12-25' || the_date == '2022-12-26') {
+          if (the_date == '2023-01-16' || the_date == '2023-02-10' || the_date == '2023-02-19' || the_date == '2023-02-20' || the_date == '2023-04-09' || the_date == '2023-05-12' || the_date == '2023-05-28' || the_date == '2023-05-29' || the_date == '2023-06-18' || the_date == '2023-06-19' || the_date == '2023-07-04' || the_date == '2023-08-11' || the_date == '2023-09-03' || the_date == '2023-09-04' || the_date == '2023-10-20' || the_date == '2023-11-10' || the_date == '2023-11-11' || the_date == '2023-11-23' || the_date == '2023-11-24' || the_date == '2023-12-24' || the_date == '2023-12-25' || the_date == '2023-12-26') {
             alert("We're closed on holidays. Please select another date.");
             which_date.val('');
           } else {
@@ -1074,15 +1074,15 @@ code: |-
       });
     });
   })(jQuery);
-conditions_require_all: true
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/admin/structure/webform/manage/meeting_room_reservation_request/submission/*/edit\r\n/meeting-rooms/request\r\n/admin/structure/webform/manage/meeting_room_reservation_request/submission/*/duplicate"
 contexts: {  }
-header: false
-preprocess: false
-jquery: true
-noscript: ''
-noscriptRegion: {  }
+conditions_require_all: true

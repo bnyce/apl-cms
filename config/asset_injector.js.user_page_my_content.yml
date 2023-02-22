@@ -1,0 +1,37 @@
+uuid: e127a918-b521-4cc5-9479-51f15d3bae86
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_page_my_content
+label: 'User Page - My Content'
+code: |+
+  (function ($,jQuery) {
+    $(document).ready(function(){
+      
+  $('#button-add-content').click(function(event) {
+    event.preventDefault();
+    $('.menu--add-content').toggleClass('active');
+  });
+
+  $('.toolbar-menu .account > a:nth-child(1)').html('My content');
+
+  });
+  })(jQuery);
+
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: true
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+contexts: {  }
+conditions_require_all: true

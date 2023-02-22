@@ -2,8 +2,6 @@ uuid: 140eded8-3352-4509-95a0-3f0857b6d89c
 langcode: eng
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: xDOjIlVZnTtITjP2Co2yipSYS3UUhYvB-VZMdmjNUPU
 id: menu
 label: menu
 code: |-
@@ -19,8 +17,8 @@ code: |-
   .page-content.clearfix {
   	margin-top: 10px;
   }
-conditions_require_all: true
-conditions: {  }
-contexts: {  }
 media: all
 preprocess: false
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

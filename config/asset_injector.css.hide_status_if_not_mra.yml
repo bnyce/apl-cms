@@ -4,15 +4,14 @@ status: true
 dependencies:
   module:
     - user
-_core:
-  default_config_hash: qhb5VmAlWzl6GylWRucXlNUzKZSM-40Ug2Ybo4DV7FA
 id: hide_status_if_not_mra
 label: 'hide status if not MRA'
 code: |-
   #edit-status--wrapper {
   	display: none;
   }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   user_role:
     id: user_role
@@ -22,5 +21,4 @@ conditions:
     roles:
       meeting_rooms_administrator: meeting_rooms_administrator
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

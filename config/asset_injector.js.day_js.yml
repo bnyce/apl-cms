@@ -6,8 +6,6 @@ dependencies:
     - node
     - system
     - webform
-_core:
-  default_config_hash: 54p8SujhGB2M16JkA3cxtCD5bOSAM8ZnPXCzjcgdmTE
 id: day_js
 label: day.js
 code: |-
@@ -29,13 +27,16 @@ conditions:
     context_mapping:
       webform_submission: '@webform.webform_submission_route_context:webform_submission'
     bundles:
+      shared_learning_room_reservation: shared_learning_room_reservation
       meeting_room_reservation_request: meeting_room_reservation_request
-  node_type:
-    id: node_type
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      event: event
+      passport_reservation: passport_reservation
+      reflection: reflection
+      slr: slr
 contexts: {  }
 conditions_require_all: false

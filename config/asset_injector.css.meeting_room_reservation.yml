@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: '-Wwj7vU7IWUvKc71uQYesNd_Ukgl3ETlWY87GTQqMGo'
 id: meeting_room_reservation
 label: 'Meeting Room Reservation'
 code: |-
@@ -22,7 +20,8 @@ code: |-
   .content-header.clearfix {
   	padding: 0;
   }
-conditions_require_all: false
+media: all
+preprocess: true
 conditions:
   node_type:
     id: node_type
@@ -32,5 +31,4 @@ conditions:
     bundles:
       room_reservation: room_reservation
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: false

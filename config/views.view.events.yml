@@ -2351,7 +2351,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<i class="material-icons-outlined">place</i><div>{{ field_event_loc }}{{ field_street_address }}</div>'
+            text: '<span class="icon_svg"><img class="icon_locations" src="/themes/custom/apl/assets/img/locations.svg" /></span><span class="event_location">{{ field_event_loc }} - {{ field_street_address }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -2479,7 +2479,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<div class="field-remote-loc"><i class="material-icons-outlined">place</i><div>{{ name_1 }}{{ field_rl_street_address }}</div></div>'
+            text: '<span class="icon_svg"><img class="icon_locations" src="/themes/custom/apl/assets/img/locations.svg" /></span><span class="event_location">{{ name_1 }}<br>{{ field_rl_street_address }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -2512,7 +2512,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '{{ field_event_loc }}'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -3614,69 +3614,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_subtitle:
-          id: field_subtitle
-          table: node__field_subtitle
-          field: field_subtitle
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         field_omit_category_description:
           id: field_omit_category_description
           table: node__field_omit_category_description
@@ -4055,6 +3992,131 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_item_list_1:
+          id: field_item_list_1
+          table: node__field_item_list
+          field: field_item_list
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: "{% set termid = field_item_list_1__target_id|render|striptags|spaceless %}\r\n{{ drupal_view('item_carousels_2021p', 'block_5', termid) }}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_id
+          settings: {  }
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ''
+          field_api_classes: false
+        field_subtitle:
+          id: field_subtitle
+          table: node__field_subtitle
+          field: field_subtitle
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: '{{ field_item_list_1 }}'
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         views_conditional_field_2:
           id: views_conditional_field_2
           table: views_conditional
@@ -4107,9 +4169,9 @@ display:
           if: field_slr_time_end
           condition: eq
           equalto: '{{ field_slr_time_start }}'
-          then: "<i class=\"material-icons-outlined\">schedule</i><div>{{ field_slr_time_start_1 }}</div>\r\n"
+          then: "<span class=\"icon_svg\"><img class=\"icon_alarm\" src=\"/themes/custom/apl/assets/img/alarm_clock.svg\" /></span><span class=\"event_time\">{{ field_slr_time_start_1 }}</span>\r\n"
           then_translate: 1
-          or: '<i class="material-icons-outlined">schedule</i><div>{{ field_slr_time_start_1 }} to {{ field_slr_time_end_1 }}</div>'
+          or: '<span class="icon_svg"><img class="icon_alarm" src="/themes/custom/apl/assets/img/alarm_clock.svg" /></span><span class="event_time">{{ field_slr_time_start_1 }} to {{ field_slr_time_end_1 }}</span>'
           or_translate: 1
           strip_tags: 0
         nid:
@@ -4126,7 +4188,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ field__this_event_main_image }}\r\n<div class=\"apl-event\">\r\n\t<div class=\"field-title\">{{ title }}</div>{{ field_subtitle }}{{ field_event_summary }}{{ views_conditional_field_1 }}{{ field_event_recommended_ages }}\r\n\t<div class=\"field-event-time\">{{ views_conditional_field_2 }}</div>\r\n\t<div class=\"field-event-loc\">{{ field_event_loc }}</div>{{ name_1 }}{{ field_link_for_registration }} \r\n        <div class=\"apl-free\">Free and open to the public | Gratis y abierto al público</div>\r\n       <div class=\"apl-event-tags\">Tags: {{ field_cat_ia }} {{ name }} {{ field_event_tag_1 }} {{ field_item_list }} {{ field_link }} \r\n</div>"
+            text: "{{ field__this_event_main_image }}\r\n<div class=\"apl-event\">\r\n\t<div class=\"field-title\">{{ title }}</div>{{ field_subtitle }}{{ field_event_summary }}{{ views_conditional_field_1 }}{{ field_event_recommended_ages }}\r\n\t<div class=\"event-time\">{{ views_conditional_field_2 }}</div>\r\n\t<div class=\"event-loc\">{{ name_1 }}</div>{{ field_link_for_registration }} \r\n        <div class=\"apl-free\">Free and open to the public | Gratis y abierto al público</div>\r\n       <div class=\"apl-event-tags\">Tags: {{ field_cat_ia }} {{ name }} {{ field_event_tag_1 }} {{ field_item_list }} {{ field_link }} \r\n</div>"
             make_link: false
             path: ''
             absolute: false

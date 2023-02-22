@@ -1,0 +1,23 @@
+uuid: e99e31cb-753d-458b-b9d0-631332397c76
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: body
+label: body
+code: |-
+  .layout--onecol .field--name-body {
+  	text-align: left !important;
+  	width: 580px;
+  	margin: 0 auto;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/mylibrarycard\r\n/mitarjeta"
+contexts: {  }
+conditions_require_all: true

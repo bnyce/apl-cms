@@ -15,6 +15,19 @@ code: |-
   .apl-events {
   	display: block !important;
   }
+  .icon_con {
+  	width: 22px;
+  	display: block;
+  	text-align: center;
+  	margin-right: 5px;
+  	float: left;
+  }
+  .apl-event .apl-carousel.view-display-id-block_5 {
+  	padding: 0;
+  	margin: 1em 0;
+  	font-weight: bold;
+  	background: none;
+  }
 media: all
 preprocess: true
 conditions: {  }

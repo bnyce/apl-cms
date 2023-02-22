@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: L3PA1C9Ct_FSmCo2YPpU-sj9S5mUkR8xMOd5tRkJrTo
 id: mr_webform_calendar
 label: 'MR Webform Calendar'
 code: |+
@@ -205,12 +203,12 @@ code: |+
       
   }
 
-conditions_require_all: true
+media: all
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/meeting-rooms/calendar\r\n/meeting-rooms/calendar/staff"
 contexts: {  }
-media: all
-preprocess: false
+conditions_require_all: true

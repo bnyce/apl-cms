@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: vH2a9h7vzBR_kZHwZujVC25vna_bXtNW1y2EWpKxsVE
 id: meeting_rooms_policies
 label: 'Meeting Rooms Policies'
 code: |-
@@ -13,12 +11,12 @@ code: |-
   	float: left;
   	margin: 0 20px 20px 0;
   }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: /meeting-rooms/policies
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

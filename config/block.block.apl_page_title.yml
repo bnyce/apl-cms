@@ -1,0 +1,26 @@
+uuid: a5604fd0-e8c2-4041-b8df-3d7d33997409
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apl
+_core:
+  default_config_hash: b03tnuEh4KrKN1-wqPdxtCFVmg6agVdquN-tL8uRIuw
+id: apl_page_title
+theme: apl
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /slr/request

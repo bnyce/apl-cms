@@ -5,8 +5,6 @@ dependencies:
   module:
     - system
     - webform
-_core:
-  default_config_hash: HSSp1p-ZatBcz-12dKl9dTip51qKH4e0NcJt06bJKr0
 id: fixer
 label: fixer
 code: |-
@@ -59,7 +57,8 @@ code: |-
   	margin: 0 auto;
   }
   }
-conditions_require_all: true
+media: all
+preprocess: true
 conditions:
   request_path:
     id: request_path
@@ -73,5 +72,4 @@ conditions:
     bundles:
       event_services_survey: event_services_survey
 contexts: {  }
-media: all
-preprocess: true
+conditions_require_all: true

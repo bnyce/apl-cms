@@ -1,0 +1,22 @@
+uuid: 437c5070-160a-4e62-a2bd-2d5686b2781f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: highlighted_fixer
+label: 'highlighted fixer'
+code: |-
+  .block.block-views.block-views-blockhighlighted-block-1 {
+  	background: white;
+  	margin-bottom: 20px;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+contexts: {  }
+conditions_require_all: true

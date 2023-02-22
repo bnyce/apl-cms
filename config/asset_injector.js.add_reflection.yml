@@ -1,0 +1,126 @@
+uuid: db4ef1b1-191b-4065-84b5-7d1006f09296
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: add_reflection
+label: 'Add Attendance Stat'
+code: |
+  (function ($,jQuery) {
+    $(document).ready(function(){
+
+  var url_string = window.location.href;
+  var url = new URL(url_string);
+
+
+
+
+      
+
+
+  $( "#edit-field-reflection-type" ).change(function() {
+    if($( "#edit-field-reflection-type" ).val() == "Event") {
+       $('#edit-field-event-category-tags-wrapper').css('display','block');
+    } else {
+       $('#edit-field-event-category-tags-wrapper').css('display','none');
+       $('#edit-field-event-category-tags-').val('_none');
+    }
+  });
+
+  var type = url.searchParams.get('type');
+  var type2 = $('#edit-field-reflection-type');
+
+
+
+
+  var ttitle = url.searchParams.get('title');
+  var ttitle2 = $('#edit-title-0-value');
+
+  var loc = url.searchParams.get('loc');
+  var loc2 = $('#edit-field-branch-location');
+
+  var date23 = url.searchParams.get('date');
+  var date2 = $('#edit-field-reflection-date-and-time-0-value-date');
+
+  var time23 = url.searchParams.get('time');
+  var time2 = $('#edit-field-reflection-date-and-time-0-value-time');
+
+  var nid = url.searchParams.get('nid');
+  var nid2 = $('#edit-field-node-id-0-target-id');
+
+  var uuid = url.searchParams.get('uuid');
+
+  var priority = url.searchParams.get('priority');
+
+  var priority4515 = $('#edit-field-library-priority-4515');
+  var priority4514 = $('#edit-field-library-priority-4514');
+  var priority4517 = $('#edit-field-library-priority-4517');
+  var priority4512= $('#edit-field-library-priority-4512');
+  var priority4513 = $('#edit-field-library-priority-4513');
+
+  var attendance = url.searchParams.get('attendance');
+  var attendance2 = $('#edit-field-how-many-attended-0-value');
+
+  var cat = url.searchParams.get('cat');
+  var cat2 = $('#edit-field-event-category-tags-');
+
+  var aud = url.searchParams.get('aud');
+
+  var aud29 = $('#edit-field-target-audience-adult');
+  var aud32 = $('#edit-field-target-audience-children');
+  var aud31 = $('#edit-field-target-audience-teen');
+    
+  if(nid) {
+  	nid2.val(nid);
+  	type2.val('Event');
+  } 
+  if(cat) {
+  	cat2.val(cat);
+  } 
+  if(loc) {
+  	loc2.val(loc);
+  }  
+  if(ttitle) {
+  	ttitle2.val(ttitle);
+  } 
+  if(date23) {
+  	date2.val(date23);
+  }  
+  if(time23) {
+  	time2.val(time23);
+  } 
+    
+  if(priority) {
+  	if(priority == '4515') {priority4515.attr('checked','checked');}
+  	if(priority == '4514') {priority4514.attr('checked','checked');}
+  	if(priority == '4517') {priority4517.attr('checked','checked');}
+  	if(priority == '4512') {priority4512.attr('checked','checked');}
+  	if(priority == '4513') {priority4513.attr('checked','checked');}
+  }  
+
+   
+  if(aud) {
+  	if(aud == '29') {aud29.attr('checked','checked');} else
+  	if(aud == '32') {aud32.attr('checked','checked');} else
+  	if(aud == '31') {aud31.attr('checked','checked');};
+  }
+    
+    
+  });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      reflection: reflection
+contexts: {  }
+conditions_require_all: false

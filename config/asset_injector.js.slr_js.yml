@@ -4,14 +4,12 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: _ORpgLI4oCZ-iUWTWRYEWsiPDkc10ZTyBwJJvOJEtP8
 id: slr_js
 label: 'SLR JS'
 code: |-
   (function($, jQuery) {
   $(document).ready(function() {
-  console.log('hellenx23');
+  console.log('abcu2');
   if (performance.navigation.type == 2) {
     alert('reloading page..');
     location.reload(true);
@@ -388,7 +386,7 @@ code: |-
         var the_date1 = dayjs(which_date.val());
         var ppwf_format = 'YYYY-MM-DD';
         var the_date = the_date1.format(ppwf_format);
-        if ( the_date == '2022-04-17' || the_date == '2022-05-29' || the_date == '2022-05-30' || the_date == '2022-06-19' || the_date == '2022-06-20' || the_date == '2022-07-04' || the_date == '2022-09-04' || the_date == '2022-09-05' || the_date == '2022-11-11' || the_date == '2022-11-24' || the_date == '2022-11-25' || the_date == '2022-12-23' || the_date == '2022-12-24' || the_date == '2022-12-25' || the_date == '2022-12-26') {
+        if ( the_date == '2023-01-16' || the_date == '2023-02-10' || the_date == '2023-02-19' || the_date == '2023-02-20' || the_date == '2023-04-09' || the_date == '2023-05-12' || the_date == '2023-05-28' || the_date == '2023-05-29' || the_date == '2023-06-18' || the_date == '2023-06-19' || the_date == '2023-07-04' || the_date == '2023-08-11' || the_date == '2023-09-03' || the_date == '2023-09-04' || the_date == '2023-10-20' || the_date == '2023-11-10' || the_date == '2023-11-11' || the_date == '2023-11-23' || the_date == '2023-11-24' || the_date == '2023-12-24' || the_date == '2023-12-25' || the_date == '2023-12-26') {  
           alert("We're closed on holidays. Please select another date.");
           which_date.val('');
         } else {
@@ -511,7 +509,7 @@ code: |-
           e.handled = true;
           //var duration = $('#edit-duration').val();
            get_room(how_many1.val());
-          //	 $('.check_date.check').click(); 
+          //   $('.check_date.check').click(); 
           availStarts = [];
           submit_button.prop('disabled', true);
           // $('.pp_avail, .pp_more').css('opacity', '0');
@@ -555,7 +553,7 @@ code: |-
       time2.val($(this).attr('data-time2'));
       $('.pp_avail').css('opacity', '1');
     });
-    $('#edit-submit').click(function(e) {
+    $('#edit-submite').click(function(e) {
       e.preventDefault();
       var mini = dayjs(date1.val()).format('YYYY-MM-DD');
       var maxi = dayjs(date1.val()).add(1, 'day').format('YYYY-MM-DD');
@@ -646,15 +644,15 @@ code: |-
   });
   });
   })(jQuery);
-conditions_require_all: true
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/slr/request\r\n/webform/shared_learning_room_reservation/submissions/*/edit"
 contexts: {  }
-header: false
-preprocess: false
-jquery: true
-noscript: ''
-noscriptRegion: {  }
+conditions_require_all: true

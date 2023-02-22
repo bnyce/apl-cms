@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: lB8lYrp--T1t5rn_j0Z9iIXVXmu8xE6_si8plUlV25s
 id: meeting_rooms_webform
 label: 'Meeting Rooms webform'
 code: |-
@@ -14,6 +12,9 @@ code: |-
   	border-style: solid !important;
   	border-color: green !important;
   	display: inline-block !important;
+  }
+  option[value="183"] {
+  	display: none;
   }
   #edit-status--wrapper {
   	padding-bottom: 15px;
@@ -150,12 +151,12 @@ code: |-
   	border: 1px solid #0071bc;
   	width: 175px;
   }
-conditions_require_all: true
+media: all
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: "/admin/structure/webform/manage/meeting_room_reservation_request/submission/*\r\n/meeting-rooms/request"
 contexts: {  }
-media: all
-preprocess: false
+conditions_require_all: true

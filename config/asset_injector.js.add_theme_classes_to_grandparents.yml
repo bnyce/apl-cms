@@ -1,0 +1,58 @@
+uuid: 49413caf-4a7b-4196-a16c-b4162471fd96
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: add_theme_classes_to_grandparents
+label: 'add theme classes to grandparents'
+code: |+
+  (function($, jQuery) {
+    $(document).ready(function() {
+  	  
+  	  
+  $( ".apl-theme.Gray" ).parents('.apl-alert-row').addClass( "Gray" );	  
+  $( ".apl-theme.Blue" ).parents('.apl-alert-row').addClass( "Blue" );	  
+  $( ".apl-theme.Black" ).parents('.apl-alert-row').addClass( "Black" );	  
+  $( ".apl-theme.Green" ).parents('.apl-alert-row').addClass( "Green" );	  
+  $( ".apl-theme.Dark.Green" ).parents('.apl-alert-row').addClass( "Dark" );	  
+  $( ".apl-theme.Dark.Green" ).parents('.apl-alert-row').addClass( "Green" );	  
+  $( ".apl-theme.Lavender" ).parents('.apl-alert-row').addClass( "Lavender" );	  
+  $( ".apl-theme.Light.Blue" ).parents('.apl-alert-row').addClass( "Light" );	  
+  $( ".apl-theme.Light.Blue" ).parents('.apl-alert-row').addClass( "Blue" );	  
+  $( ".apl-theme.Orange" ).parents('.apl-alert-row').addClass( "Orange" );	  
+  $( ".apl-theme.Pink" ).parents('.apl-alert-row').addClass( "Pink" );	  
+  $( ".apl-theme.Purple" ).parents('.apl-alert-row').addClass( "Purple" );	  
+  $( ".apl-theme.Yellow" ).parents('.apl-alert-row').addClass( "Yellow" );	  
+  	  
+  	  
+  $( ".apl-theme.Gray" ).parents('.recommendation-slide').addClass( "Gray" );	  
+  $( ".apl-theme.Blue" ).parents('.recommendation-slide').addClass( "Blue" );	  
+  $( ".apl-theme.Black" ).parents('.recommendation-slide').addClass( "Black" );	  
+  $( ".apl-theme.Green" ).parents('.recommendation-slide').addClass( "Green" );	  
+  $( ".apl-theme.Dark.Green" ).parents('.recommendation-slide').addClass( "Dark" );	  
+  $( ".apl-theme.Dark.Green" ).parents('.recommendation-slide').addClass( "Green" );	  
+  $( ".apl-theme.Lavender" ).parents('.recommendation-slide').addClass( "Lavender" );	  
+  $( ".apl-theme.Light.Blue" ).parents('.recommendation-slide').addClass( "Light" );	  
+  $( ".apl-theme.Light.Blue" ).parents('.recommendation-slide').addClass( "Blue" );	  
+  $( ".apl-theme.Orange" ).parents('.recommendation-slide').addClass( "Orange" );	  
+  $( ".apl-theme.Pink" ).parents('.recommendation-slide').addClass( "Pink" );	  
+  $( ".apl-theme.Purple" ).parents('.recommendation-slide').addClass( "Purple" );	  
+  $( ".apl-theme.Yellow" ).parents('.recommendation-slide').addClass( "Yellow" );	  
+
+    });
+  })(jQuery);
+
+
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search-website\r\n/recommended/whats-hot\r\n<front>\r\n/virtual\r\n/virtual/*"
+contexts: {  }
+conditions_require_all: true

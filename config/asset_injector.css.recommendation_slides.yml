@@ -1,0 +1,36 @@
+uuid: 97d611c2-23b9-4577-9ac5-c2cb9b030c9a
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: recommendation_slides
+label: 'Recommendation Slides'
+code: |-
+  .apl-random {
+  	margin-bottom: 10px;
+  	padding: 15px 15px 10px;
+  }
+
+  .apl-web-recommendation-title {
+  	font-weight: bold;
+  }
+
+  .apl-recommended-web .view-content {
+  	display: flex;
+  	justify-content: space-between;
+  	margin-top: 10px;
+  }
+
+  .apl-recommended-item {
+  	width: 100px;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+contexts: {  }
+conditions_require_all: true

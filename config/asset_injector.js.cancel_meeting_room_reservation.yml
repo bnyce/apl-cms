@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - system
-_core:
-  default_config_hash: 4mi3BZhdsIglGXj2nY6r4HlrOb51yB6NvpUETQKKP8U
 id: cancel_meeting_room_reservation
 label: 'Cancel Meeting Room Reservation'
 code: |-
@@ -20,15 +18,15 @@ code: |-
   //$('#webform-submission-passport-appointment-request-delete-form').css('color','transparent');
    }); // end of ready
   })(jQuery); // end of jQuery
-conditions_require_all: true
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
 conditions:
   request_path:
     id: request_path
     negate: false
     pages: '/webform/meeting_room_reservation_request/submissions/*/delete'
 contexts: {  }
-header: false
-preprocess: false
-jquery: true
-noscript: ''
-noscriptRegion: {  }
+conditions_require_all: true

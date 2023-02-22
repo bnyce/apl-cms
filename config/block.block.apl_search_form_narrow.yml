@@ -1,0 +1,23 @@
+uuid: dc82142f-f8ac-498f-8d68-aeb2184bb601
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - apl
+_core:
+  default_config_hash: Xvp5l-QYs-lhvD13goR56dNFo6ZnrDbU0qKSiGpILdg
+id: apl_search_form_narrow
+theme: apl
+region: primary_menu
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
