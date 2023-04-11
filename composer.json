@@ -24,7 +24,6 @@
         "drupal/asset_injector": "^2.12",
         "drupal/migrate_file": "^2.1",
         "drupal/pathauto": "^1.11",
-        "drupal/uswds_base": "^3.0",
         "drupal/webform": "^6.1",
         "drupal/views_data_export": "^1.2",
         "drupal/webform_views": "^5.0",
@@ -50,7 +49,10 @@
         "drupal/calendar": "^1.0@alpha",
         "drupal/fullcalendar_view": "^5.1",
         "drupal/uswds": "^2.7",
-        "drupal/office_hours": "^1.7"
+        "drupal/office_hours": "^1.7",
+        "drupal/theme_switcher": "^1.2",
+        "drupal/calendar_view": "^2.0",
+        "drupal/feeds_ex": "^1.0@beta"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"

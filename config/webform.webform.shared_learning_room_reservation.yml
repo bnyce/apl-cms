@@ -130,9 +130,6 @@ elements: |-
       5: Denied
     '#default_value': '1'
     '#access_create_roles': {  }
-  phone:
-    '#type': textfield
-    '#title': phone
 css: "#webform-submission-shared-learning-room-reservation-delete-form {\r\n\tcolor: transparent;\r\n}\r\n.item-list {\r\n\theight: 0;\r\n}\r\n"
 javascript: ''
 settings:

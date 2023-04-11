@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.apl_item.feeds_item
     - field.field.node.apl_item.field_api_format
     - field.field.node.apl_item.field_api_subtitle
     - field.field.node.apl_item.field_apl_authors
@@ -26,7 +27,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.apl_item
   module:
-    - content_moderation
     - image
     - path
     - scheduler
@@ -74,6 +74,14 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_bib_isbn:
+    type: string_textfield
+    weight: 25
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_bibliocommons_id:
     type: string_textfield
     weight: 10
@@ -108,7 +116,7 @@ content:
     third_party_settings: {  }
   field_exclude_from_we_recommend:
     type: boolean_checkbox
-    weight: 25
+    weight: 24
     region: content
     settings:
       display_label: true
@@ -194,7 +202,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 24
+    weight: 23
     region: content
     settings:
       display_label: true
@@ -231,7 +239,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_bib_isbn: true
+  feeds_item: true
   field_display_title: true
   field_skip_adding_this_to_a_list: true
   field_sort_order: true

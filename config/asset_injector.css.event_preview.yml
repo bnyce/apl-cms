@@ -9,27 +9,25 @@ code: |-
   	line-height: 1.5em !important;
   	margin-top: 0;
   }
-  #previewDate,
-  #previewLocContainer {
-  	clear: left;
-  	display: flex;
+  #prevBook {
+  	width: 15.5%;
   }
-  #previewBook {
-  	max-width: 15.5%;
-  }
-  #previewSubtitle {
+  #prevSubtitle {
   	font-weight: bold;
   }
   .field-event-reg a {
   	text-decoration: none;
   	color: #0069aa;
   }
-  #previewBook,
+  #prevBook,
   .apl-item-list {
   	margin: 20px 20px 0 0;
   }
   .apl-free {
   	margin: 20px 0 10px;
+  }
+  #prevRemote{
+  	padding-left: 1.7em;
   }
   .apl-rec-age, .apl-event-summary {
   	margin-bottom: 20px;
@@ -85,12 +83,12 @@ code: |-
   	-moz-osx-font-smoothing: grayscale;
   }
 
-  #previewEventContainer {
+  #prevEventContainer {
   	border: 1px solid black;
   	width: 100%;
   	position: fixed;
   }
-  #previewEvent {
+  #prevEvent {
   	background: white;
   	width: 580px;
   	margin: 0 auto;
@@ -104,12 +102,12 @@ code: |-
   }
 
   .field-title,
-  #previewTitle {
+  #prevTitle {
   	font-size: 40px !important;
   	font-weight: bold;
   	margin-bottom: 20px !important;
   }
-  #previewSummary {
+  #prevSummary {
   	margin-bottom: 20px;
   }
 

@@ -27,16 +27,14 @@ conditions:
     context_mapping:
       webform_submission: '@webform.webform_submission_route_context:webform_submission'
     bundles:
-      shared_learning_room_reservation: shared_learning_room_reservation
       meeting_room_reservation_request: meeting_room_reservation_request
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
+      shared_learning_room_reservation: shared_learning_room_reservation
+  node_type:
+    id: node_type
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      passport_reservation: passport_reservation
-      reflection: reflection
-      slr: slr
+      event: event
 contexts: {  }
 conditions_require_all: false

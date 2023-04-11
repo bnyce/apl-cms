@@ -11,6 +11,8 @@ module:
   breakpoint: 0
   calendar: 0
   calendar_datetime: 0
+  calendar_view: 0
+  calendar_view_demo: 0
   ckeditor: 0
   comment: 0
   config: 0
@@ -28,6 +30,7 @@ module:
   editor: 0
   entity_hierarchy: 0
   feeds: 0
+  feeds_ex: 0
   feeds_tamper: 0
   field: 0
   field_group: 0
@@ -128,5 +131,4 @@ theme:
   classy: 0
   uswds: 0
   apl_subtheme: 0
-  apl: 0
 profile: standard

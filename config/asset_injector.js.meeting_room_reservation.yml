@@ -9,7 +9,7 @@ label: 'Meeting Room Reservation'
 code: |-
   (function($, jQuery) {
     $(document).ready(function() {
-      console.log('bb3'); // which version
+      console.log('bb4g'); // which version
       // if back button, reload the page
       if (performance.navigation.type == 2) {
         location.reload(true);
@@ -196,9 +196,8 @@ code: |-
             if (my_overlap) {
               $('#edit-submit').val('Please select an available room');
             } else {
-              // next check if the user exceeds the 1 per 28 days limitation
+              // next check if the user meets the 3 per 90 days limitation
               //$('.webform-submission-form').submit();
-              //console.log('next check if the user exceeds the 1 per 28 days limitation');
               checkMonthlyLimit();
             }
           } // done checking if overlapping
@@ -216,17 +215,56 @@ code: |-
         if (parseInt(splitUrl[7]) > 0) {
           sid = splitUrl[7];
         }
-        var mini333 = dayjs(date1.val()).subtract(28, 'days').format('YYYY-MM-DD');
-        var maxi444 = dayjs(date1.val()).add(28, 'days').format('YYYY-MM-DD');
+
+        var mini333 = dayjs(date1.val()).subtract(90, 'days').format('YYYY-MM-DD');
+        var miDate = dayjs(date1.val()).format('YYYY-MM-DD');
+
+        var maxi444 = dayjs(date1.val()).add(90, 'days').format('YYYY-MM-DD');
+
         var email = $('#edit-group-representative-email-address').val();
         var json_rules = '/mr_rules.json?sid=' + sid + '&loc=' + loc + '&t=' + Date.now() + '&date333=' + mini333 + '&date444=' + maxi444 + '&email=' + email;
         //console.log(json_rules);
         await $.getJSON(encodeURI(json_rules), function(json333) {
-          if (json333.length > 0) {
-            $('body').addClass('sooner');
-            $('#edit-submit').val('Only one reservation per branch within 28 days');
+
+        // 6 update to > 2
+          if (json333.length > 2) { // expand this logic
+           // console.log('more than 2')
+           // console.log(json333);
+        var pips = [];
+        var p;
+        for (p = 0; p < json333.length; p++) {
+          pips.push(json333[p].date);
+        }
+        pips.push(miDate)
+        pips.sort();
+        //console.log(pips)
+
+        var q;
+        var qq;
+        var breaker = 0;
+        for(q = 0; q < pips.length - 2; q++) {
+            var qcounter = 0;
+            for(qq = q + 1; qq < pips.length; qq++) {
+              var oDate = dayjs(pips[q]);
+              var tDate = dayjs(pips[qq]);
+              var ooDate = oDate.add(90, 'day');
+              if(ooDate.isAfter(tDate)) {
+               qcounter++;
+               if(qcounter > 1) {
+                breaker = 1;
+               }
+              }
+            }
+
+        }
+          if(breaker == 1) {
+              $('body').addClass('sooner');
+              $('#edit-submit').val('Only 3 reservations per branch within 90 days');
+            } else {
+              $('.webform-submission-form').submit();
+            }
+          
           } else {
-            //   console.log('no 28 day conflicts');
             $('.webform-submission-form').submit();
           }
         });
@@ -245,8 +283,11 @@ code: |-
       var existingStarts_room = [];
       var existingStarts_start = [];
       var existingStarts_end = [];
-      var disabledDays = ['2023-01-16','2023-02-10','2023-02-19','2023-02-20','2023-04-09','2023-05-12','2023-05-28','2023-05-29','2023-06-18','2023-06-19','2023-07-04','2023-08-11','2023-09-03','2023-09-04','2023-10-20','2023-11-10','2023-11-11','2023-11-23','2023-11-24','2023-12-24','2023-12-25','2023-12-26'];
-      var max_date = dayjs().add(29, 'days').hour(7);
+      var disabledDays = ['2023-04-09','2023-05-12','2023-05-28','2023-05-29','2023-06-18','2023-06-19','2023-07-04','2023-08-11','2023-09-03','2023-09-04','2023-10-20','2023-11-10','2023-11-11','2023-11-23','2023-11-24','2023-12-24','2023-12-25','2023-12-26'];
+
+      // 5 28 + 1 = 29
+      var max_date = dayjs().add(91, 'days').hour(7);
+
       var min_date = dayjs().add(3, 'days').hour(7);
       var which_date = $('#edit-date');
       var how_many = $('#edit-location').val();
@@ -1001,8 +1042,8 @@ code: |-
           var the_date1 = dayjs(which_date.val());
           var ppwf_format = 'YYYY-MM-DD';
           var the_date = the_date1.format(ppwf_format);
-          if (the_date == '2023-01-16' || the_date == '2023-02-10' || the_date == '2023-02-19' || the_date == '2023-02-20' || the_date == '2023-04-09' || the_date == '2023-05-12' || the_date == '2023-05-28' || the_date == '2023-05-29' || the_date == '2023-06-18' || the_date == '2023-06-19' || the_date == '2023-07-04' || the_date == '2023-08-11' || the_date == '2023-09-03' || the_date == '2023-09-04' || the_date == '2023-10-20' || the_date == '2023-11-10' || the_date == '2023-11-11' || the_date == '2023-11-23' || the_date == '2023-11-24' || the_date == '2023-12-24' || the_date == '2023-12-25' || the_date == '2023-12-26') {
-            alert("We're closed on holidays. Please select another date.");
+          if ( the_date == '2023-04-09' || the_date == '2023-05-12' || the_date == '2023-05-28' || the_date == '2023-05-29' || the_date == '2023-06-18' || the_date == '2023-06-19' || the_date == '2023-07-04' || the_date == '2023-08-11' || the_date == '2023-09-03' || the_date == '2023-09-04' || the_date == '2023-10-20' || the_date == '2023-11-10' || the_date == '2023-11-11' || the_date == '2023-11-23' || the_date == '2023-11-24' || the_date == '2023-12-24' || the_date == '2023-12-25' || the_date == '2023-12-26') {
+            alert("We're closed on that day. Please select another date.");
             which_date.val('');
           } else {
             if ((my_date > max_date) && (is_admin != '1' && is_internal != '1')) {

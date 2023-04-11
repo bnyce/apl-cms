@@ -11,7 +11,6 @@ features:
 logo:
   path: ''
   use_default: false
-schemas: {  }
 cdn_provider: custom
 cdn_custom_img: 'https://cdn.jsdelivr.net/npm/@uswds/uswds@3.0.1/dist/img'
 cdn_custom_css: 'https://cdn.jsdelivr.net/npm/@uswds/uswds@3.0.1/dist/css/uswds.css'
@@ -33,13 +32,14 @@ uswds_phone: ''
 uswds_facebook: '#facebook'
 uswds_twitter: ''
 uswds_youtube: '#youtube'
-uswds_instagram: '#instagram'
+uswds_instagram: ''
 uswds_rss: /rss.xml
 uswds_paragraphs_edge_to_edge: 0
 uswds_menu_accordion_duplicate_parent: 0
 uswds_menu_bypass:
-  primary_menu: primary_menu
-  footer_menu: footer_menu
+  primary_menu: 0
   secondary_menu: 0
   sidebar_first: 0
   sidebar_second: 0
+  footer_menu: 0
+schemas: {  }
