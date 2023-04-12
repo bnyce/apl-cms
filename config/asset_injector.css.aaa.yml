@@ -1,0 +1,221 @@
+uuid: 156900dd-35bf-433c-bb64-a06c86884b42
+langcode: en
+status: true
+dependencies: {  }
+id: aaa
+label: aaa
+code: |-
+  header {
+  	position: sticky;
+  	top: 0;
+  	z-index: 9999 !important;
+  	background: white;
+  	width: 100%;
+  }
+
+  @media (min-width: 40em) {
+  .tablet\:grid-col-6,
+  .tablet-grid-col-6 {
+  	flex: 0 1 auto;
+  	width: 50%;
+  }
+
+  .tablet\:grid-col-3,
+  .tablet-grid-col-3 {
+  	flex: 0 1 auto;
+  	width: 25%;
+  }
+  }
+
+  @media (min-width: 64em) {
+  .desktop\:grid-col-6,
+  .desktop-grid-col-6 {
+  	flex: 0 1 auto;
+  	width: 50%;
+  }
+  .desktop\:grid-col-3,
+  .desktop-grid-col-3 {
+  	flex: 0 1 auto;
+  	width: 25%;
+  }
+  }
+
+  @media (min-width: 64em) {
+  #block-views-block-press-releases-grid-container,
+  .grid-container {
+  	padding-left: 2rem;
+  	padding-right: 2rem;
+  }
+  }
+  #block-views-block-press-releases-grid-container,
+  .grid-container {
+  	margin-left: auto;
+  	margin-right: auto;
+  	max-width: 64rem;
+  	padding-left: 1rem;
+  	padding-right: 1rem;
+  }
+  #apl-nav {
+  	background: black;
+  }
+  #apl-nav .home {
+  	color: transparent;
+  	background-image: url(/themes/custom/apl/assets/img/APL.png);
+  	width: 296px;
+  	background-repeat: no-repeat;
+  	display: inline-block;
+  	background-position: 0px 46px;
+  }
+  #apl-nav a {
+  	color: white;
+  	text-decoration: none;
+  	display: block;
+  	padding: 43px 32px 43px 0;
+  }
+  .full-width {
+  	background: black;
+  }
+  .views_slideshow_cycle_slide {
+  	width: 100% !important;
+  }
+  .img_container {
+  	display: block;
+  	height: 140px;
+  }
+  html #nav-events {
+  	padding-right: 0;
+  }
+  .menu.menu--languages.nav {
+  	display: none;
+  }
+  .grid-row.right {
+  	justify-content: right;
+  }
+  #nav-events, #nav-locations {
+  	padding: 4px 12px 4px 30px;
+  	position: relative;
+  }
+  #nav-events a, #nav-locations a {
+  	color: black;
+  	text-decoration: none;
+  }
+  #nav-events img {
+  	left: 8px;
+  }
+  #nav-locations img {
+  	left: 12px;
+  }
+  #block-biblioaccountlogin img {
+  	position: absolute;
+  	top: 6px;
+  }
+
+  .menu.menu--main.nav li.first a {
+  	color: transparent;
+  	background-image: url(/themes/custom/apl/assets/img/APL.png);
+  	width: 263px;
+  	background-repeat: no-repeat;
+  	display: inline-block;
+  	padding: 3px 0;
+  	margin: 0;
+  	background-position: 0px 46px;
+  	height: 112px;
+  }
+  .usa-nav-container {
+  	background: black;
+  	max-width: 100%;
+  	display: block !important;
+  }
+  .menu.menu--main.nav {
+  	display: flex;
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+  }
+  .menu.menu--main.nav a {
+  	color: white;
+  	text-decoration: none;
+  	display: block;
+  	padding: 43px;
+  }
+  .menu.menu--main.nav li {
+  	display: inline-block;
+  	height: 112px;
+  }
+
+  #main-content > .grid-container {
+  	width: 100%;
+  	max-width: 100%;
+  	padding: 0;
+  	margin: 0;
+  }
+
+  .button360 .skin-default img, .button504 .skin-default img {
+  	width: 100%;
+  	height: auto;
+  	position: absolute;
+  	opacity: 0;
+  }
+
+  div.hero-image {
+  	height: 504px;
+  	overflow: hidden;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  }
+  #main-content {
+  	padding-top: 0;
+  	border-top: none;
+  }
+  .hero-text2 p {
+  	margin: 0;
+  	padding: 0 0 10px;
+  }
+  .hero-title2 {
+  	font-weight: bold;
+  	font-size: 30px;
+  }
+  .hero-text2 {
+  	background: white;
+  	padding: .8em 1em 1em;
+  	position: absolute;
+  	top: 54px;
+  	border-radius: 2px;
+  	opacity: .9;
+  	width: 300px;
+  	display: block;
+  }
+  .hero-action a {
+  	background: #009ABF;
+  	padding: 10px;
+  	color: white;
+  	border-radius: 4px;
+  	display: inline-block;
+  	width: auto;
+  	text-decoration: none;
+  	margin-top: 10px;
+  }
+  #block-views-block-sections-block-1 p {
+  	color: #009ABF;
+  	font-size: 30px;
+  	text-align: center;
+  	line-height: 1.5em;
+  }
+  #sections {
+  	margin: 0 16px !important;
+  	text-align: center;
+  }
+  #sections .usa-link {
+  	display: block;
+  	margin-bottom: 2em;
+  }
+  .usa-button.grid-col-right {
+  	float: right;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

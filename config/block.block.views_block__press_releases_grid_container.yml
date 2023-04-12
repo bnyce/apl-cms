@@ -1,19 +1,22 @@
-uuid: b0393be1-8999-4a35-9cba-fe89d5148b62
+uuid: 3751650a-b621-474f-9a13-f5165f1eb391
 langcode: en
-status: false
+status: true
 dependencies:
+  config:
+    - views.view.press_releases
   module:
     - system
+    - views
   theme:
     - uswds_base
-id: views_block__press_releases_block_1
+id: views_block__press_releases_grid_container
 theme: uswds_base
 region: content
-weight: -3
+weight: 0
 provider: null
-plugin: 'views_block:press_releases-block_1'
+plugin: 'views_block:press_releases-grid_container'
 settings:
-  id: 'views_block:press_releases-block_1'
+  id: 'views_block:press_releases-grid_container'
   label: ''
   label_display: visible
   provider: views

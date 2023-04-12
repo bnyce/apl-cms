@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.hero_image.field_button_link
     - field.field.node.hero_image.field_hero_image
+    - field.field.node.hero_image.field_hero_image_small
     - field.field.node.hero_image.field_hero_summary
     - field.field.node.hero_image.field_hero_template
     - field.field.node.hero_image.field_slr_time_end
@@ -12,7 +13,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.hero_image
   module:
-    - content_moderation
     - datetime
     - image
     - link
@@ -39,6 +39,14 @@ content:
     third_party_settings: {  }
   field_hero_image:
     type: image_image
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_hero_image_small:
+    type: image_image
     weight: 10
     region: content
     settings:
@@ -61,13 +69,13 @@ content:
     third_party_settings: {  }
   field_slr_time_end:
     type: datetime_default
-    weight: 27
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   field_slr_time_start:
     type: datetime_default
-    weight: 26
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -98,7 +106,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 8
     region: content
     settings:
       display_label: true

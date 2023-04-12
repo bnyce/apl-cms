@@ -1,17 +1,17 @@
-uuid: f9ef1837-ea5f-4a80-afef-23fcf87acbef
+uuid: 609490f9-4cb4-4f13-9a0f-701b6b374ff4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_hero_image
+    - field.storage.node.field_hero_image_small
     - node.type.hero_image
   module:
     - image
-id: node.hero_image.field_hero_image
-field_name: field_hero_image
+id: node.hero_image.field_hero_image_small
+field_name: field_hero_image_small
 entity_type: node
 bundle: hero_image
-label: 'Hero Image Large'
+label: 'Hero Image Small'
 description: ''
 required: false
 translatable: false

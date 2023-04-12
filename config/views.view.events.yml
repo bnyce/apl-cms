@@ -302,7 +302,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: apl-event-row
+          row_class: grid-col-6
           default_row_class: false
       row:
         type: fields
@@ -1026,12 +1026,8 @@ display:
                   collapsible: false
                   is_secondary: false
       cache:
-        type: time
-        options:
-          results_lifespan: 3600
-          results_lifespan_custom: 0
-          output_lifespan: 3600
-          output_lifespan_custom: 0
+        type: none
+        options: {  }
       sorts:
         field_slr_time_start_value:
           id: field_slr_time_start_value
@@ -1214,6 +1210,7 @@ display:
         cache: false
         query: false
         title: false
+        css_class: false
         use_ajax: false
         pager: false
         use_more: false
@@ -1228,11 +1225,12 @@ display:
         filter_groups: false
         header: false
         footer: false
+      css_class: 'grid-gap grid-row'
       use_ajax: false
       display_description: ''
-      use_more: false
+      use_more: true
       use_more_always: true
-      use_more_text: 'More Events'
+      use_more_text: 'More Upcoming Events'
       link_display: custom_url
       link_url: /events
       header: {  }

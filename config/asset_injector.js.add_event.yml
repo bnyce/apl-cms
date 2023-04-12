@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - node
+    - system
 id: add_event
 label: 'Add Event'
 code: |
@@ -446,5 +447,9 @@ conditions:
       node: '@node.node_route_context:node'
     bundles:
       event: event
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
 contexts: {  }
 conditions_require_all: true

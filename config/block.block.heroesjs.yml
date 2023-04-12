@@ -1,23 +1,23 @@
-uuid: 936b7973-02b6-4ab9-a6da-8a306d150525
+uuid: 3674d6b4-2282-431a-937f-a4880b264d61
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:f45654ed-7b00-4d94-94b7-877732cdcd38'
+    - 'block_content:basic:7bffdf5e-5aff-4fc6-8d50-65702d0122ff'
   module:
     - block_content
     - system
   theme:
     - uswds_base
-id: moreupcomingevents
+id: heroesjs
 theme: uswds_base
-region: content
-weight: -5
+region: footer_secondary
+weight: 0
 provider: null
-plugin: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
+plugin: 'block_content:7bffdf5e-5aff-4fc6-8d50-65702d0122ff'
 settings:
-  id: 'block_content:f45654ed-7b00-4d94-94b7-877732cdcd38'
-  label: 'More upcoming events'
+  id: 'block_content:7bffdf5e-5aff-4fc6-8d50-65702d0122ff'
+  label: 'heroes JS'
   label_display: '0'
   provider: block_content
   status: true

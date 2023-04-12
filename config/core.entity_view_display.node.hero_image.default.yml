@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.hero_image.field_button_link
     - field.field.node.hero_image.field_hero_image
+    - field.field.node.hero_image.field_hero_image_small
     - field.field.node.hero_image.field_hero_summary
     - field.field.node.hero_image.field_hero_template
     - field.field.node.hero_image.field_slr_time_end
@@ -12,12 +13,24 @@ dependencies:
     - node.type.hero_image
   module:
     - datetime
+    - image
     - user
 id: node.hero_image.default
 targetEntityType: node
 bundle: hero_image
 mode: default
 content:
+  field_hero_image_small:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
   field_slr_time_end:
     type: datetime_default
     label: above

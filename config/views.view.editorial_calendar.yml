@@ -2,8 +2,6 @@ uuid: e5f2a09e-04dc-49fa-9ae8-56b1bf2675c7
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.main
   module:
     - calendar_view
     - node
@@ -295,10 +293,14 @@ display:
       display_extenders: {  }
       path: editorial-calendar
       menu:
-        type: normal
+        type: none
         title: 'Editorial calendar'
+        description: ''
+        weight: 0
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

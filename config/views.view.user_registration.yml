@@ -2,8 +2,6 @@ uuid: 145d33bf-f17a-43f4-8b92-3410a28251ac
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.main
   module:
     - calendar_view
     - smart_date
@@ -271,10 +269,14 @@ display:
       display_extenders: {  }
       path: user-registration
       menu:
-        type: normal
+        type: none
         title: 'User registration'
+        description: ''
+        weight: 0
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

@@ -8,7 +8,6 @@ dependencies:
     - config_perms
     - field_permissions
     - filter
-    - node
 id: meeting_rooms_administrator
 label: 'Meeting Room Administrator'
 weight: 17

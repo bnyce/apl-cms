@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
     - system
 id: apl_carousel
 label: apl-carousel
@@ -117,13 +116,6 @@ conditions:
   request_path:
     id: request_path
     negate: false
-    pages: "<front>\r\n/virtual"
-  node_type:
-    id: node_type
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      apl_site_content: apl_site_content
+    pages: "<frontxxx>\r\n/virtualxxx"
 contexts: {  }
 conditions_require_all: false
