@@ -2,14 +2,17 @@ uuid: b0393be1-8999-4a35-9cba-fe89d5148b62
 langcode: en
 status: false
 dependencies:
+  config:
+    - views.view.press_releases
   module:
     - system
+    - views
   theme:
     - uswds_base
 id: views_block__press_releases_block_1
 theme: uswds_base
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: 'views_block:press_releases-block_1'
 settings:

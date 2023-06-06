@@ -1,0 +1,28 @@
+uuid: f9074e10-410f-4c95-9cc2-14413a1efd8a
+langcode: eng
+status: false
+dependencies:
+  config:
+    - facets.facet.disease
+  module:
+    - facets
+    - system
+  theme:
+    - claro2
+id: disease
+theme: claro2
+region: content
+weight: 0
+provider: null
+plugin: 'facet_block:disease'
+settings:
+  id: 'facet_block:disease'
+  label: Disease
+  label_display: visible
+  provider: facets
+  block_id: disease
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /ahc/oakwood

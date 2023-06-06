@@ -1,0 +1,30 @@
+uuid: a04b4179-01f0-4fcc-ada2-f4f475d13b48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:75f5784e-c051-410a-9842-5dfde41d99ad'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds_base
+id: biblioaccountlogin
+theme: uswds_base
+region: header_top
+weight: 0
+provider: null
+plugin: 'block_content:75f5784e-c051-410a-9842-5dfde41d99ad'
+settings:
+  id: 'block_content:75f5784e-c051-410a-9842-5dfde41d99ad'
+  label: 'Biblio Account Login'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/meeting-rooms/*\r\n/ahc/*"

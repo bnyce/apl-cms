@@ -1,0 +1,25 @@
+uuid: bbf6dc92-cb56-4fc8-a45d-a789a66e6b84
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - uswds_base
+id: topmenu
+theme: uswds_base
+region: header_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'Top Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

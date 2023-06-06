@@ -1,0 +1,14 @@
+uuid: a2284a1f-1f92-4b3b-a979-e16d69025607
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.internal_group_representative
+  module:
+    - user
+id: user_remove_role_action.internal_group_representative
+label: 'Remove the Meeting Room Internal role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: internal_group_representative

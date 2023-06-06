@@ -11,7 +11,7 @@ _core:
 id: uswds_base_search
 theme: uswds_base
 region: breadcrumb
-weight: -7
+weight: -11
 provider: null
 plugin: search_form_block
 settings:

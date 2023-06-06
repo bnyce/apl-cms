@@ -1,0 +1,10 @@
+uuid: 9a2fd1f5-353f-415e-99ae-33416aaa17ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AV6r-pw9cjNURpXXB14cyoCM305HiScp6J8Scw8b2Oo
+name: 'Library Priorities'
+vid: library_priorities
+description: ''
+weight: -7

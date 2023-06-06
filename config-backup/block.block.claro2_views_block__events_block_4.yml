@@ -1,0 +1,29 @@
+uuid: 69ed70bf-f46f-455b-9d44-7241c21b8e1e
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: claro2_views_block__events_block_4
+theme: claro2
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:events-block_4'
+settings:
+  id: 'views_block:events-block_4'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

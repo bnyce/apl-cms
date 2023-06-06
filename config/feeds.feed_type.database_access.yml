@@ -1,0 +1,79 @@
+uuid: d0912c3b-7e73-472e-b2a3-1c5c0842e6ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_access
+  module:
+    - feeds_ex
+    - taxonomy
+label: 'Database Access'
+id: database_access
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'private://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.db_access.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: database_access
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: json
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: json
+  pid:
+    value: pid
+    label: pid
+    machine_name: pid
+    type: json
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: parent
+    map:
+      target_id: pid
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0

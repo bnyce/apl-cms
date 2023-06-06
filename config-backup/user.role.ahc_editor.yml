@@ -1,0 +1,54 @@
+uuid: b299b169-fb37-4ccd-b3b2-dab617442684
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.document
+    - node.type.ahc_page
+    - node.type.oakwood
+  module:
+    - editoria11y
+    - filter
+    - media
+    - node
+    - publishcontent
+    - quickedit
+    - system
+    - toolbar
+id: ahc_editor
+label: 'AHC editor'
+weight: -9
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create document media'
+  - 'create media'
+  - 'delete any document media'
+  - 'delete any oakwood content'
+  - 'delete media'
+  - 'delete oakwood revisions'
+  - 'delete own document media'
+  - 'delete own oakwood content'
+  - 'edit any document media'
+  - 'edit any oakwood content'
+  - 'edit own document media'
+  - 'edit own oakwood content'
+  - 'publish any node type ahc_page'
+  - 'publish editable content'
+  - 'revert ahc_page revisions'
+  - 'revert oakwood revisions'
+  - 'unpublish editable content'
+  - 'update any media'
+  - 'update media'
+  - 'use text format full_html'
+  - 'view all media revisions'
+  - 'view editoria11y checker'
+  - 'view oakwood revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

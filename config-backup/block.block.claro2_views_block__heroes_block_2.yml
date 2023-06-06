@@ -1,0 +1,29 @@
+uuid: dd969e6c-99bf-4077-8725-0f08765117ee
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.heroes
+  module:
+    - system
+    - views
+  theme:
+    - claro2
+id: claro2_views_block__heroes_block_2
+theme: claro2
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:heroes-block_2'
+settings:
+  id: 'views_block:heroes-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

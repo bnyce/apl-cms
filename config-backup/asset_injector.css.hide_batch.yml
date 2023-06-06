@@ -1,0 +1,30 @@
+uuid: 1b43b26a-9931-4e98-8948-07f52937774c
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+    - user
+id: hide_batch
+label: 'Hide batch'
+code: |-
+  html {
+    opacity:0;
+    display: none;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/batch\r\n/batch/*"
+  user_role:
+    id: user_role
+    negate: true
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+contexts: {  }
+conditions_require_all: true

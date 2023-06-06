@@ -1,0 +1,11 @@
+uuid: fe438b23-f815-4cbe-b7da-cb425695b670
+langcode: eng
+status: true
+dependencies:
+  config:
+    - node.type.oakwood
+id: node.oakwood
+target_entity_type_id: node
+target_bundle: oakwood
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,33 @@
+uuid: bcf7c102-1e3c-42be-8fd8-34693d097484
+langcode: en
+status: true
+dependencies: {  }
+id: locations
+label: Locations
+code: |-
+  .views-field.views-field-field-hours-more-info {
+  	text-align: left;
+  	background: white;
+  }
+  .path-taxonomy .views-field.views-field-field-hours-more-info {
+  	padding: 1px 15px;
+  }
+  .block.block-views.block-views-blockapl-locations-block-1 {
+  	margin-top: 30px;
+  }
+
+  .views-field.views-field-description-1 a.usa-button {
+      margin: 5px 0;
+  }
+  .usa-button.usa-button-outline img { height: 20px; background-color: #0069aa; padding: 5px; vertical-align: middle; margin-right: 5px; margin-top: 0px; border-radius: 3px; } .apl-print { vertical-align: middle; }
+  .location-description img {
+  	vertical-align: sub;
+  	margin: 0px 7px 0px 0px;
+  	height: 17px;
+  	width: 17px;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

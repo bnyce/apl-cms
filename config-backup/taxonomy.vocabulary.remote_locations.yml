@@ -1,0 +1,10 @@
+uuid: d3dfb1cf-2f58-4154-a434-0638c52f68be
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: guDnhxgwbBFjQQYoFk_eV-JS2-lnmroW4B3eXMUMq3I
+name: 'Remote Locations'
+vid: remote_locations
+description: ''
+weight: 1

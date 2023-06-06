@@ -1,0 +1,103 @@
+uuid: daf4c83e-e112-4f04-b711-71c89436aff8
+langcode: eng
+status: true
+dependencies: {  }
+id: meeting_room_reservation
+title: 'Meeting Room Reservation'
+webform: meeting_room_reservation_request
+content_type: null
+field_title: null
+use_encrypt: null
+encryption_profile: null
+sync_content: true
+sync_content_delete: true
+sync_content_node_field: null
+elements:
+  field____date:
+    type: false
+    webform_field: date
+    custom_check: false
+    custom_value: ''
+  field_agreements:
+    type: false
+    webform_field: agreements
+    custom_check: false
+    custom_value: ''
+  field_digital_signature:
+    type: false
+    webform_field: digital_signature
+    custom_check: false
+    custom_value: ''
+  field_email:
+    type: false
+    webform_field: group_representative_email_address
+    custom_check: false
+    custom_value: ''
+  field_group_name:
+    type: false
+    webform_field: group_name
+    custom_check: false
+    custom_value: ''
+  field_group_rep_full_name:
+    type: false
+    webform_field: group_representative_full_name
+    custom_check: false
+    custom_value: ''
+  field_group_rep_phone:
+    type: false
+    webform_field: group_representative_phone_number
+    custom_check: false
+    custom_value: ''
+  field_group_website:
+    type: false
+    webform_field: website
+    custom_check: false
+    custom_value: ''
+  field_internal_:
+    type: false
+    webform_field: is_this_meeting_for_internal_use_
+    custom_check: false
+    custom_value: ''
+  field_meeting_room:
+    type: false
+    webform_field: meeting_room
+    custom_check: false
+    custom_value: ''
+  field_purpose_of_group_:
+    type: false
+    webform_field: purpose_of_group
+    custom_check: false
+    custom_value: ''
+  field_room_expected_attendance:
+    type: false
+    webform_field: expected_attendance
+    custom_check: false
+    custom_value: ''
+  field_room_group:
+    type: false
+    webform_field: meeting_room_group
+    custom_check: false
+    custom_value: ''
+  field_slr_duration:
+    type: false
+    webform_field: duration
+    custom_check: false
+    custom_value: ''
+  field_slr_time_end:
+    type: false
+    webform_field: date_time_end
+    custom_check: false
+    custom_value: ''
+  field_slr_time_start:
+    type: false
+    webform_field: date_time_start
+    custom_check: false
+    custom_value: ''
+  title:
+    type: false
+    webform_field: topic
+    custom_check: false
+    custom_value: ''
+sync_content_field: field_submission_id
+target_entity_type: node
+target_bundle: room_reservation

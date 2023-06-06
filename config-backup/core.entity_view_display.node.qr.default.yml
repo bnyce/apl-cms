@@ -1,0 +1,52 @@
+uuid: a2d5588f-8e90-43f6-8e66-791176fdde7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.qr.field_generated_qr
+    - field.field.node.qr.field_short_url
+    - field.field.node.qr.field_url_for_qr
+    - node.type.qr
+  module:
+    - image
+    - user
+id: node.qr.default
+targetEntityType: node
+bundle: qr
+mode: default
+content:
+  field_generated_qr:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_short_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_url_for_qr:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

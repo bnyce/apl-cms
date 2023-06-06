@@ -11,7 +11,7 @@ dependencies:
 id: languages
 theme: uswds_base
 region: header_top
-weight: -6
+weight: -9
 provider: null
 plugin: 'system_menu_block:languages'
 settings:

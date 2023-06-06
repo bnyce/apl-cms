@@ -1,0 +1,28 @@
+uuid: a85ba1a7-1ab1-42f1-8fa6-bb6a80593e51
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.qr.field_generated_qr
+    - field.field.node.qr.field_short_url
+    - field.field.node.qr.field_url_for_qr
+    - node.type.qr
+  module:
+    - user
+id: node.qr.teaser
+targetEntityType: node
+bundle: qr
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_generated_qr: true
+  field_short_url: true
+  field_url_for_qr: true
+  langcode: true
+  search_api_excerpt: true

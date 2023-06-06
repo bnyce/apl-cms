@@ -1,0 +1,12 @@
+uuid: 69d92517-64f1-44c3-92b6-a0ee28917663
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+_core:
+  default_config_hash: om4mejyYt1hhviO3XoMuR1exDllRe8mTQayd9mf2ko4
+id: feeds_subscription.token
+label: Token
+targetEntityType: feeds_subscription
+cache: true

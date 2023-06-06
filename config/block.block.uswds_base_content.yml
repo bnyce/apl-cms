@@ -11,7 +11,7 @@ _core:
 id: uswds_base_content
 theme: uswds_base
 region: content
-weight: -1
+weight: -7
 provider: null
 plugin: system_main_block
 settings:

@@ -1,0 +1,455 @@
+uuid: 14b68542-a62a-402d-af59-55b6338fc8c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: add_event
+label: 'Add Event'
+code: |
+  (function($, jQuery) {
+    $(document).ready(function() {
+        var submitButton = $('.node-form #edit-submit');
+  	  submitButton.css('display', 'none');
+      var pButton = $('<a class="button button--primary" href="#">Preview</a>');
+      pButton.attr('id', 'bbPreview');
+      pButton.insertBefore(submitButton);
+      var fieldTitle = $('#edit-title-0-value');
+      var fieldSummary = $('#edit-field-event-summary-0-value');
+      var fieldSubtitle = $('#edit-field-subtitle-0-value');
+      var fieldCategory = $('#edit-field-event-category-tags-');
+      var fieldAges = $('#edit-field-event-recommended-ages');
+      var fieldStart = $('#edit-field-slr-time-start-0-value-date');
+      var fieldEnd = $('#edit-field-slr-time-end-0-value-date');
+      var fieldStartTime = $('#edit-field-slr-time-start-0-value-time');
+      var fieldEndTime = $('#edit-field-slr-time-end-0-value-time');
+      var fieldLoc = $('#edit-field-event-loc');
+      var fieldAud29 = $('#edit-field-cat-ia-29');
+      var fieldAud32 = $('#edit-field-cat-ia-32');
+      var fieldAud31 = $('#edit-field-cat-ia-31');
+        var fieldRemote = $('#edit-field-remote-location-0-target-id');
+      //  var buttonSubmit = $('#edit-submit');
+      //	  buttonSubmit.css('display','none');
+      //    buttonSubmit.insertBefore('<a class="button button--primary" href="#">Preview 2</a>');
+      var prevEvent = $('<div></div>');
+      var prevBook = $('<div></div>');
+      prevBook.attr('id', 'prevBook');
+      var prevSubtitle = $('<div></div>');
+      prevSubtitle.attr('id', 'prevSubtitle');
+      var prevEventContainer = $('<div></div>');
+      var fieldReg = $('#edit-field-link-for-registration-0-value');
+      var prevReg = $('<div class="field-event-reg"><i class="material-icons-outlined">local_activity</i><div><a target="_blank" href="#">Please register for this event.</a></div></div>');
+      var prevButtons = $('<div><a id="bSubmit" class="button button--primary" href="#">Save</a> <a id="bCancel" href="#">Hide preview and keep editing</a></div>');
+      var prevTags = $('<div>Tags: <span id="aud29"></span> <span id="aud32"></span> <span id="aud31"></span> <span id="prevCat"></span> <span id="prevTag"></span></div>');
+      prevEventContainer.attr('id', 'prevEventContainer');
+      prevEvent.attr('id', 'prevEvent');
+      prevEventContainer.attr('class', 'modal');
+      prevEventContainer.css('display', 'none');
+      prevEventContainer.append(prevEvent);
+      var prevTitle = $('<h1>' + fieldTitle.val() + '</h1>');
+      prevTitle.attr('id', 'prevTitle');
+      prevTitle.attr('class', 'field-title');
+      var prevSummary = $('<div></div>');
+      prevSummary.attr('id', 'prevSummary');
+
+  function getClone() {
+        $.getJSON("/clone_event.json?clone=" + cloneId, function(clonedata) {
+          $.each(clonedata, function(key, val) {
+              fieldTitle.val(val.title);
+              fieldSubtitle.val(val.subtitle);
+  	    fieldCategory.val(val.event_category);
+  	    console.log('event cat:' + val.event_category)
+  	    fieldLoc.val(val.location);
+  	    fieldRemote.val(val.remote_location);
+  	    fieldStart.val(val.event_date);
+  	    fieldEnd.val(val.event_end);
+  	    console.log(val.time_start);
+  	    fieldStartTime.val(val.time_start);
+  	    fieldEndTime.val(val.time_end);
+  	    fieldAges.val(val.ages);
+  	    fieldSummary.val(val.summary);
+  	    fieldReg.val(val.reg);
+
+  const str = val.audience;
+  const substr29 = '29';
+  const substr32 = '32';
+  const substr31 = '31';
+
+  	    if(str.includes(substr29)) {
+  		fieldAud29.attr('checked','checked');
+  	    };
+  	    if(str.includes(substr32)) {
+  		fieldAud32.attr('checked','checked');
+  	    };
+  	    if(str.includes(substr31)) {
+  		fieldAud31.attr('checked','checked');
+  	    };
+
+          });
+        });
+  }
+  var cloneId = '';
+  const queryString = window.location.search;
+  console.log(queryString);
+  const urlParams = new URLSearchParams(queryString);
+  cloneId = urlParams.get('clone');
+
+  if(cloneId) {
+      getClone();
+      console.log('getting date')    
+      getDate();
+  }
+
+        
+      function getCat() {
+        var myName = $('#edit-field-event-category-tags- option:selected').text();
+        $('#prevCat').html('<a class="usa-button usa-button-outline" href="#">' + myName + '</a>');
+      }
+      // getCat()
+      function getSummary() {
+        $.getJSON("/event_tag_summary.json?tid=" + fieldCategory.val(), function(data) {
+          $.each(data, function(key, val) {
+            $('#prevSummary').html(val.description);
+            $('#prevCat').html('<a class="usa-button usa-button-outline" href="#">' + val.name + '</a>');
+          });
+        });
+        getCat()
+      }
+      getSummary()
+      var myRemote = $('#edit-field-remote-location-0-target-id').val();
+
+      function getRemote() {
+        var myRemote = $('#edit-field-remote-location-0-target-id').val();
+        var regex = /\((\d+)\)/g;
+        var result = regex.exec(myRemote);
+        var result_match = regex.test(myRemote);
+        if (result_match) {
+          $.getJSON("/remote_location_address.json?tid=" + result[1], function(data) {
+            $.each(data, function(key, val) {
+              $('#prevLoc').html(' ');
+              $('#prevRemote').html(val.name + '<br>' + val.address);
+            });
+          });
+        } else {
+          $('#prevRemote').html(' ');
+        }
+      }
+      if (myRemote) {
+        getRemote()
+      }
+      var myRemoteField = $('#edit-field-remote-location-0-target-id');
+      myRemoteField.change(function() {
+        getRemote()
+      });
+      var myBook = $('#edit-field-item-list-0-target-id').val();
+
+      function getBook() {
+        var myBook = $('#edit-field-item-list-0-target-id').val();
+        console.log('getting book: ' + myBook)
+        var regex = /\((\d+)\)/g;
+        var bookResult = regex.exec(myBook);
+        console.log(bookResult[1]);
+        if (bookResult[1]) {
+          $.getJSON("/attached_item.json?nid=" + bookResult[1], function(data) {
+            $.each(data, function(key, val) {
+              $('#prevSubtitle').html(val.title);
+              $('#prevBook').html('<img alt="' + val.title + '" src="https://secure.syndetics.com/index.aspx?isbn=' + val.isbn + '/LC.GIF&amp;client=austinpl&amp;upc=" border="0">');
+              console.log('book result: ' + val.title)
+            });
+          });
+        } else {
+          $('#prevSubtitle').html(' ');
+          $('#prevBook').html(' ');
+        }
+      }
+      if (myBook) {
+        getBook()
+      }
+      var prevAges = $('<div></div>');
+      prevAges.attr('id', 'prevAges');
+      prevAges.attr('class', 'apl-rec-age');
+
+      function getAges() {
+        var fieldAgesSelected = $('#edit-field-event-recommended-ages option:selected');
+        if (fieldAgesSelected.val() == '_none') {
+          prevAges.html(' ');
+        } else {
+          prevAges.html(fieldAgesSelected.text());
+        }
+      }
+      getAges()
+      var prevDate = $('<div><i class="material-icons-outlined">schedule</i><div><span id="prevDateDate"></span> - <span id="prevDateTime"></span> <span id="prevDateTime2"></span></div></div>');
+      prevDate.attr('id', 'prevDate');
+      prevDate.attr('class', 'field-event-time');
+      var prevLoc = $('<div><i class="material-icons-outlined">place</i><div id="prevLoc"></div><div id="prevRemote"></div>');
+      var prevFree = $('<div class="apl-free">Free and open to the public | Gratis y abierto al público</div>');
+      prevTags.attr('id', 'prevTags');
+      $(prevEventContainer).insertBefore(".layout-region--node-footer");
+      $(prevEvent).append(prevTitle);
+      $(prevEvent).append(prevSubtitle);
+      $(prevEvent).append(prevSummary);
+      $(prevEvent).append(prevAges);
+      $(prevEvent).append(prevDate);
+      $(prevEvent).append(prevLoc);
+      if (fieldReg.val()) {
+        $(prevEvent).append(prevReg);
+      }
+      $(prevEvent).append(prevFree);
+      $(prevEvent).append(prevTags);
+      $(prevEvent).append(prevBook);
+      $(prevEvent).append(prevButtons);
+      fieldTitle.change(function() {
+        $('#prevTitle').html(fieldTitle.val());
+      });
+      fieldCategory.change(function() {
+        getCat()
+        getSummary()
+      });
+      fieldAges.change(function() {
+        getAges()
+      });
+
+      function getAud29() {
+        if ($('#edit-field-cat-ia-29:checked').length) {
+          $('#aud29').html('<a class="usa-button usa-button-outline" href="#">Adult</a>');
+        } else {
+          $('#aud29').html(' ');
+        }
+      }
+
+      function getAud32() {
+        if ($('#edit-field-cat-ia-32:checked').length) {
+          $('#aud32').html('<a class="usa-button usa-button-outline" href="#">Children</a>');
+        } else {
+          $('#aud32').html(' ');
+        }
+      }
+
+      function getAud31() {
+        console.log('getting Aud 31')
+        if ($('#edit-field-cat-ia-31:checked').length) {
+          $('#aud31').html('<a class="usa-button usa-button-outline" href="#">Teen</a>');
+        } else {
+          $('#aud31').html(' ');
+        }
+      }
+      getAud29()
+      fieldAud29.change(function() {
+        getAud29()
+      });
+      getAud32()
+      fieldAud32.change(function() {
+        getAud32()
+      });
+      getAud31()
+      fieldAud31.change(function() {
+        getAud31()
+      });
+
+      function getDate() {
+        var myDate = dayjs(fieldStart.val()).format('dddd, MMMM D, YYYY');
+        $('#prevDateDate').html(myDate);
+      }
+      getDate()
+      fieldStart.change(function() {
+        getDate()
+      });
+
+      function getStartTime() {
+        var myTime = dayjs(fieldStart.val() + ' ' + fieldStartTime.val()).format('h:mm A');
+        $('#prevDateTime').html(myTime);
+      }
+      getStartTime()
+      fieldStartTime.change(function() {
+        getStartTime()
+      });
+
+      function getEndTime() {
+        var myTime2 = dayjs(fieldStart.val() + ' ' + fieldEndTime.val()).format('h:mm A');
+        $('#prevDateTime2').html(' to ' + myTime2);
+      }
+      getEndTime()
+      fieldEndTime.change(function() {
+        getEndTime()
+      });
+
+      function getLoc() {
+        var myRemote2 = $('#edit-field-remote-location-0-target-id').val();
+        if (!myRemote2) {
+          myLoc = fieldLoc.val();
+          var loc = '';
+          switch (myLoc) {
+            case "3939":
+              loc = 'Central Library, 710 W. César Chávez St.';
+              break;
+            case "194":
+              loc = 'Carver Branch, 1161 Angelina St. ';
+              break;
+            case "186":
+              loc = 'Cepeda Branch, 651 N. Pleasant Valley Rd.';
+              break;
+            case "195":
+              loc = 'Hampton Branch at Oak Hill, 5125 Convict Hill Rd.';
+              break;
+            case "196":
+              loc = 'Howson Branch, 2500 Exposition Blvd.';
+              break;
+            case "197":
+              loc = 'Little Walnut Creek Branch, 835 W. Rundberg Ln.';
+              break;
+            case "198":
+              loc = 'Menchaca Road Branch, 5500 Menchaca Rd.';
+              break;
+            case "199":
+              loc = 'Milwood Branch, 12500 Amherst Dr.';
+              break;
+            case "200":
+              loc = 'North Village Branch, 2505 Steck Ave.';
+              break;
+            case "202":
+              loc = 'Old Quarry Branch, 7051 Village Center Dr.';
+              break;
+            case "4999":
+              loc = 'Online Event';
+              break;
+            case "203":
+              loc = 'Pleasant Hill Branch, 211 E. William Cannon Dr.';
+              break;
+            case "205":
+              loc = 'Ruiz Branch, 1600 Grove Blvd.';
+              break;
+            case "208":
+              loc = 'Spicewood Springs Branch, 8637 Spicewood Springs Rd.';
+              break;
+            case "209":
+              loc = 'Terrazas Branch, 1105 E. César Chávez St.';
+              break;
+            case "210":
+              loc = 'Twin Oaks Branch, 1800 S. Fifth St.';
+              break;
+            case "185":
+              loc = 'University Hills Branch, 4721 Loyola Ln.';
+              break;
+            case "201":
+              loc = 'Willie Mae Kirk Branch, 3101 Oak Springs Dr.';
+              break;
+            case "184":
+              loc = 'Windsor Park Branch, 5833 Westminster Dr.';
+              break;
+            case "211":
+              loc = 'Yarborough Branch, 2200 Hancock Dr.';
+              break;
+          }
+          $('#prevLoc').html(loc);
+          $('#prevRemote').html(' ');
+        }
+      }
+      getLoc()
+      fieldLoc.change(function() {
+        getLoc()
+      });
+      var myBookField = $('edit-field-item-list-0-target-id');
+      myBookField.change(function() {
+        getBook()
+      });
+      $('#edit-group-movie').css('display', 'none');
+      $('#edit-field-central-event-location-wrapper').css('display', 'none');
+      $('#edit-field-event-loc').change(function() {
+        if ($(this).val() == '3939') {
+          $('#edit-field-central-event-location-wrapper').css('display', 'block');
+        } else {
+          $('#edit-field-central-event-location-wrapper').css('display', 'none');
+        }
+      });
+      $('#edit-field-event-category-tags-').change(function() {
+        if ($(this).val() == '1993' || $(this).val() == '2126') {
+          $('#edit-group-movie').css('display', 'block');
+        } else {
+          $('#edit-group-movie').css('display', 'none');
+        }
+      });
+
+      function updateCanceled() {
+        var titlee = $('#edit-title-0-value').val();
+        if (document.getElementById('edit-field-canceled-value').checked) {
+          titlee = titlee.replace("Canceled - ", "");
+          titlee = 'Canceled - ' + titlee;
+          $('#edit-title-0-value').val(titlee);
+        } else {
+          titlee = titlee.replace("Canceled - ", "");
+          $('#edit-title-0-value').val(titlee);
+        }
+      }
+      updateCanceled();
+      $('#edit-field-canceled-value').change(function() {
+        updateCanceled();
+        var fieldTitle3 = $('#edit-title-0-value');
+        var prevTitle3 = $('#prevTitle');
+        console.log('hhhh' + fieldTitle3.val());
+        prevTitle3.val(fieldTitle3.val());
+      });
+
+      // When the user clicks anywhere outside of the modal, close it
+      $('body').click(function(event) {
+        if (!$(event.target).closest('#prevEvent').length && !$(event.target).is('#prevEvent') && !$(event.target).is('#bbPreview')) {
+          $(".modal").hide();
+        }
+      });
+        $('#bCancel').click(function(e) {
+  	  e.preventDefault();
+          $(".modal").hide();
+      });
+
+        
+      $('#bSubmit').click(function(e) {
+        e.preventDefault();
+        submitButton.click();
+      });
+      $('#bbPreview').click(function(e) {
+        e.preventDefault();
+            getDate();
+            getStartTime();
+            getEndTime();
+            getLoc();
+                getAud32();
+      getAud31();
+      getAud29();
+      getAges()
+
+  console.log('getting date fresh2')
+        var fieldTitle2 = $('#edit-title-0-value');
+        prevTitle.val(fieldTitle2.val());
+        prevEventContainer.css('display', 'block');
+        if ($('#edit-field-event-loc').val() == '_none') {
+          if (!$('#edit-field-remote-location-0-target-id').val()) {
+            alert('Please select a Location or add a Remote Location');
+            e.preventDefault();
+          } else {
+            prevEventContainer.css('display', 'block');
+          }
+        } else {
+          prevEventContainer.css('display', 'block');
+        }
+      });
+    });
+  })(jQuery);
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
+contexts: {  }
+conditions_require_all: true

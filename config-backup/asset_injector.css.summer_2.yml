@@ -1,0 +1,48 @@
+uuid: d6b97c64-366a-43ca-854b-552e0e596825
+langcode: eng
+status: true
+dependencies:
+  module:
+    - system
+id: summer_2
+label: 'summer 2'
+code: |-
+  .block.block-views.block-views-blockactivities-and-activity-pages-block-2 h2 {
+  	padding: 1px 15px;
+  }
+  .view-activities.views-row > div span {
+  	font-size: 1.5em;
+  	font-weight: bold;
+  }
+  .region-content .layout--onecol {
+  	text-align: left;
+  }
+  .block.block-layout-builder.block-field-blocknodepagetitle {
+  	clear: both;
+  	text-align: left;
+  }
+  .summer-icon {
+  	margin-right: 10px;
+  	margin-left: 10px;
+  	float: left;
+  	width: 60px;
+  	height: 58px;
+  }
+
+  .views-field.views-field-field-act-video .field-content {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
+  }
+  .video-embed-field-provider-vimeo {
+  	margin-bottom: 20px;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/summer\r\n/summer/*"
+contexts: {  }
+conditions_require_all: true

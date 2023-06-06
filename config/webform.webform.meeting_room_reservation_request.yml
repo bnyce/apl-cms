@@ -2,8 +2,6 @@ uuid: ee7cfc71-63fc-4ea5-aa7d-7b6ffc9afe89
 langcode: eng
 status: open
 dependencies: {  }
-_core:
-  default_config_hash: jD3Ro9Kqtz5WZKf4NfgmRrrpLTMvxni32R_glnyGKSY
 weight: 0
 open: null
 close: null
@@ -52,8 +50,9 @@ elements: |-
       <strong>Please note</strong></p>
 
       <ul>
-      	<li>Reservations may be made up to 30 days in advance</li>
-      	<li>Groups or organizations may reserve one room per location per 30 days</li>
+      	<li>If you are booking less than three days in advance of your planned event, please contact the branch directly to assure your request is processed in time.</li>
+      	<li><span style="font-size:11pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:12.0pt">Reservations may be made up to <strong>90 days</strong> in advance</span></span></span></li>
+      	<li><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">To provide an opportunity for all groups to use the meeting rooms, a group may reserve one meeting room <strong>up to 3 times in a rolling 90 day period</strong></span></span></li>
       	<li>Rooms cannot be booked for days or times when the library is not open</li>
       </ul>
 
@@ -113,6 +112,8 @@ elements: |-
       '#type': email
       '#title': 'Email Address'
       '#required': true
+      '#pattern': '^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+      '#pattern_error': 'Please use an email address without any special characters.'
   meeting_room_reservation:
     '#type': details
     '#title': 'Meeting Room Reservation'
@@ -389,18 +390,21 @@ access:
     roles:
       - administrator
       - meeting_rooms_administrator
+      - internal_group_representative
     users: {  }
     permissions: {  }
   delete_any:
     roles:
       - administrator
       - meeting_rooms_administrator
+      - internal_group_representative
     users: {  }
     permissions: {  }
   purge_any:
     roles:
       - administrator
       - meeting_rooms_administrator
+      - internal_group_representative
     users: {  }
     permissions: {  }
   view_own:
@@ -653,7 +657,7 @@ handlers:
     handler_id: email_to_mra_acb_awaiting_confirmation_
     label: 'Email to MRA-ACB (Awaiting Confirmation)'
     notes: ''
-    status: false
+    status: true
     conditions:
       enabled:
         ':input[name="status"]':
@@ -706,7 +710,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Augustine.Miranda@austintexas.gov,Nancy.Toombs@austintexas.gov'
+      to_mail: Augustine.Miranda@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -748,7 +752,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Curtricia.Thompson@austintexas.gov,ted.mccoy@austintexas.gov'
+      to_mail: 'Cesar.Garza@austintexas.gov,Curtricia.Thompson@austintexas.gov,ted.mccoy@austintexas.gov'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -790,7 +794,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Eric.Travis@austintexas.gov,Susan.Waite@austintexas.gov'
+      to_mail: michelle.baker@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -916,7 +920,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: Pauline.Stacchini@austintexas.gov
+      to_mail: Briana.Garza@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -958,7 +962,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Trudy.Williams@austintexas.gov,Richard.Monthie@austintexas.gov'
+      to_mail: Richard.Monthie@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1042,7 +1046,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: Ralph.Ratcliff@austintexas.gov
+      to_mail: 'Julie.Brown@austintexas.gov,kimthu.nguyen@austintexas.gov'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1126,7 +1130,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Carlos.Pin@austintexas.gov,Michelle.Baker@austintexas.gov'
+      to_mail: Carlos.Pin@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1168,7 +1172,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Irene.Magana-Noverola@austintexas.gov,Alicia.Niwagaba@austintexas.gov'
+      to_mail: Irene.Magana-Noverola@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1252,7 +1256,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Cesar.Garza@austintexas.gov,Danny.Walker@austintexas.gov'
+      to_mail: 'Danny.Walker@austintexas.gov,mark.pfannenstiel@austintexas.gov'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1294,7 +1298,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Michelle.Beebower@austintexas.gov,Angelica.Johnson@austintexas.gov'
+      to_mail: Michelle.Beebower@austintexas.gov
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1336,7 +1340,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Johnathon.Parsons@austintexas.gov,Steven.Raab@austintexas.gov'
+      to_mail: 'Steven.Raab@austintexas.gov,Daniel.Rivera@austintexas.gov'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1365,7 +1369,7 @@ handlers:
   email_to_mra_auh_awaiting_confirmation__1:
     id: email
     handler_id: email_to_mra_auh_awaiting_confirmation__1
-    label: 'Email to MRA-AUH (Awaiting Confirmation)'
+    label: 'Email to MRA-AWK (Awaiting Confirmation)'
     notes: ''
     status: true
     conditions:
@@ -1420,7 +1424,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: Kelly.Overton@austintexas.gov
+      to_mail: 'Kelly.Overton@austintexas.gov,meghan.otoupalik@austintexas.gov'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -1462,7 +1466,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'Aaron.Goldman@austintexas.gov,Rebecca.Rich-Wulfmeyer@austintexas.gov'
+      to_mail: 'Brandon.Boykin@austintexas.gov,Rebecca.Rich-Wulfmeyer@austintexas.gov'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

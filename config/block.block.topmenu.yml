@@ -11,7 +11,7 @@ dependencies:
 id: topmenu
 theme: uswds_base
 region: header_top
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:top-menu'
 settings:

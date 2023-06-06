@@ -1,0 +1,79 @@
+uuid: 8d97251d-bf19-4fff-aa95-c6cdb451d785
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.database_types
+  module:
+    - feeds_ex
+    - taxonomy
+label: 'Database Types'
+id: database_types
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'private://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.db_type.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: database_types
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: json
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: json
+  pid:
+    value: pid
+    label: pid
+    machine_name: pid
+    type: json
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: parent
+    map:
+      target_id: pid
+    settings:
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0

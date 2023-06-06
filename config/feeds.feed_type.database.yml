@@ -1,0 +1,232 @@
+uuid: bfd8743d-ae73-46b5-860c-9e7bc9e1e1a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.database.body
+    - field.field.node.database.field_database_access
+    - field.field.node.database.field_database_category
+    - field.field.node.database.field_database_link
+    - field.field.node.database.field_database_subjects
+    - field.field.node.database.field_database_types
+    - field.field.node.database.field_former_product_names
+    - field.field.node.database.field_grade_level
+    - field.field.node.database.field_help_text
+    - field.field.node.database.field_intended_audience
+    - node.type.database
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      9bc12d19-0315-4eda-af28-aa76c05bad32:
+        separator: ','
+        limit: null
+        uuid: 9bc12d19-0315-4eda-af28-aa76c05bad32
+        plugin: explode
+        source: db_subjects
+        weight: 0
+        label: Explode
+      de602a60-60e1-45a4-9084-d14f936ce6f6:
+        separator: ','
+        limit: null
+        uuid: de602a60-60e1-45a4-9084-d14f936ce6f6
+        plugin: explode
+        source: grade
+        weight: 0
+        label: Explode
+label: Database
+id: database
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: json
+  directory: 'private://feeds'
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.database.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: database
+  langcode: en
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nid:
+    value: nid
+    label: nid
+    machine_name: nid
+    type: json
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: json
+  body:
+    value: body
+    label: body
+    machine_name: body
+    type: json
+  db_access:
+    value: db_access
+    label: db_access
+    machine_name: db_access
+    type: json
+  db_cat:
+    value: db_cat
+    label: db_cat
+    machine_name: db_cat
+    type: json
+  db_subjects:
+    value: db_subjects
+    label: db_subjects
+    machine_name: db_subjects
+    type: json
+  db_types:
+    value: db_types
+    label: db_types
+    machine_name: db_types
+    type: json
+  former_names:
+    value: former_names
+    label: former_names
+    machine_name: former_names
+    type: json
+  grade:
+    value: grade
+    label: grade
+    machine_name: grade
+    type: json
+  help:
+    value: help
+    label: help
+    machine_name: help
+    type: json
+  audience:
+    value: audience
+    label: audience
+    machine_name: audience
+    type: json
+  summary:
+    value: summary
+    label: summary
+    machine_name: summary
+    type: json
+  link:
+    value: link
+    label: link
+    machine_name: link
+    type: json
+mappings:
+  -
+    target: nid
+    map:
+      value: nid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: body
+      summary: summary
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_database_access
+    map:
+      target_id: db_access
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_category
+    map:
+      target_id: db_cat
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_subjects
+    map:
+      target_id: db_subjects
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_types
+    map:
+      target_id: db_types
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_former_product_names
+    map:
+      value: former_names
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_grade_level
+    map:
+      value: grade
+    settings:
+      language: null
+  -
+    target: field_help_text
+    map:
+      value: help
+      summary: ''
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_intended_audience
+    map:
+      target_id: audience
+    settings:
+      language: ''
+      reference_by: tid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_database_link
+    map:
+      value: link
+    settings:
+      language: null
+    unique: {  }

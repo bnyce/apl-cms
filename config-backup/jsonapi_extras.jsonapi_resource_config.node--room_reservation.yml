@@ -1,0 +1,197 @@
+uuid: 84f819c1-c78e-45d5-9e81-ec483f22c232
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room_reservation
+id: node--room_reservation
+disabled: false
+path: room_reservation
+resourceType: room_reservation
+resourceFields:
+  nid:
+    disabled: false
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: false
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  revision_timestamp:
+    disabled: false
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: false
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: false
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: false
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: false
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: false
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: false
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: false
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  publish_on:
+    disabled: false
+    fieldName: publish_on
+    publicName: publish_on
+    enhancer:
+      id: ''
+  unpublish_on:
+    disabled: false
+    fieldName: unpublish_on
+    publicName: unpublish_on
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: false
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  feeds_item:
+    disabled: false
+    fieldName: feeds_item
+    publicName: feeds_item
+    enhancer:
+      id: ''
+  field____date:
+    disabled: false
+    fieldName: field____date
+    publicName: field____date
+    enhancer:
+      id: ''
+  field_internal_:
+    disabled: false
+    fieldName: field_internal_
+    publicName: field_internal_
+    enhancer:
+      id: ''
+  field_meeting_room:
+    disabled: false
+    fieldName: field_meeting_room
+    publicName: field_meeting_room
+    enhancer:
+      id: ''
+  field_room_expected_attendance:
+    disabled: false
+    fieldName: field_room_expected_attendance
+    publicName: field_room_expected_attendance
+    enhancer:
+      id: ''
+  field_room_group:
+    disabled: false
+    fieldName: field_room_group
+    publicName: field_room_group
+    enhancer:
+      id: ''
+  field_room_status:
+    disabled: false
+    fieldName: field_room_status
+    publicName: field_room_status
+    enhancer:
+      id: ''
+  field_slr_time_end:
+    disabled: false
+    fieldName: field_slr_time_end
+    publicName: field_slr_time_end
+    enhancer:
+      id: ''
+  field_slr_time_start:
+    disabled: false
+    fieldName: field_slr_time_start
+    publicName: field_slr_time_start
+    enhancer:
+      id: ''

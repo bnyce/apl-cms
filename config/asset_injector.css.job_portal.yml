@@ -1,17 +1,21 @@
 uuid: 2fe15daa-56cb-4fad-8964-ccc569fcd185
 langcode: eng
 status: true
-dependencies:
-  module:
-    - system
+dependencies: {  }
 id: job_portal
-label: 'Job Portal'
+label: 'Accordion like on Job Portal'
 code: |-
   .block.block-layout-builder.block-field-blocknodejob-portal-pagetitle,
   #views_slideshow_cycle_div_highlighted-block_3_1 div span a,
   #views_slideshow_cycle_div_highlighted-block_3_1 span,
   .field.field--name-body {
   	padding: 0;
+  }
+  #summer .section-heading {
+  	padding-left: 0;
+  }
+  h3 {
+  	margin-left: 15px;
   }
   p, 
   .field--name-title {
@@ -30,13 +34,19 @@ code: |-
   	left: 1px;
   	width: 50px;
   }
+  #jobportal ul {
+  	margin-left: 15px !important;
+  	padding-left: 15px;
+  }
   .field--name-body h2 img {
   	position: absolute;
   	top: 5px;
   	left: 5px;
   	width: 40px;
   }
+  .virtual-library h2,
   .field--name-body h2,
+  .field--name-body h4,
   #jobportal h2 {
   	position: relative;
   	background-color: #efefef;
@@ -48,15 +58,23 @@ code: |-
   	color: #1b1b1b;
     cursor: pointer;
   }
+  .virtual-library h2 {
+  	padding-left: 20px !important;
+  }
+  .virtual-library h2.active,
   .field--name-body h2.active,
+  .field--name-body h4.active,
   #jobportal h2.active {
   	background-image: url(/library/misc/remove.svg),linear-gradient(transparent,transparent);
   }
+  .virtual-library .details,
   .field--name-body .details,
   #jobportal .details {
   	display: none;
   }
+  .virtual-library h2.active + .details,
   .field--name-body h2.active + .details,
+  .field--name-body h4.active + .details,
   h2.active + .details {
   	display: block !important;
   }
@@ -81,11 +99,7 @@ code: |-
   	margin: 0 auto;
   }
 media: all
-preprocess: true
-conditions:
-  request_path:
-    id: request_path
-    negate: false
-    pages: "/jobportal\r\n/jobportal/*\r\n/portaldeempleo\r\n/portaldeempleo/*\r\n/community-resource-hub"
+preprocess: false
+conditions: {  }
 contexts: {  }
 conditions_require_all: true

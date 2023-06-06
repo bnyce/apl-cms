@@ -1,0 +1,25 @@
+uuid: be859c9f-0237-4e0f-9dab-107ec60eb304
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.languages
+  module:
+    - system
+  theme:
+    - claro2
+id: claro2_languages
+theme: claro2
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:languages'
+settings:
+  id: 'system_menu_block:languages'
+  label: Languages
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

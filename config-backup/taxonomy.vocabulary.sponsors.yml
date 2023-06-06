@@ -1,0 +1,10 @@
+uuid: 757ed334-72b9-4381-998c-834d3f78689d
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AHJkbJocyWq5Veq_wy6H7Tk4l84QmvabycJjleCeEuQ
+name: Sponsors
+vid: sponsors
+description: ''
+weight: 0

@@ -52,7 +52,21 @@
         "drupal/office_hours": "^1.7",
         "drupal/theme_switcher": "^1.2",
         "drupal/calendar_view": "^2.0",
-        "drupal/feeds_ex": "^1.0@beta"
+        "drupal/feeds_ex": "^1.0@beta",
+        "drupal/endroid_qr_code": "^3.0",
+        "drupal/facets": "^2.0",
+        "drupal/search_api": "^1.29",
+        "drupal/publishcontent": "^1.6",
+        "drupal/quickedit": "^1.0",
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/search_api_db": "^1.29",
+        "drupal/consumers": "^1.17",
+        "drupal/jsonapi_extras": "^3.23",
+        "drupal/jwt": "^2.0",
+        "drupal/key": "^1.17",
+        "drupal/redirect": "^1.8",
+        "drupal/webform_content_creator": "^4.0",
+        "drupal/webform_image_select": "^6.1"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
@@ -119,7 +133,8 @@
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "endroid/installer": true
         }
     }
 }

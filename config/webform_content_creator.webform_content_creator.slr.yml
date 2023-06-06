@@ -1,0 +1,68 @@
+uuid: 57b46f08-7453-4f09-a8ab-7dcb5a6d7337
+langcode: eng
+status: true
+dependencies: {  }
+id: slr
+title: SLR
+webform: shared_learning_room_reservation
+content_type: null
+field_title: null
+use_encrypt: null
+encryption_profile: null
+sync_content: true
+sync_content_delete: true
+sync_content_node_field: null
+elements:
+  field_how_many_people_:
+    type: false
+    webform_field: how_many_people_
+    custom_check: false
+    custom_value: ''
+  field_slr_agreement:
+    type: false
+    webform_field: agreement
+    custom_check: false
+    custom_value: ''
+  field_slr_duration:
+    type: false
+    webform_field: duration
+    custom_check: false
+    custom_value: ''
+  field_slr_email:
+    type: false
+    webform_field: email
+    custom_check: false
+    custom_value: ''
+  field_slr_full_name:
+    type: false
+    webform_field: full_name
+    custom_check: false
+    custom_value: ''
+  field_slr_reservation_date:
+    type: false
+    webform_field: reservation_date
+    custom_check: false
+    custom_value: ''
+  field_slr_room:
+    type: false
+    webform_field: room
+    custom_check: false
+    custom_value: ''
+  field_slr_time_end:
+    type: false
+    webform_field: time_end
+    custom_check: false
+    custom_value: ''
+  field_slr_time_start:
+    type: false
+    webform_field: time_start
+    custom_check: false
+    custom_value: ''
+  title:
+    type: false
+    webform_field: meeting_topic
+    custom_check: false
+    custom_value: ''
+sync_content_field: field_slr_webform
+target_entity_type: node
+target_bundle: slr

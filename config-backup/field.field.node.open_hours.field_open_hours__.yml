@@ -1,0 +1,21 @@
+uuid: b329d281-10ea-43a2-8a66-fd770cdafa91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_hours__
+    - node.type.open_hours
+  module:
+    - office_hours
+id: node.open_hours.field_open_hours__
+field_name: field_open_hours__
+entity_type: node
+bundle: open_hours
+label: 'Open Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

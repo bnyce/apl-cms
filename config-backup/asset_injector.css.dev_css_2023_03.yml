@@ -1,0 +1,15 @@
+uuid: 1b19e340-82ff-44fb-860b-a4564d675608
+langcode: en
+status: true
+dependencies: {  }
+id: dev_css_2023_03
+label: 'dev css 2023-03'
+code: |-
+  .usa-header.usa-header--extended {
+  	display: none;
+  }
+media: all
+preprocess: false
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

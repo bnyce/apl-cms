@@ -1,0 +1,17 @@
+uuid: eed621b1-a190-48d0-aa72-6efc0ff3e9d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Open Hours'
+type: open_hours
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,27 @@
+uuid: 9f9ea182-820e-42e5-8590-dbe7d0142bd3
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: FK9d_Jjy6OaMDzGVo33D6siIz0_2wItSMtK4o-f7w44
+id: taxonomy_term.field_remote_url
+field_name: field_remote_url
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

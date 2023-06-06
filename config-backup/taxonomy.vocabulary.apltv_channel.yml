@@ -1,0 +1,10 @@
+uuid: 72d5132b-cf1b-420a-bad2-ffec40545fad
+langcode: eng
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PiVafIx7mNoG6MwQ7G-oOT1tKI44vOCn3BUqXIWMksk
+name: 'APLTV Channel'
+vid: apltv_channel
+description: ''
+weight: 0

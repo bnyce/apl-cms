@@ -12,7 +12,7 @@ dependencies:
 id: views_block__sections_block_1
 theme: uswds_base
 region: content
-weight: -8
+weight: -11
 provider: null
 plugin: 'views_block:sections-block_1'
 settings:

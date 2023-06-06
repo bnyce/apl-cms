@@ -8,8 +8,8 @@ _core:
   default_config_hash: EMaHqTPYMYBCgJxDNacklCOc4izcUYu8hOdorw0vzzU
 id: uswds_base_local_tasks
 theme: uswds_base
-region: content
-weight: -10
+region: header_top
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:

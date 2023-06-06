@@ -57,6 +57,11 @@ module:
   migrate_blogs: 0
   migrate_booklist_cats: 0
   migrate_channels: 0
+  migrate_databases: 0
+  migrate_db_access: 0
+  migrate_db_cats: 0
+  migrate_db_subjects: 0
+  migrate_db_types: 0
   migrate_event_tags: 0
   migrate_events: 0
   migrate_file: 0
@@ -89,6 +94,7 @@ module:
   tamper: 0
   taxonomy: 0
   text: 0
+  theme_switcher: 0
   token: 0
   toolbar: 0
   tour: 0
@@ -102,6 +108,7 @@ module:
   views_templates: 0
   views_ui: 0
   webform: 0
+  webform_content_creator: 0
   webform_demo_event_registration: 0
   webform_example_composite: 0
   webform_example_element: 0
@@ -109,6 +116,7 @@ module:
   webform_example_handler: 0
   webform_example_variant: 0
   webform_examples: 0
+  webform_image_select: 0
   webform_node: 0
   webform_options_custom: 0
   webform_options_limit: 0
@@ -129,6 +137,4 @@ theme:
   claro2: 0
   stable: 0
   classy: 0
-  uswds: 0
-  apl_subtheme: 0
 profile: standard

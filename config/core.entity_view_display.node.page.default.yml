@@ -4,13 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_main_image
     - field.field.node.page.layout_builder__layout
     - node.type.page
+    - views.view.24v
   module:
+    - image
     - layout_builder
     - layout_discovery
     - text
     - user
+    - views
 third_party_settings:
   layout_builder:
     enabled: true
@@ -20,20 +24,20 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
-          2cd5ee76-c9e2-4732-b601-3b7be0d94c60:
-            uuid: 2cd5ee76-c9e2-4732-b601-3b7be0d94c60
+          cc1d5064-1d4c-401b-bc2e-3e29dac21245:
+            uuid: cc1d5064-1d4c-401b-bc2e-3e29dac21245
             region: content
             configuration:
-              id: 'field_block:node:page:body'
+              id: 'views_block:24v-block_1'
+              label: ''
               label_display: '0'
+              provider: views
               context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
+                nid: layout_builder.entity
+              views_label: ''
+              items_per_page: none
             weight: 0
             additional: {  }
         third_party_settings: {  }
@@ -50,6 +54,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 100
+    region: content
+  field_main_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

@@ -11,7 +11,7 @@ dependencies:
 id: biblioaccountlogin
 theme: uswds_base
 region: header_top
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:75f5784e-c051-410a-9842-5dfde41d99ad'
 settings:

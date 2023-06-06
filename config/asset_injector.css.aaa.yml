@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: aaa
 label: aaa
-code: |-
+code: |+
   header {
   	position: sticky;
   	top: 0;
@@ -12,7 +12,19 @@ code: |-
   	background: white;
   	width: 100%;
   }
-
+  #apl-nav .grid-row.left {
+  	padding: 10px 0 6px;
+  }
+  .main-menu-links a {
+  	padding: 12px 24px;
+  	display: inline-block;
+  }
+  #apl-nav .first {
+  	padding: 15px 32px 7px 0;
+  }
+  .first.grid-col-auto {
+  	padding: 12px 36px 4px 0;
+  }
   @media (min-width: 40em) {
   .tablet\:grid-col-6,
   .tablet-grid-col-6 {
@@ -40,12 +52,43 @@ code: |-
   }
   }
 
+  @media (min-width: 800px) {
+  #apl-nav .home {
+  	flex: 0 1 auto;
+  	width: 25%;
+  }
+
+  }
+
+  #apl-nav .home {
+  	color: transparent;
+  	background-image: url(/themes/custom/apl/assets/img/APL.png);
+  	background-repeat: no-repeat;
+  	display: inline-block;
+  	padding: 3px 0;
+  	margin: 20px;
+  	background-position: 0px 16px;
+  	height: 46px;
+  }
+  #apl-nav a {
+  	color: white;
+  	text-decoration: none;
+  }
+
   @media (min-width: 64em) {
   #block-views-block-press-releases-grid-container,
   .grid-container {
   	padding-left: 2rem;
   	padding-right: 2rem;
   }
+  /*
+  #apl-nav .home {
+  	background-position: 0px 46px;
+  }
+  #apl-nav a {
+  	padding: 43px 32px 43px 0;
+  }
+  */
   }
   #block-views-block-press-releases-grid-container,
   .grid-container {
@@ -58,20 +101,7 @@ code: |-
   #apl-nav {
   	background: black;
   }
-  #apl-nav .home {
-  	color: transparent;
-  	background-image: url(/themes/custom/apl/assets/img/APL.png);
-  	width: 296px;
-  	background-repeat: no-repeat;
-  	display: inline-block;
-  	background-position: 0px 46px;
-  }
-  #apl-nav a {
-  	color: white;
-  	text-decoration: none;
-  	display: block;
-  	padding: 43px 32px 43px 0;
-  }
+
   .full-width {
   	background: black;
   }
@@ -100,27 +130,16 @@ code: |-
   	text-decoration: none;
   }
   #nav-events img {
+  	position: absolute;
+  	top: 6px;
   	left: 8px;
   }
   #nav-locations img {
-  	left: 12px;
-  }
-  #block-biblioaccountlogin img {
   	position: absolute;
   	top: 6px;
+  	left: 12px;
   }
 
-  .menu.menu--main.nav li.first a {
-  	color: transparent;
-  	background-image: url(/themes/custom/apl/assets/img/APL.png);
-  	width: 263px;
-  	background-repeat: no-repeat;
-  	display: inline-block;
-  	padding: 3px 0;
-  	margin: 0;
-  	background-position: 0px 46px;
-  	height: 112px;
-  }
   .usa-nav-container {
   	background: black;
   	max-width: 100%;
@@ -132,12 +151,7 @@ code: |-
   	margin: 0;
   	padding: 0;
   }
-  .menu.menu--main.nav a {
-  	color: white;
-  	text-decoration: none;
-  	display: block;
-  	padding: 43px;
-  }
+
   .menu.menu--main.nav li {
   	display: inline-block;
   	height: 112px;
@@ -214,6 +228,7 @@ code: |-
   .usa-button.grid-col-right {
   	float: right;
   }
+
 media: all
 preprocess: true
 conditions: {  }

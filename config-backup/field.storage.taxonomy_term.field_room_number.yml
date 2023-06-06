@@ -1,0 +1,23 @@
+uuid: c47c6e8f-753d-45f3-9720-cf4f0c959ffb
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: hsKF8pxgZkcLlQGONSm8KU0rJU7VzWxlQdq73X6aYHQ
+id: taxonomy_term.field_room_number
+field_name: field_room_number
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

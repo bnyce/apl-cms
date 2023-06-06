@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: af529165-dd02-45b6-b969-4d61cd701010
+name: APL-CMS
+mail: brycebenton+aplcms@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/759101
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

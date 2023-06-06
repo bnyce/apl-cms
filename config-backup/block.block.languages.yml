@@ -1,0 +1,25 @@
+uuid: 31adee8f-1203-4524-a65f-e09d0717c75c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.languages
+  module:
+    - system
+  theme:
+    - uswds_base
+id: languages
+theme: uswds_base
+region: header_top
+weight: -6
+provider: null
+plugin: 'system_menu_block:languages'
+settings:
+  id: 'system_menu_block:languages'
+  label: Languages
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

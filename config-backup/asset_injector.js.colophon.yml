@@ -1,0 +1,41 @@
+uuid: 6562b48d-e50f-4703-be1c-3a1238b5f658
+langcode: eng
+status: true
+dependencies:
+  module:
+    - node
+id: colophon
+label: Colophon
+code: |-
+  let searchParams = new URLSearchParams(window.location.search);
+   
+  if( (searchParams.has('about') || searchParams.has('colophon')) && document.getElementsByClassName('view-colophon') ){
+  	document.getElementsByClassName('view-colophon')[0].classList.add('reveal');
+  	if(document.getElementsByClassName('usa-footer__secondary-section')) {document.getElementsByClassName('usa-footer__secondary-section')[0].classList.add('reveal');}
+  	console.log('Colophon revealed at bottom of page')
+  } else {
+  	console.log('reveal the Colophon by adding the URL parameter "about", for example: ' + window.location.href + '?about');
+  }
+
+   
+  if( (searchParams.has('ipad') || searchParams.has('kiosk')) ){
+  	document.body.classList.add('ipad');
+  }
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      apl_site_content: apl_site_content
+      event: event
+      library_info: library_info
+      page: page
+contexts: {  }
+conditions_require_all: true
